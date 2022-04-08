@@ -1,8 +1,7 @@
 import React from "react";
 import type { NextPage } from "next";
 
-import { Loading } from "../components";
-import Header from "../components/Header";
+import { Header } from "../components";
 
 const Home: NextPage = () => {
     return (
