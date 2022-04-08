@@ -5,9 +5,10 @@ import { Loading } from "../components";
 
 const Home: NextPage = () => {
     return (
-        <main className="bg-gradient-to-tl from-primary-purple via-primary-green/80 to-primary-purple">
+        // <main className="bg-gradient-to-tl from-primary-purple via-primary-green/80 to-primary-purple">
+        <main>
             <section className="container flex flex-col items-center mx-auto p-10">
-                <h3 className="text-5xl font-bold py-5 text-center text-white">Judges & Speakers</h3>
+                <h3 className="text-5xl font-bold py-5 text-center text-black">Judges & Speakers</h3>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                     <div className="bg-green-500 p-2 rounded-lg shadow-lg">
@@ -32,7 +33,7 @@ const Home: NextPage = () => {
             </section>
 
             <section className="container flex flex-col items-center mx-auto p-10">
-                <h3 className="text-5xl font-bold py-5 text-center text-white">Our Sponsors</h3>
+                <h3 className="text-5xl font-bold py-5 text-center text-black">Our Sponsors</h3>
 
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
                     <div className="rounded-lg">
@@ -56,58 +57,63 @@ const Home: NextPage = () => {
                     <div className="rounded-lg">
                         <img src="https://via.placeholder.com/400x400" alt="team-member" className="h-32 w-64 object-cover object-center rounded-lg" />
                     </div>
+                    <div className="rounded-lg">
+                        <img src="https://via.placeholder.com/400x400" alt="team-member" className="h-32 w-64 object-cover object-center rounded-lg" />
+                    </div>
                 </div>
+
+                <button className="bg-green-500 text-white font-bold p-5 rounded-lg mt-5">Become a Sponsor</button>
             </section>
 
             <section className="container flex flex-col items-center mx-auto p-10">
-                <h3 className="text-5xl font-bold py-5 text-center text-white">Frequently Asked Questions</h3>
+                <h3 className="text-5xl font-bold py-5 text-center text-black">Frequently Asked Questions</h3>
 
                 <div className="flex flex-col items-center">
                     <div className="w-full md:w-2/3">
                         <div className="flex items-center justify-between border-4 rounded-lg border-green-500 p-5 my-5">
-                            <h4 className="text-2xl font-bold text-white">What is HackFest ?</h4>
+                            <h4 className="text-2xl font-bold text-black">What is HackFest ?</h4>
                             <span>
                                 <svg width={24} height={14} viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M2 2L12 12L22 2" stroke="black" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                             </span>
                         </div>
-                        <p className="text-lg text-white">HackFest is a hackathon that is held every year in the fall. It is a great way to learn new skills and get involved in the tech community.</p>
+                        <p className="text-lg text-black">HackFest is a hackathon that is held every year in the fall. It is a great way to learn new skills and get involved in the tech community.</p>
                     </div>
                     <div className="w-full md:w-2/3">
                         <div className="flex items-center justify-between border-4 rounded-lg border-green-500 p-5 my-5">
-                            <h4 className="text-2xl font-bold text-white">What is the hackathon format?</h4>
+                            <h4 className="text-2xl font-bold text-black">What is the hackathon format?</h4>
                             <span>
                                 <svg width={24} height={14} viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M2 2L12 12L22 2" stroke="black" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                             </span>
                         </div>
-                        <p className="text-lg text-white">The hackathon is a 24 hour event where teams of around 5-10 people come together to build a project.</p>
+                        <p className="text-lg text-black">The hackathon is a 24 hour event where teams of around 5-10 people come together to build a project.</p>
                     </div>
                     <div className="w-full md:w-2/3">
                         <div className="flex items-center justify-between border-4 rounded-lg border-green-500 p-5 my-5">
-                            <h4 className="text-2xl font-bold text-white">What is the hackathon theme?</h4>
+                            <h4 className="text-2xl font-bold text-black">What is the hackathon theme?</h4>
                             <span>
                                 <svg width={24} height={14} viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M2 2L12 12L22 2" stroke="black" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                             </span>
                         </div>
-                        <p className="text-lg text-white">The theme of the hackathon is to build a product that will help people in need.</p>
+                        <p className="text-lg text-black">The theme of the hackathon is to build a product that will help people in need.</p>
                     </div>
                 </div>
             </section>
 
             <section className="container flex flex-col items-center mx-auto p-10">
-                <h3 className="text-5xl font-bold py-5 text-center text-white">Ready to Join Us?</h3>
-                <p className="text-2xl pb-5 text-center max-w-lg text-white">Join others and be among the first to know when we finally launch.</p>
+                <h3 className="text-5xl font-bold py-5 text-center text-black">Ready to Join Us?</h3>
+                <p className="text-2xl pb-5 text-center max-w-lg text-black">Join others and be among the first to know when we finally launch.</p>
 
                 <button className="bg-green-500 text-white font-bold p-5 rounded-lg">Get involved</button>
             </section>
 
             <footer className="container flex flex-col items-center mx-auto p-10">
-                <h4 className="text-3xl font-bold py-5 text-center text-white">Connect with us</h4>
+                <h4 className="text-3xl font-bold py-5 text-center text-black">Connect with us</h4>
 
                 <div className="flex flex-row gap-5 pb-10 items-center">
                     <a href="https://twitter.com/genztechies" target="_blank" rel="noopener noreferrer">
