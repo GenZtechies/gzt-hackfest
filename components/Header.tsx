@@ -34,7 +34,7 @@ const Header = () => {
                 </ul>
             </div>
 
-            <a href="#" className="bg-green-600 rounded-lg text-white px-5 py-1">
+            <a href="#" className="bg-green-500 text-white font-bold p-4 rounded-lg">
                 Register
             </a>
         </nav>
