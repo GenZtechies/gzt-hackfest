@@ -16,20 +16,20 @@ const Header = () => {
 
             <div className="hidden md:inline-flex">
                 <ul className="flex">
-                    <li className="mx-4">
-                        <a href="#Home">Home</a>
+                    <li className="mx-4 hover:text-green-500 active:text-green-500 transition-all">
+                        <a href="#home">Home</a>
                     </li>
-                    <li className="mx-4">
-                        <a href="#About">About</a>
+                    <li className="mx-4 hover:text-green-500 active:text-green-500 transition-all">
+                        <a href="#about">About</a>
                     </li>
-                    <li className="mx-4">
-                        <a href="#Schedule">Schedule</a>
+                    <li className="mx-4 hover:text-green-500 active:text-green-500 transition-all">
+                        <a href="#schedule">Schedule</a>
                     </li>
-                    <li className="mx-4">
-                        <a href="#Sponsors">Sponsors</a>
+                    <li className="mx-4 hover:text-green-500 active:text-green-500 transition-all">
+                        <a href="#sponsors">Sponsors</a>
                     </li>
-                    <li className="mx-4">
-                        <a href="#Judges">Judges</a>
+                    <li className="mx-4 hover:text-green-500 active:text-green-500 transition-all">
+                        <a href="#judges">Judges</a>
                     </li>
                 </ul>
             </div>
