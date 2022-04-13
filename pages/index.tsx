@@ -10,7 +10,7 @@ const Home: NextPage = () => {
             <Header />
 
             <main>
-                <section className="container flex flex-col items-center mx-auto p-10 min-h-screen py-20">
+                <section id="home" className="container flex flex-col items-center mx-auto p-10 min-h-screen py-20">
                     <h3 className="text-3xl font-medium py-5 text-center text-black">This is Gen Z Hack + Fest</h3>
                     <h3 className="text-5xl font-bold py-5 text-center text-black max-w-xl">Africa&apos;s largest GenZ Hackathon.</h3>
                     <p className="text-2xl pb-5 text-center max-w-3xl text-black">
@@ -36,7 +36,7 @@ const Home: NextPage = () => {
                     </div>
                 </section>
 
-                <section className="container flex flex-col items-center mx-auto p-10">
+                <section id="about" className="container flex flex-col items-center mx-auto p-10">
                     <h3 className="text-5xl font-bold py-5 text-center text-black max-w-3xl">Why Africa&apos;s largest Gen-Z Hackathon + Festival?</h3>
                     <p className="text-2xl pb-5 text-center max-w-3xl text-black">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been th industry&apos;s standard dummy text ever since the 1500s, when an unknown
@@ -45,23 +45,23 @@ const Home: NextPage = () => {
                     </p>
                 </section>
 
-                <section className="container flex flex-col items-center mx-auto p-10">
+                <section id="judges" className="container flex flex-col items-center mx-auto p-10">
                     <h3 className="text-5xl font-bold py-5 text-center text-black">Judges & Speakers</h3>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-                        <div className="bg-green-500 p-2 rounded-lg shadow-lg">
+                        <div className="bg-green-500 p-2 rounded-lg shadow-lg hover:scale-105 transition duration-300">
+                            <img src="https://via.placeholder.com/600x600"  alt="team-member" className="h-60 w-72 object-cover object-center rounded-lg pb-2" />
+                            <h4 className="text-xl text-white font-bold px-1">Samantha Jane</h4>
+                            <p className="text-md text-white font-light px-1 italic">Software Developer</p>
+                            <p className="text-md text-white font-medium px-1">Microsoft</p>
+                        </div>
+                        <div className="bg-green-500 p-2 rounded-lg shadow-lg hover:scale-105 transition duration-300">
                             <img src="https://via.placeholder.com/600x600" alt="team-member" className="h-60 w-72 object-cover object-center rounded-lg pb-2" />
                             <h4 className="text-xl text-white font-bold px-1">Samantha Jane</h4>
                             <p className="text-md text-white font-light px-1 italic">Software Developer</p>
                             <p className="text-md text-white font-medium px-1">Microsoft</p>
                         </div>
-                        <div className="bg-green-500 p-2 rounded-lg shadow-lg">
-                            <img src="https://via.placeholder.com/600x600" alt="team-member" className="h-60 w-72 object-cover object-center rounded-lg pb-2" />
-                            <h4 className="text-xl text-white font-bold px-1">Samantha Jane</h4>
-                            <p className="text-md text-white font-light px-1 italic">Software Developer</p>
-                            <p className="text-md text-white font-medium px-1">Microsoft</p>
-                        </div>
-                        <div className="bg-green-500 p-2 rounded-lg shadow-lg">
+                        <div className="bg-green-500 p-2 rounded-lg shadow-lg hover:scale-105 transition duration-300">
                             <img src="https://via.placeholder.com/600x600" alt="team-member" className="h-60 w-72 object-cover object-center rounded-lg pb-2" />
                             <h4 className="text-xl text-white font-bold px-1">Samantha Jane</h4>
                             <p className="text-md text-white font-light px-1 italic">Software Developer</p>
@@ -70,7 +70,7 @@ const Home: NextPage = () => {
                     </div>
                 </section>
 
-                <section className="container flex flex-col items-center mx-auto p-10">
+                <section id="sponsors" className="container flex flex-col items-center mx-auto p-10">
                     <h3 className="text-5xl font-bold py-5 text-center text-black">Our Sponsors</h3>
 
                     <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
@@ -111,7 +111,7 @@ const Home: NextPage = () => {
                             <div className="flex items-center justify-between border-4 rounded-lg border-green-500 p-5 my-5">
                                 <h4 className="text-2xl font-bold text-black">What is HackFest ?</h4>
                                 <span>
-                                    <svg width={24} height={14} viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg className="animate-bounce" width={24} height={14} viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M2 2L12 12L22 2" stroke="black" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
                                     </svg>
                                 </span>
@@ -124,7 +124,7 @@ const Home: NextPage = () => {
                             <div className="flex items-center justify-between border-4 rounded-lg border-green-500 p-5 my-5">
                                 <h4 className="text-2xl font-bold text-black">What is the hackathon format?</h4>
                                 <span>
-                                    <svg width={24} height={14} viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg className="animate-bounce" width={24} height={14} viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M2 2L12 12L22 2" stroke="black" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
                                     </svg>
                                 </span>
@@ -135,7 +135,7 @@ const Home: NextPage = () => {
                             <div className="flex items-center justify-between border-4 rounded-lg border-green-500 p-5 my-5">
                                 <h4 className="text-2xl font-bold text-black">What is the hackathon theme?</h4>
                                 <span>
-                                    <svg width={24} height={14} viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg className="animate-bounce" width={24} height={14} viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M2 2L12 12L22 2" stroke="black" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
                                     </svg>
                                 </span>
