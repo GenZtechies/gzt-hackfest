@@ -3,6 +3,7 @@ import type { NextPage } from "next";
 
 import { Header } from "../components";
 
+
 const Home: NextPage = () => {
     return (
         <>
@@ -28,7 +29,7 @@ const Home: NextPage = () => {
                         <div className="w-screen md:w-9/12">
                             <img src="/assets/images/icon-5.svg" alt="hackathon"/>
                         </div>
-                        
+
                     </div>
 
                     {/* Background Images Attachment */}
@@ -47,13 +48,19 @@ const Home: NextPage = () => {
                     </div>
                 </section>
 
-                <section id="about" className="container flex flex-col items-center mx-auto p-10">
-                    <h3 className="text-5xl font-bold py-5 text-center text-black max-w-3xl">Why Africa&apos;s largest Gen-Z Hackathon + Festival?</h3>
-                    <p className="text-2xl pb-5 text-center max-w-3xl text-black">
+                <section id="about" className="container flex flex-col items-center mx-auto p-10 ">
+                <div className="grid md:grid-cols-2 items-center place-items-center">
+                    <img src="/assets/images/icon-6.svg" alt="hackathon" />
+                    <div className="md:mr-10">
+                    <h3 className="text-5xl font-bold py-5 md:text-left text-center text-black max-w-3xl">Why Africa&apos;s largest Gen-Z Hackathon + Festival?</h3>
+                    <p className="text-xl pb-5 md:text-left text-center max-w-3xl text-black" >
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been th industry&apos;s standard dummy text ever since the 1500s, when an unknown
                         printer took a galley. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the
                         1500s, when an unknown printer took a galley.
                     </p>
+                    </div>
+                    </div>
+                    
                 </section>
 
                 <section id="judges" className="container flex flex-col items-center mx-auto p-10">
@@ -81,7 +88,7 @@ const Home: NextPage = () => {
                     </div>
                 </section>
 
-                <section id="sponsors" className="container flex flex-col items-center mx-auto p-10">
+                <section id="sponsors" className="container flex flex-col items-center mx-auto p-10 bg-slate-50">
                     <h3 className="text-5xl font-bold py-5 text-center text-black">Our Sponsors</h3>
 
                     <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
@@ -163,7 +170,7 @@ const Home: NextPage = () => {
                     <button className="bg-green-500 text-white font-bold p-5 rounded-lg">Get involved</button>
                 </section>
 
-                <footer className="container flex flex-col items-center mx-auto p-10">
+                <footer className="container flex flex-col items-center mx-auto p-10 ">
                     <h4 className="text-3xl font-bold py-5 text-center text-black">Connect with us</h4>
 
                     <div className="flex flex-row gap-5 pb-10 items-center">
