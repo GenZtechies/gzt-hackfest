@@ -11,6 +11,7 @@ const Home: NextPage = () => {
             <Header />
 
             <main>
+
                 <section id="home" className="container flex flex-col items-center mx-auto p-10 min-h-screen py-6 bg-slate-50 shadow-sm">
                     <h3 className="md:text-3xl text-2xl font-medium py-5 text-center text-black">This is Gen Z Hack + Fest</h3>
                     <div className="grid md:grid-cols-2 items-center place-items-center">
@@ -25,6 +26,7 @@ const Home: NextPage = () => {
 
                             <button className="bg-green-500 text-white font-bold p-5 rounded-lg">Register</button>
                         </div>
+
 
                         <div className="w-screen md:w-9/12">
                             <img src="/assets/images/icon-5.svg" alt="hackathon"/>
@@ -48,12 +50,14 @@ const Home: NextPage = () => {
                     </div>
                 </section>
 
+
                 <section id="about" className="container flex flex-col items-center mx-auto p-10 ">
                 <div className="grid md:grid-cols-2 items-center place-items-center">
                     <img src="/assets/images/icon-6.svg" alt="hackathon" />
                     <div className="md:mr-10">
                     <h3 className="text-5xl font-bold py-5 md:text-left text-center text-black max-w-3xl">Why Africa&apos;s largest Gen-Z Hackathon + Festival?</h3>
                     <p className="text-xl pb-5 md:text-left text-center max-w-3xl text-black" >
+
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been th industry&apos;s standard dummy text ever since the 1500s, when an unknown
                         printer took a galley. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the
                         1500s, when an unknown printer took a galley.
@@ -68,7 +72,9 @@ const Home: NextPage = () => {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                         <div className="bg-green-500 p-2 rounded-lg shadow-lg hover:scale-105 transition duration-300">
-                            <img src="https://via.placeholder.com/600x600" alt="team-member" className="h-60 w-72 object-cover object-center rounded-lg pb-2" />
+
+                            <img src="https://via.placeholder.com/600x600"  alt="team-member" className="h-60 w-72 object-cover object-center rounded-lg pb-2" />
+
                             <h4 className="text-xl text-white font-bold px-1">Samantha Jane</h4>
                             <p className="text-md text-white font-light px-1 italic">Software Developer</p>
                             <p className="text-md text-white font-medium px-1">Microsoft</p>
@@ -88,7 +94,9 @@ const Home: NextPage = () => {
                     </div>
                 </section>
 
+
                 <section id="sponsors" className="container flex flex-col items-center mx-auto p-10 bg-slate-50">
+
                     <h3 className="text-5xl font-bold py-5 text-center text-black">Our Sponsors</h3>
 
                     <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
