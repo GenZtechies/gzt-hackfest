@@ -1,70 +1,70 @@
 import React from "react";
+// @ts-ignore
+import Zoom from "react-reveal/Zoom";
+
 import type { NextPage } from "next";
 
 import { Header } from "../components";
 
-
 const Home: NextPage = () => {
     return (
         <>
-            {/* <main className="bg-gradient-to-tl from-primary-purple via-primary-green/80 to-primary-purple"> */}
             <Header />
 
             <main>
-
-                <section id="home" className="container flex flex-col items-center mx-auto p-10 min-h-screen py-6 bg-slate-50 shadow-sm">
+                <section id="home" className="container flex flex-col items-center mx-auto p-10 min-h-screen py-6 shadow-sm">
                     <h3 className="md:text-3xl text-2xl font-medium py-5 text-center text-black">This is Gen Z Hack + Fest</h3>
+
                     <div className="grid md:grid-cols-2 items-center place-items-center">
-
                         <div className="flex flex-col items-center md:items-start md:pl-20">
-
                             <h3 className="md:text-5xl text-3xl font-bold py-5 text-center md:text-left text-black max-w-xl">Africa&apos;s largest GenZ Hackathon.</h3>
+
                             <p className="md:text-2xl text-xl pl-5 md:pl-0 pr-5 md:pr-0 pb-5  text-center md:text-left max-w-3xl text-black">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been th industry&apos;s standard dummy text ever since the 1500s, when an unknown
-                                printer took a galley.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been th industry&apos;s standard dummy text ever since the 1500s, when an
+                                unknown printer took a galley.
                             </p>
 
                             <button className="bg-green-500 text-white font-bold p-5 rounded-lg">Register</button>
                         </div>
 
-
-                        <div className="w-screen md:w-9/12">
-                            <img src="/assets/images/icon-5.svg" alt="hackathon"/>
+                        <div className="w-screen md:w-9/12 -order-1 md:order-1">
+                            <Zoom>
+                                <img src="/assets/images/icon-5.svg" alt="hackathon" />
+                            </Zoom>
                         </div>
-
                     </div>
 
                     {/* Background Images Attachment */}
-                    <div className="fixed -z-10 opacity-40 lg:opacity-100 right-10 top-36">
+                    <div className="fixed -z-10 opacity-40 lg:opacity-100 right-10 top-36 animate-pulse">
                         <img src="/assets/images/bg-icon-1.svg" alt="hackathon" />
                     </div>
-                    <div className="fixed -z-10 opacity-40 lg:opacity-100 left-10 top-36">
+                    <div className="fixed -z-10 opacity-40 lg:opacity-100 left-10 top-36 animate-bounce">
                         <img src="/assets/images/bg-icon-4.svg" alt="hackathon" />
                     </div>
 
-                    <div className="fixed -z-10 opacity-40 lg:opacity-100 left-10 bottom-20">
+                    <div className="fixed -z-10 opacity-40 lg:opacity-100 left-10 bottom-20 animate-pulse">
                         <img src="/assets/images/bg-icon-2.svg" alt="hackathon" />
                     </div>
-                    <div className="fixed -z-10 opacity-40 lg:opacity-100 right-10 bottom-20">
+                    <div className="fixed -z-10 opacity-40 lg:opacity-100 right-10 bottom-20 animate-spin">
                         <img src="/assets/images/bg-icon-3.svg" alt="hackathon" />
                     </div>
                 </section>
 
-
                 <section id="about" className="container flex flex-col items-center mx-auto p-10 ">
-                <div className="grid md:grid-cols-2 items-center place-items-center">
-                    <img src="/assets/images/icon-6.svg" alt="hackathon" />
-                    <div className="md:mr-10">
-                    <h3 className="text-5xl font-bold py-5 md:text-left text-center text-black max-w-3xl">Why Africa&apos;s largest Gen-Z Hackathon + Festival?</h3>
-                    <p className="text-xl pb-5 md:text-left text-center max-w-3xl text-black" >
+                    <div className="grid md:grid-cols-2 items-center place-items-center">
+                        <Zoom>
+                            <img src="/assets/images/icon-6.svg" alt="hackathon" />
+                        </Zoom>
 
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been th industry&apos;s standard dummy text ever since the 1500s, when an unknown
-                        printer took a galley. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the
-                        1500s, when an unknown printer took a galley.
-                    </p>
+                        <div className="md:mr-10">
+                            <h3 className="text-5xl font-bold py-5 md:text-left text-center text-black max-w-3xl">Why Africa&apos;s largest Gen-Z Hackathon + Festival?</h3>
+                            <p className="text-xl pb-5 md:text-left text-center max-w-3xl text-black">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been th industry&apos;s standard dummy text ever since the 1500s, when an
+                                unknown printer took a galley. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text
+                                ever since the 1500s, when an unknown printer took a galley.
+                            </p>
+                        </div>
                     </div>
-                    </div>
-                    
                 </section>
 
                 <section id="judges" className="container flex flex-col items-center mx-auto p-10">
@@ -72,8 +72,7 @@ const Home: NextPage = () => {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                         <div className="bg-green-500 p-2 rounded-lg shadow-lg hover:scale-105 transition duration-300">
-
-                            <img src="https://via.placeholder.com/600x600"  alt="team-member" className="h-60 w-72 object-cover object-center rounded-lg pb-2" />
+                            <img src="https://via.placeholder.com/600x600" alt="team-member" className="h-60 w-72 object-cover object-center rounded-lg pb-2" />
 
                             <h4 className="text-xl text-white font-bold px-1">Samantha Jane</h4>
                             <p className="text-md text-white font-light px-1 italic">Software Developer</p>
@@ -94,9 +93,7 @@ const Home: NextPage = () => {
                     </div>
                 </section>
 
-
                 <section id="sponsors" className="container flex flex-col items-center mx-auto p-10 bg-slate-50">
-
                     <h3 className="text-5xl font-bold py-5 text-center text-black">Our Sponsors</h3>
 
                     <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
