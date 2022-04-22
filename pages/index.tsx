@@ -27,10 +27,15 @@ const Home: NextPage = () => {
                             <button className="bg-green-500 text-white font-bold p-5 rounded-lg">Register</button>
                         </div>
 
+
+
+                        
+
                         <div className="w-screen md:w-9/12 -order-1 md:order-1">
                             <Zoom>
                                 <img src="/assets/images/icon-5.svg" alt="hackathon" />
                             </Zoom>
+
                         </div>
                     </div>
 
@@ -52,6 +57,9 @@ const Home: NextPage = () => {
 
                 <section id="about" className="container flex flex-col items-center mx-auto p-10 ">
                     <div className="grid md:grid-cols-2 items-center place-items-center">
+
+
+
                         <Zoom>
                             <img src="/assets/images/icon-6.svg" alt="hackathon" />
                         </Zoom>
@@ -65,6 +73,7 @@ const Home: NextPage = () => {
                             </p>
                         </div>
                     </div>
+
                 </section>
 
                 <section id="judges" className="container flex flex-col items-center mx-auto p-10">
@@ -72,7 +81,7 @@ const Home: NextPage = () => {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                         <div className="bg-green-500 p-2 rounded-lg shadow-lg hover:scale-105 transition duration-300">
-                            <img src="https://via.placeholder.com/600x600" alt="team-member" className="h-60 w-72 object-cover object-center rounded-lg pb-2" />
+                <img src="https://via.placeholder.com/600x600" alt="team-member" className="h-60 w-72 object-cover object-center rounded-lg pb-2" />
 
                             <h4 className="text-xl text-white font-bold px-1">Samantha Jane</h4>
                             <p className="text-md text-white font-light px-1 italic">Software Developer</p>
@@ -93,7 +102,12 @@ const Home: NextPage = () => {
                     </div>
                 </section>
 
-                <section id="sponsors" className="container flex flex-col items-center mx-auto p-10 bg-slate-50">
+
+
+                {/* <section id="sponsors" className="container flex flex-col items-center mx-auto p-10 bg-slate-50">
+
+
+
                     <h3 className="text-5xl font-bold py-5 text-center text-black">Our Sponsors</h3>
 
                     <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
@@ -124,11 +138,65 @@ const Home: NextPage = () => {
                     </div>
 
                     <button className="bg-green-500 text-white font-bold p-5 rounded-lg mt-5">Become a Sponsor</button>
+                </section> */}
+
+                <section className="container flex flex-col items-center p-10 mx-auto">
+                    <h1 className="font-bold text-2xl text-center md:text-3xl mb-8">Why Do Companies Sponsor Gen-Z HackFest?</h1>
+                    <div className="grid md:grid-cols-3 md:space-x-5 space-y-5 md:space-y-0">
+
+                    <div className="p-10 rounded-md shadow-md h-[560px] bg-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 bg-green-100 text-green-500 rounded-full p-2 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" />
+                        </svg>
+                        <h2 className="font-bold text-2xl mb-2">Brand Marketing</h2>
+                        <p className="text-base mb-4">Codetivate attendees, mentors, ambassadors, and speakers are influencers in tech communities, social media platforms, campuses around the world, and more. They work with cutting-edge technologies and make recommendations about brands they love to their networks.</p>
+                        <ul className="list-disc pl-10 text-base">
+                            <li>Experiential Marketing</li>
+                            <li>Lead Acquisition</li>
+                            <li>Brand Marketing</li>
+                            <li>Product Marketing</li>
+                            <li>Collegiate Marketing</li>
+                            <li>Influencer Marketing</li>
+                            <li>Developer Marketing</li>
+                        </ul>
+                    </div>
+
+                    <div className="p-10 rounded-md shadow-md h-[560px] bg-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 bg-green-100 text-green-500 rounded-full p-2 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                        </svg>
+                        <h2 className="font-bold text-2xl mb-2">Developer Relations</h2>
+                        <p className="text-base mb-4">Codetivate attendees create technology as their full-time jobs but they behave like every consumer of technology. They come to conferences and hackathons to hone their skills and learn about new technologies and products they'll use in their careers for years to come.</p>
+                        <ul className="list-disc pl-10 text-base">
+                            <li>Developer Evangelism</li>
+                            <li>Developer Relations </li>
+                            <li>Product Feedback
+                            </li>
+                            <li>Product Innovation</li>
+                            <li>Developer Platform Adoption</li>
+                        </ul>
+                    </div>
+                    <div className="p-10 bg-white rounded-md shadow-md h-[560px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 bg-green-100 text-green-500 rounded-full p-2 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                        </svg>
+                        <h2 className="font-bold text-2xl mb-2">Talent Acquisition</h2>
+                        <p className="text-base mb-4">Diverse top and emerging tech talents go to conferences and hackathons like Codetivate, not career fairs. They're there to discover new technologies, network with like-minded people, learn, hone, and show off their skills by competing to build prototypes that scale.</p>
+                        <ul className="list-disc pl-10 text-base">
+                            <li>Employer Branding</li>
+                            <li>Faster Hiring</li>
+                            <li>Reduced Cost per hire</li>
+                            <li>University Recruiting </li>
+                            <li>Interns/freelancers Recruiting</li>
+                            <li>Talent Sourcing</li>
+                        </ul>
+                    </div>
+                    </div>
+
                 </section>
 
                 <section className="container flex flex-col items-center mx-auto p-10">
                     <h3 className="text-5xl font-bold py-5 text-center text-black">Frequently Asked Questions</h3>
-
                     <div className="flex flex-col items-center">
                         <div className="w-full md:w-2/3">
                             <div className="flex items-center justify-between border-4 rounded-lg border-green-500 p-5 my-5">
@@ -165,6 +233,29 @@ const Home: NextPage = () => {
                             </div>
                             <p className="text-lg text-black">The theme of the hackathon is to build a product that will help people in need.</p>
                         </div>
+                        <div className="w-full md:w-2/3">
+                            <div className="flex items-center justify-between border-4 rounded-lg border-green-500 p-5 my-5">
+                                <h4 className="text-2xl font-bold text-black">What skills do I need?</h4>
+                                <span>
+                                    <svg className="animate-bounce" width={24} height={14} viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 2L12 12L22 2" stroke="black" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <p className="text-lg text-black">HackFest is beginner friendly! We have introductory workshops tailored to first-time hackers. If you want to fine tune your skills, join our community of learners on Discord.</p>
+                        </div>
+                        <div className="w-full md:w-2/3">
+                            <div className="flex items-center justify-between border-4 rounded-lg border-green-500 p-5 my-5">
+                                <h4 className="text-2xl font-bold text-black">How do i submit my Project?</h4>
+                                <span>
+                                    <svg className="animate-bounce" width={24} height={14} viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 2L12 12L22 2" stroke="black" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <p className="text-lg text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+
                     </div>
                 </section>
 
