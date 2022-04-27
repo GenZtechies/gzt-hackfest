@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
     return (
-        <nav className="flex items-center justify-between px-5 md:px-10 py-3 mx-auto">
+        <nav className="flex items-center justify-between px-5 md:px-10 py-3 mx-auto sticky top-0 bg-white z-50">
             <svg width={59} height={62} viewBox="0 0 59 62" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M10.9391 55.2171H55.8515C57.381 55.2171 58.6203 56.7354 58.6203 58.6089C58.6203 60.4817 57.381 62 55.8515 62H3.32528C0.452532 62 -1.0635 57.8333 0.857904 55.2171L32.7925 11.7152C33.7334 10.434 35.3085 10.2201 36.455 11.2186C37.8043 12.3928 38.0167 14.7443 36.9105 16.2513L10.0663 52.8186C9.38716 53.7437 9.92341 55.2171 10.9391 55.2171Z"
@@ -34,7 +34,7 @@ const Header = () => {
                 </ul>
             </div>
 
-            <a href="#" className="bg-green-500 text-white font-bold p-4 rounded-lg">
+            <a href="#" className="bg-primary-green text-gray-200 font-bold p-4 rounded-lg">
                 Register
             </a>
         </nav>
