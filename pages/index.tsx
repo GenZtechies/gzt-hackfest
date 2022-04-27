@@ -11,7 +11,7 @@ const Home: NextPage = () => {
         <>
             <Header />
 
-            <main className="min-h-screen" style={{ backgroundImage: `url('/assets/images/site-bg.jpg')` }}>
+            <main className="min-h-screen" style={{ backgroundImage: `url('/assets/images/site-bg.jpeg')` }}>
                 <section id="home" className="container flex flex-col items-center mx-auto p-10 min-h-screen py-6 shadow-sm">
                     <h3 className="md:text-3xl text-2xl font-medium py-5 text-center text-gray-100">This is a Gen Z Hackathon + Festival</h3>
 
