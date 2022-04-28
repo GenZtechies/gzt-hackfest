@@ -98,7 +98,7 @@ const Home: NextPage = () => {
                     <h3 className="text-5xl font-bold py-5 text-center text-gray-100">Why Sponsor Gen Z HackFest 2022?</h3>
 
                     <div className="grid md:grid-cols-3 md:space-x-5 space-y-5 md:space-y-0">
-                        <div className="p-10 bg-gray-100 rounded-md shadow-lg">
+                        <div className="p-10 bg-gray-100 rounded-md shadow-lg hover:scale-105 transition duration-300">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 className="h-12 w-12 bg-green-100 text-primary-green rounded-full p-2 mb-4"
@@ -120,7 +120,7 @@ const Home: NextPage = () => {
                             </p>
                         </div>
 
-                        <div className="p-10 bg-gray-100 rounded-md shadow-lg">
+                        <div className="p-10 bg-gray-100 rounded-md shadow-lg hover:scale-105 transition duration-300">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 className="h-12 w-12 bg-green-100 text-primary-green rounded-full p-2 mb-4"
@@ -137,7 +137,7 @@ const Home: NextPage = () => {
                                 knowledge about new technologies and products that they will make use of for years to come in their careers.
                             </p>
                         </div>
-                        <div className="p-10 bg-gray-100 rounded-md shadow-lg">
+                        <div className="p-10 bg-gray-100 rounded-md shadow-lg hover:scale-105 transition duration-300">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 className="h-12 w-12 bg-green-100 text-primary-green rounded-full p-2 mb-4"
@@ -155,6 +155,7 @@ const Home: NextPage = () => {
                             </p>
                         </div>
                     </div>
+                    <button className="bg-primary-green text-white font-bold p-5 rounded-lg mt-5 hover:scale-105 transition duration-300">Sponsor GenZ HackFest 2022</button>
                 </section>
 
                 <section className="container flex flex-col items-center mx-auto p-10">
