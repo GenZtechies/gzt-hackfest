@@ -4,6 +4,8 @@ import Zoom from "react-reveal/Zoom";
 
 import type { NextPage } from "next";
 
+import { Accordion, AccordionItem, AccordionItemHeading, AccordionItemButton, AccordionItemPanel } from "react-accessible-accordion";
+
 import { Header } from "../components";
 
 const Home: NextPage = () => {
@@ -160,68 +162,90 @@ const Home: NextPage = () => {
 
                 <section className="container flex flex-col items-center mx-auto p-10">
                     <h3 className="text-5xl font-bold py-5 text-center text-gray-100">Frequently Asked Questions</h3>
-                    <div className="flex flex-col items-center">
-                        <div className="w-full md:w-2/3">
-                            <div className="flex items-center justify-between border-4 rounded-lg border-primary-green p-5 my-5">
-                                <h4 className="text-2xl font-bold text-gray-100">What is HackFest ?</h4>
-                                <span>
-                                    <svg className="animate-bounce" width={24} height={14} viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M2 2L12 12L22 2" stroke="white" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
-                                    </svg>
-                                </span>
-                            </div>
-                            <p className="text-lg text-gray-100">
-                                HackFest is a hackathon that is held every year in the fall. It is a great way to learn new skills and get involved in the tech community.
-                            </p>
-                        </div>
-                        <div className="w-full md:w-2/3">
-                            <div className="flex items-center justify-between border-4 rounded-lg border-primary-green p-5 my-5">
-                                <h4 className="text-2xl font-bold text-gray-100">What is the hackathon format?</h4>
-                                <span>
-                                    <svg className="animate-bounce" width={24} height={14} viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M2 2L12 12L22 2" stroke="white" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
-                                    </svg>
-                                </span>
-                            </div>
-                            <p className="text-lg text-gray-100">The hackathon is a 24 hour event where teams of around 5-10 people come together to build a project.</p>
-                        </div>
-                        <div className="w-full md:w-2/3">
-                            <div className="flex items-center justify-between border-4 rounded-lg border-primary-green p-5 my-5">
-                                <h4 className="text-2xl font-bold text-gray-100">What is the hackathon theme?</h4>
-                                <span>
-                                    <svg className="animate-bounce" width={24} height={14} viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M2 2L12 12L22 2" stroke="white" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
-                                    </svg>
-                                </span>
-                            </div>
-                            <p className="text-lg text-gray-100">The theme of the hackathon is to build a product that will help people in need.</p>
-                        </div>
-                        <div className="w-full md:w-2/3">
-                            <div className="flex items-center justify-between border-4 rounded-lg border-primary-green p-5 my-5">
-                                <h4 className="text-2xl font-bold text-gray-100">What skills do I need?</h4>
-                                <span>
-                                    <svg className="animate-bounce" width={24} height={14} viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M2 2L12 12L22 2" stroke="white" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
-                                    </svg>
-                                </span>
-                            </div>
-                            <p className="text-lg text-gray-100">
-                                HackFest is beginner friendly! We have introductory workshops tailored to first-time hackers. If you want to fine tune your skills, join our community of learners on
-                                Discord.
-                            </p>
-                        </div>
-                        <div className="w-full md:w-2/3">
-                            <div className="flex items-center justify-between border-4 rounded-lg border-primary-green p-5 my-5">
-                                <h4 className="text-2xl font-bold text-gray-100">How do i submit my Project?</h4>
-                                <span>
-                                    <svg className="animate-bounce" width={24} height={14} viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M2 2L12 12L22 2" stroke="white" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
-                                    </svg>
-                                </span>
-                            </div>
-                            <p className="text-lg text-gray-100">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
+                    <Accordion className="w-full flex flex-col items-center" allowZeroExpanded={true}>
+                        <AccordionItem className="w-full md:w-2/3">
+                            <AccordionItemHeading className="w-full flex flex-row items-center justify-between border-4 rounded-lg border-primary-green p-5 my-5">
+                                <AccordionItemButton className="w-full inline-flex items-center justify-between">
+                                    <h4 className="text-2xl font-bold text-gray-100">What is HackFest ?</h4>
+                                    <span>
+                                        <svg className="animate-bounce" width={24} height={14} viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 2L12 12L22 2" stroke="white" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
+                                        </svg>
+                                    </span>
+                                </AccordionItemButton>
+                            </AccordionItemHeading>
+                            <AccordionItemPanel className="text-lg text-gray-100">
+                                <div>HackFest is a hackathon that is held every year in the fall. It is a great way to learn new skills and get involved in the tech community.</div>
+                            </AccordionItemPanel>
+                        </AccordionItem>
+
+                        <AccordionItem className="w-full md:w-2/3">
+                            <AccordionItemHeading className="w-full flex flex-row items-center justify-between border-4 rounded-lg border-primary-green p-5 my-5">
+                                <AccordionItemButton className="w-full inline-flex items-center justify-between">
+                                    <h4 className="text-2xl font-bold text-gray-100">What is the hackathon format?</h4>
+                                    <span>
+                                        <svg className="animate-bounce" width={24} height={14} viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 2L12 12L22 2" stroke="white" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
+                                        </svg>
+                                    </span>
+                                </AccordionItemButton>
+                            </AccordionItemHeading>
+                            <AccordionItemPanel className="text-lg text-gray-100">
+                                <div>The hackathon is a 24 hour event where teams of around 5-10 people come together to build a project.</div>
+                            </AccordionItemPanel>
+                        </AccordionItem>
+
+                        <AccordionItem className="w-full md:w-2/3">
+                            <AccordionItemHeading className="w-full flex flex-row items-center justify-between border-4 rounded-lg border-primary-green p-5 my-5">
+                                <AccordionItemButton className="w-full inline-flex items-center justify-between">
+                                    <h4 className="text-2xl font-bold text-gray-100">What is the hackathon theme?</h4>
+                                    <span>
+                                        <svg className="animate-bounce" width={24} height={14} viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 2L12 12L22 2" stroke="white" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
+                                        </svg>
+                                    </span>
+                                </AccordionItemButton>
+                            </AccordionItemHeading>
+                            <AccordionItemPanel className="text-lg text-gray-100">
+                                <div>The theme of the hackathon is to build a product that will help people in need.</div>
+                            </AccordionItemPanel>
+                        </AccordionItem>
+
+                        <AccordionItem className="w-full md:w-2/3">
+                            <AccordionItemHeading className="w-full flex flex-row items-center justify-between border-4 rounded-lg border-primary-green p-5 my-5">
+                                <AccordionItemButton className="w-full inline-flex items-center justify-between">
+                                    <h4 className="text-2xl font-bold text-gray-100">What skills do I need?</h4>
+                                    <span>
+                                        <svg className="animate-bounce" width={24} height={14} viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 2L12 12L22 2" stroke="white" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
+                                        </svg>
+                                    </span>
+                                </AccordionItemButton>
+                            </AccordionItemHeading>
+                            <AccordionItemPanel className="text-lg text-gray-100">
+                                <div>
+                                    HackFest is beginner friendly! We have introductory workshops tailored to first-time hackers. If you want to fine tune your skills, join our community of learners
+                                    on Discord.
+                                </div>
+                            </AccordionItemPanel>
+                        </AccordionItem>
+
+                        <AccordionItem className="w-full md:w-2/3">
+                            <AccordionItemHeading className="w-full flex flex-row items-center justify-between border-4 rounded-lg border-primary-green p-5 my-5">
+                                <AccordionItemButton className="w-full inline-flex items-center justify-between">
+                                    <h4 className="text-2xl font-bold text-gray-100">How do i submit my Project?</h4>
+                                    <span>
+                                        <svg className="animate-bounce" width={24} height={14} viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 2L12 12L22 2" stroke="white" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
+                                        </svg>
+                                    </span>
+                                </AccordionItemButton>
+                            </AccordionItemHeading>
+                            <AccordionItemPanel className="text-lg text-gray-100">
+                                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                            </AccordionItemPanel>
+                        </AccordionItem>
+                    </Accordion>
                 </section>
 
                 <section className="container flex flex-col items-center mx-auto p-10">
