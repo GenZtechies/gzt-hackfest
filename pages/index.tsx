@@ -164,14 +164,16 @@ const Home: NextPage = () => {
                     <h3 className="text-5xl font-bold py-5 text-center text-gray-100">Frequently Asked Questions</h3>
                     <Accordion className="w-full flex flex-col items-center" allowZeroExpanded={true}>
                         <AccordionItem className="w-full md:w-2/3">
-                            <AccordionItemHeading className="w-full flex flex-row items-center justify-between border-4 rounded-lg border-primary-green p-5 my-5">
-                                <AccordionItemButton className="w-full inline-flex items-center justify-between">
-                                    <h4 className="text-2xl font-bold text-gray-100">What is HackFest ?</h4>
-                                    <span>
-                                        <svg className="animate-bounce" width={24} height={14} viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2 2L12 12L22 2" stroke="white" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
-                                        </svg>
-                                    </span>
+                            <AccordionItemHeading>
+                                <AccordionItemButton className="w-full flex flex-row items-center justify-between border-4 rounded-lg border-primary-green p-5 my-5">
+                                    <div className="w-full inline-flex items-center justify-between">
+                                        <h4 className="text-2xl font-bold text-gray-100">What is HackFest ?</h4>
+                                        <span>
+                                            <svg className="animate-bounce" width={24} height={14} viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 2L12 12L22 2" stroke="white" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </div>
                                 </AccordionItemButton>
                             </AccordionItemHeading>
                             <AccordionItemPanel className="text-lg text-gray-100">
@@ -180,14 +182,16 @@ const Home: NextPage = () => {
                         </AccordionItem>
 
                         <AccordionItem className="w-full md:w-2/3">
-                            <AccordionItemHeading className="w-full flex flex-row items-center justify-between border-4 rounded-lg border-primary-green p-5 my-5">
-                                <AccordionItemButton className="w-full inline-flex items-center justify-between">
-                                    <h4 className="text-2xl font-bold text-gray-100">What is the hackathon format?</h4>
-                                    <span>
-                                        <svg className="animate-bounce" width={24} height={14} viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2 2L12 12L22 2" stroke="white" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
-                                        </svg>
-                                    </span>
+                            <AccordionItemHeading>
+                                <AccordionItemButton className="w-full flex flex-row items-center justify-between border-4 rounded-lg border-primary-green p-5 my-5" >
+                                    <div className="w-full inline-flex items-center justify-between">
+                                        <h4 className="text-2xl font-bold text-gray-100">What is the hackathon format?</h4>
+                                        <span>
+                                            <svg className="animate-bounce" width={24} height={14} viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 2L12 12L22 2" stroke="white" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </div>
                                 </AccordionItemButton>
                             </AccordionItemHeading>
                             <AccordionItemPanel className="text-lg text-gray-100">
@@ -196,14 +200,16 @@ const Home: NextPage = () => {
                         </AccordionItem>
 
                         <AccordionItem className="w-full md:w-2/3">
-                            <AccordionItemHeading className="w-full flex flex-row items-center justify-between border-4 rounded-lg border-primary-green p-5 my-5">
-                                <AccordionItemButton className="w-full inline-flex items-center justify-between">
-                                    <h4 className="text-2xl font-bold text-gray-100">What is the hackathon theme?</h4>
-                                    <span>
-                                        <svg className="animate-bounce" width={24} height={14} viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2 2L12 12L22 2" stroke="white" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
-                                        </svg>
-                                    </span>
+                            <AccordionItemHeading>
+                                <AccordionItemButton className="w-full flex flex-row items-center justify-between border-4 rounded-lg border-primary-green p-5 my-5">
+                                    <div className="w-full inline-flex items-center justify-between">
+                                        <h4 className="text-2xl font-bold text-gray-100">What is the hackathon theme?</h4>
+                                        <span>
+                                            <svg className="animate-bounce" width={24} height={14} viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 2L12 12L22 2" stroke="white" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </div>
                                 </AccordionItemButton>
                             </AccordionItemHeading>
                             <AccordionItemPanel className="text-lg text-gray-100">
@@ -212,14 +218,16 @@ const Home: NextPage = () => {
                         </AccordionItem>
 
                         <AccordionItem className="w-full md:w-2/3">
-                            <AccordionItemHeading className="w-full flex flex-row items-center justify-between border-4 rounded-lg border-primary-green p-5 my-5">
-                                <AccordionItemButton className="w-full inline-flex items-center justify-between">
-                                    <h4 className="text-2xl font-bold text-gray-100">What skills do I need?</h4>
-                                    <span>
-                                        <svg className="animate-bounce" width={24} height={14} viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2 2L12 12L22 2" stroke="white" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
-                                        </svg>
-                                    </span>
+                            <AccordionItemHeading>
+                                <AccordionItemButton className="w-full flex flex-row items-center justify-between border-4 rounded-lg border-primary-green p-5 my-5">
+                                    <div className="w-full inline-flex items-center justify-between">
+                                        <h4 className="text-2xl font-bold text-gray-100">What skills do I need?</h4>
+                                        <span>
+                                            <svg className="animate-bounce" width={24} height={14} viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 2L12 12L22 2" stroke="white" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </div>
                                 </AccordionItemButton>
                             </AccordionItemHeading>
                             <AccordionItemPanel className="text-lg text-gray-100">
@@ -231,14 +239,16 @@ const Home: NextPage = () => {
                         </AccordionItem>
 
                         <AccordionItem className="w-full md:w-2/3">
-                            <AccordionItemHeading className="w-full flex flex-row items-center justify-between border-4 rounded-lg border-primary-green p-5 my-5">
-                                <AccordionItemButton className="w-full inline-flex items-center justify-between">
-                                    <h4 className="text-2xl font-bold text-gray-100">How do i submit my Project?</h4>
-                                    <span>
-                                        <svg className="animate-bounce" width={24} height={14} viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2 2L12 12L22 2" stroke="white" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
-                                        </svg>
-                                    </span>
+                            <AccordionItemHeading>
+                                <AccordionItemButton className="w-full flex flex-row items-center justify-between border-4 rounded-lg border-primary-green p-5 my-5">
+                                    <div className="w-full inline-flex items-center justify-between">
+                                        <h4 className="text-2xl font-bold text-gray-100">How do i submit my Project?</h4>
+                                        <span>
+                                            <svg className="animate-bounce" width={24} height={14} viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 2L12 12L22 2" stroke="white" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </div>
                                 </AccordionItemButton>
                             </AccordionItemHeading>
                             <AccordionItemPanel className="text-lg text-gray-100">
