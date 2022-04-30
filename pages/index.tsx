@@ -8,34 +8,18 @@ import { Header } from "../components";
 
 const Home: NextPage = () => {
     return (
-        <>
+        <div className=" bg-repeat bg-auto bg-[url('/assets/images/Background.svg')] md:p-3 box-border">
             <Header />
-
-            <main className="min-h-screen" style={{ backgroundImage: `url('/assets/images/site-bg.jpeg')` }}>
-                <section id="home" className="container flex flex-col items-center mx-auto p-10 min-h-screen py-6 shadow-sm">
-                    <h3 className="md:text-3xl text-2xl font-medium py-5 text-center text-gray-100">This is a Gen Z Hackathon + Festival</h3>
-
-                    <div className="grid md:grid-cols-2 items-center place-items-center">
-                        <div className="flex flex-col items-center md:items-start md:pl-20">
-                            <h3 className="md:text-5xl text-3xl font-bold py-5 text-center md:text-left text-gray-100 max-w-xl">Africa&apos;s largest GenZ Hackathon.</h3>
-
-                            <p className="md:text-2xl text-xl pl-5 md:pl-0 pr-5 md:pr-0 pb-5  text-center md:text-left max-w-3xl text-gray-100">
-                                GenZ HackFest is an annual hybrid event aimed to connect Gen Z&apos;s in tech on a large scale. It&apos;s an event where bright and ambitious Gen Z&apos;s come together
-                                to put their creative and coding skills to test, and solve challenging problems in Africa!
-                            </p>
-
-                            <button className="bg-primary-green text-white font-bold p-5 rounded-lg">Register</button>
-                        </div>
-
-                        <div className="w-screen md:w-9/12 -order-1 md:order-1">
-                            <Zoom>
-                                <img src="/assets/images/icon-5.svg" alt="hackathon" />
-                            </Zoom>
-                        </div>
+            <main>
+                <section id="home" className="container flex flex-col items-center mx-auto md:p-10 p-5 md:py-6 mb-20">
+                    <img src="/assets/images/GEN_Z-HACKFEST-2022.png" alt="hackathon" width={500} />
+                    <div className="md:flex inline-block justify-between w-[85%]  md:gap-32 md:m-10 mt-10 p-5 md:p-0 mx-auto">
+                        <img src="/assets/images/register.png" alt="hackathon" className="mb-5 md:mb-0 w-72" />
+                        <img src="/assets/images/join-community.png" alt="hackathon" className="mb-5 md:mb-0 w-72 items-center" />
                     </div>
 
                     {/* Background Images Attachment */}
-                    <div className="fixed z-0 hidden lg:block right-10 top-36 animate-pulse">
+                    {/* <div className="fixed z-0 hidden lg:block right-10 top-36 animate-pulse">
                         <img src="/assets/images/bg-icon-1.svg" alt="hackathon" />
                     </div>
                     <div className="fixed z-0 hidden lg:block left-10 top-36 animate-bounce">
@@ -47,6 +31,24 @@ const Home: NextPage = () => {
                     </div>
                     <div className="fixed z-0 hidden lg:block right-10 bottom-20 animate-spin">
                         <img src="/assets/images/bg-icon-3.svg" alt="hackathon" />
+                    </div> */}
+                </section>
+
+                <section>
+                    <div className="grid md:grid-cols-2 items-center md:-mt-10 mt-0 justify-items-center md:pl-40 mb-10 ">
+                        <div className="flex-col col-start-1">
+                            <h4 className="md:text-5xl text-3xl font-bold py-5 text-center md:text-left text-white max-w-xl md:tracking-widest tracking-tight mb-6">Come <span className="text-yellow-500 italic">Showcase</span> and <p className="mt-5"><span className="text-green-500 italic">Connect</span> with other Gen Z&apos;s</p></h4>
+                            <p className="md:text-3xl text-xl pl-5 md:pl-0 pr-5 md:pr-0 pb-5 text-center md:text-left max-w-lg text-white leading-loose break-words">
+                                GenZ HackFest is an annual hybrid event aimed to connect Gen Z&apos;s in tech on a large scale. It&apos;s an event where bright and ambitious Gen Z&apos;s come together
+                                to put their creative and coding skills to test, and solve challenging problems in Africa and showcase what they can do!
+                            </p>
+                        </div>
+
+                        <div className="w-screen md:w-6/12 -order-1 md:order-1">
+                            <Zoom>
+                                <img src="/assets/images/icon-5.svg" alt="hackathon" />
+                            </Zoom>
+                        </div>
                     </div>
                 </section>
 
@@ -57,7 +59,7 @@ const Home: NextPage = () => {
                         </Zoom>
 
                         <div className="md:mr-10">
-                            <h3 className="text-5xl font-bold py-5 md:text-left text-center text-gray-100 max-w-3xl">Why Gen Z HackFest 2022?</h3>
+                            <h3 className="md:text-[60px] text-[30px] font-bold py-5 md:text-left text-center text-gray-100 max-w-3xl">Why Gen Z HackFest 2022?</h3>
                             <p className="text-xl pb-5 md:text-left text-center max-w-3xl text-gray-100">
                                 Our mission is to connect thousands of GenZ Techies in Africa to share ideas and collaborate and also connect GenZ Techies to opportunities and expose them to latest
                                 development in the technology ecosystem.
@@ -68,10 +70,11 @@ const Home: NextPage = () => {
                     </div>
                 </section>
 
-                <section id="judges" className="container flex flex-col items-center mx-auto p-10">
-                    <h3 className="text-5xl font-bold py-5 text-center text-gray-100">Judges {"&"} Speakers</h3>
+                <section id="judges" className="container flex flex-col md:items-start items-center p-10 md:pl-36 mb-10">
+                    <h3 className="md:text-[60px] text-[30px] font-bold py-5  text-gray-100 md:text-left text-center"><span className="text-green-500">Judges</span>  and <span className="text-yellow-500">Speakers</span></h3>
+                    <p className="text-white text-xl">Yet to be announced...</p>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                    {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                         <div className="bg-primary-green p-2 rounded-lg shadow-lg hover:scale-105 transition duration-300">
                             <img src="https://via.placeholder.com/600x600" alt="team-member" className="h-60 w-72 object-cover object-center rounded-lg pb-2" />
 
@@ -91,11 +94,16 @@ const Home: NextPage = () => {
                             <p className="text-md text-white font-light px-1 italic">Software Developer</p>
                             <p className="text-md text-white font-medium px-1">Microsoft</p>
                         </div>
-                    </div>
+                    </div> */}
                 </section>
 
-                <section className="container flex flex-col items-center mx-auto p-10">
-                    <h3 className="text-5xl font-bold py-5 text-center text-gray-100">Why Sponsor Gen Z HackFest 2022?</h3>
+                <section id="sponsors" className="container flex flex-col md:items-start items-center p-10 md:pl-36 mb-5">
+                    <div className="md:flex block items-end justify-between mb-10 w-[100%] box-border ">
+                        <h3 className="md:text-[60px] text-[30px] font-bold text-gray-100 md:tracking-wider">Why Sponsor
+                            <span className="text-green-500"> Gen Z </span>
+                            <p className="items-start md:mt-5"><span className="text-yellow-500"> HackFest 2022?</span></p></h3>
+                        <img src="/assets/images/sponsor.png" alt="hackathon" className="md:mt-0 mt-5" />
+                    </div>
 
                     <div className="grid md:grid-cols-3 md:space-x-5 space-y-5 md:space-y-0">
                         <div className="p-10 bg-gray-100 rounded-md shadow-lg hover:scale-105 transition duration-300">
@@ -155,15 +163,14 @@ const Home: NextPage = () => {
                             </p>
                         </div>
                     </div>
-                    <button className="bg-primary-green text-white font-bold p-5 rounded-lg mt-5 hover:scale-105 transition duration-300">Sponsor GenZ HackFest 2022</button>
                 </section>
 
-                <section className="container flex flex-col items-center mx-auto p-10">
-                    <h3 className="text-5xl font-bold py-5 text-center text-gray-100">Frequently Asked Questions</h3>
+                <section id="faq" className="container flex flex-col items-center  p-4">
+                    <h3 className="md:text-[60px] text-[30px] font-bold py-5 text-center text-gray-100"><span className="text-yellow-500">Frequently</span>  Asked  <span className="text-green-500">Questions</span></h3>
                     <div className="flex flex-col items-center">
                         <div className="w-full md:w-2/3">
                             <div className="flex items-center justify-between border-4 rounded-lg border-primary-green p-5 my-5">
-                                <h4 className="text-2xl font-bold text-gray-100">What is HackFest ?</h4>
+                                <h4 className="text-2xl font-bold text-gray-100"> How does registration work?</h4>
                                 <span>
                                     <svg className="animate-bounce" width={24} height={14} viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M2 2L12 12L22 2" stroke="white" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
@@ -176,7 +183,7 @@ const Home: NextPage = () => {
                         </div>
                         <div className="w-full md:w-2/3">
                             <div className="flex items-center justify-between border-4 rounded-lg border-primary-green p-5 my-5">
-                                <h4 className="text-2xl font-bold text-gray-100">What is the hackathon format?</h4>
+                                <h4 className="text-2xl font-bold text-gray-100">What if I don&apos;t know coding?</h4>
                                 <span>
                                     <svg className="animate-bounce" width={24} height={14} viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M2 2L12 12L22 2" stroke="white" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
@@ -187,7 +194,7 @@ const Home: NextPage = () => {
                         </div>
                         <div className="w-full md:w-2/3">
                             <div className="flex items-center justify-between border-4 rounded-lg border-primary-green p-5 my-5">
-                                <h4 className="text-2xl font-bold text-gray-100">What is the hackathon theme?</h4>
+                                <h4 className="text-2xl font-bold text-gray-100"> How will my code be judged?</h4>
                                 <span>
                                     <svg className="animate-bounce" width={24} height={14} viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M2 2L12 12L22 2" stroke="white" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
@@ -198,7 +205,7 @@ const Home: NextPage = () => {
                         </div>
                         <div className="w-full md:w-2/3">
                             <div className="flex items-center justify-between border-4 rounded-lg border-primary-green p-5 my-5">
-                                <h4 className="text-2xl font-bold text-gray-100">What skills do I need?</h4>
+                                <h4 className="text-2xl font-bold text-gray-100"> I live in different timezone and it will be hard for me to join?</h4>
                                 <span>
                                     <svg className="animate-bounce" width={24} height={14} viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M2 2L12 12L22 2" stroke="white" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
@@ -212,7 +219,7 @@ const Home: NextPage = () => {
                         </div>
                         <div className="w-full md:w-2/3">
                             <div className="flex items-center justify-between border-4 rounded-lg border-primary-green p-5 my-5">
-                                <h4 className="text-2xl font-bold text-gray-100">How do i submit my Project?</h4>
+                                <h4 className="text-2xl font-bold text-gray-100"> Can I work with other people?</h4>
                                 <span>
                                     <svg className="animate-bounce" width={24} height={14} viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M2 2L12 12L22 2" stroke="white" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
@@ -224,11 +231,13 @@ const Home: NextPage = () => {
                     </div>
                 </section>
 
-                <section className="container flex flex-col items-center mx-auto p-10">
-                    <h3 className="text-5xl font-bold py-5 text-center text-gray-100">Ready to Join Us?</h3>
-                    <p className="text-2xl pb-5 text-center max-w-lg text-gray-100">Join others and be among the first to know when we finally launch.</p>
-
-                    <button className="bg-primary-green text-white font-bold p-5 rounded-lg">Get involved</button>
+                <section className="container flex flex-col  items-center p-10 md:pl-36">
+                    <h3 className="md:text-[60px] text-[30px] font-bold py-5  text-gray-100">Stay <span className="text-green-500">In</span>  <span className="text-yellow-500">Touch.</span> </h3>
+                    <ul className="text-white md:text-[50px] text-[25px]  font-bold list-disc">
+                        <li className=" mb-3">Register for HackFest 2022</li>
+                        <li className=" mb-3">Join the Community</li>
+                        <li className=" mb-3">hello@genztechies.com</li>
+                    </ul>
                 </section>
 
                 <footer className="container flex flex-col items-center mx-auto p-10 ">
@@ -288,7 +297,7 @@ const Home: NextPage = () => {
                     </p>
                 </footer>
             </main>
-        </>
+        </div>
     );
 };
 
