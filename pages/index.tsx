@@ -1,10 +1,11 @@
 import React from "react";
+import Link from "next/link";
 import { NextPage } from "next";
 // @ts-ignore
 import Zoom from "react-reveal/Zoom";
 import { Accordion, AccordionItem, AccordionItemHeading, AccordionItemButton, AccordionItemPanel } from "react-accessible-accordion";
 
-import { Header } from "../components";
+import { Header, Footer } from "../components";
 
 const Home: NextPage = () => {
     return (
@@ -37,9 +38,9 @@ const Home: NextPage = () => {
                         </h1>
 
                         <div className="flex flex-col md:flex-row gap-5 justify-center my-10">
-                            <a href="" target="_blank" rel="noopener noreferrer" className="text-center text-white font-black px-6 py-3 bg-primary-purple tracking-wide">
-                                Register for HackFest2022 →
-                            </a>
+                            <Link href="/tickets">
+                                <a className="text-center text-white font-black px-6 py-3 bg-primary-purple tracking-wide">Register for HackFest2022 →</a>
+                            </Link>
                             <a href="https://bit.ly/join-gzt" target="_blank" rel="noopener noreferrer" className="text-center text-white font-black px-6 py-3 bg-primary-purple tracking-wide">
                                 Join the Community →
                             </a>
@@ -307,58 +308,7 @@ const Home: NextPage = () => {
                 </section>
             </main>
 
-            <footer className="flex flex-col items-center min-h-screen p-10">
-                <div className="my-auto w-full max-w-6xl">
-                    <h3 className="text-4xl md:text-6xl text-white font-bold">
-                        Stay <span className="text-primary-green">In</span> <span className="text-primary-yellow">Touch.</span>
-                    </h3>
-
-                    <ul className="text-lg md:text-3xl text-white font-bold leading-loose md:leading-loose my-5 text-justify list-disc list-inside">
-                        <li>
-                            <a href="" target="_blank" rel="noopener noreferrer" className="underline">
-                                Register for HackFest2022
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://bit.ly/join-gzt" target="_blank" rel="noopener noreferrer" className="underline">
-                                Join the community
-                            </a>
-                        </li>
-                        <li>
-                            <a href="mailto:hello@genztechies.com">hello@genztechies.com</a>
-                        </li>
-
-                        <li className="mt-5">
-                            Socials:
-                            <ul className="list-disc list-inside indent-8">
-                                <li>
-                                    <a href="http://twitter.com/genztechies" target="_blank" rel="noopener noreferrer" className="underline">
-                                        Twitter
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="http://linkedin.com/company/genztechies" target="_blank" rel="noopener noreferrer" className="underline">
-                                        Linkedin
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="http://instagram.com/genztechies" target="_blank" rel="noopener noreferrer" className="underline">
-                                        Instagram
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                    <p className="text-lg md:text-2xl text-white font-bold leading-loose md:leading-loose my-5 text-justify">
-                        &copy; Event Hosted by&nbsp;
-                        <a href="https://genztechies.com" target="_blank" rel="noopener noreferrer" className="underline">
-                            GenZTechies.
-                        </a>
-                        &nbsp; 501(c)(3) nonprofit.
-                    </p>
-                </div>
-            </footer>
+            <Footer />
         </>
     );
 };

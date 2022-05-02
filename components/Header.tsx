@@ -1,6 +1,7 @@
 import React from "react";
+import Link from "next/link";
 
-const TopNavigationBar = () => {
+const Header = () => {
     const [isMobileNavExpanded, setIsMobileNavExpanded] = React.useState(false);
 
     return (
@@ -21,25 +22,31 @@ const TopNavigationBar = () => {
 
             <ul className={["flex flex-col mt-4 space-y-2 lg:mt-0 lg:flex-row lg:-mx-6 lg:space-y-0 lg:flex lg:space-x-14", isMobileNavExpanded ? "block" : "hidden"].join(" ")}>
                 <li className="text-2xl text-white font-bold hover:text-primary-green transition-all mx-4">
-                    <a href="#home">Home</a>
+                    <Link href="/#home">
+                        <a>Home</a>
+                    </Link>
                 </li>
                 <li className="text-2xl text-white font-bold hover:text-primary-green transition-all mx-4">
-                    <a href="#sponsors">Sponsors</a>
+                    <Link href="/#sponsors">
+                        <a>Sponsors</a>
+                    </Link>
                 </li>
                 <li className="text-2xl text-white font-bold hover:text-primary-green transition-all mx-4">
-                    <a href="#faq">FAQ</a>
+                    <Link href="/#faq">
+                        <a>FAQ</a>
+                    </Link>
                 </li>
             </ul>
 
             <ul className={["flex flex-col lg:flex-row lg:space-x-5 lg:flex", isMobileNavExpanded ? "block" : "hidden"].join(" ")}>
                 <li className="text-2xl text-white font-bold hover:text-primary-green transition-all mx-4">
-                    <a href="" target="_blank" rel="noopener noreferrer">
-                        Get Tickets
-                    </a>
+                    <Link href="/tickets">
+                        <a>Get Tickets</a>
+                    </Link>
                 </li>
             </ul>
         </nav>
     );
 };
 
-export default TopNavigationBar;
+export default Header;
