@@ -49,41 +49,43 @@ const Home: NextPage = () => {
                 </section>
 
                 <section id="about" className="flex flex-col items-center min-h-screen p-10">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 m-auto gap-5">
-                        <div className="my-auto max-w-2xl">
-                            <h3 className="text-4xl md:text-6xl text-white font-bold">
-                                Come <span className="text-primary-yellow italic">Showcase</span> and <span className="text-primary-green italic">Connect</span> with other Gen-Z&apos;s
-                            </h3>
+                    <div className="my-auto w-full max-w-6xl">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 m-auto gap-5">
+                            <div className="my-auto max-w-2xl">
+                                <h3 className="text-4xl md:text-6xl text-white font-bold">
+                                    Come <span className="text-primary-yellow italic">Showcase</span> and <span className="text-primary-green italic">Connect</span> with other Gen-Z&apos;s
+                                </h3>
 
-                            <p className="text-lg md:text-2xl text-white font-bold leading-loose md:leading-loose my-5 text-justify">
-                                Gen Z HackFest is an annual hybrid hackathon and conference aimed to connect Gen Z&apos;s in tech on a large scale. It&apos;s an event where bright and ambitious Gen
-                                Z&apos;s come together to put their creative and coding skills to test, solve challenging problems in Africa and showcase what they can do!
-                            </p>
+                                <p className="text-lg md:text-2xl text-white font-bold leading-loose md:leading-loose my-5 text-justify">
+                                    Gen Z HackFest is an annual hybrid hackathon and conference aimed to connect Gen Z&apos;s in tech on a large scale. It&apos;s an event where bright and ambitious
+                                    Gen Z&apos;s come together to put their creative and coding skills to test, solve challenging problems in Africa and showcase what they can do!
+                                </p>
+                            </div>
+
+                            <div className="my-auto -order-1 md:order-1">
+                                <Zoom>
+                                    <img src="/assets/images/icon-5.svg" alt="hackathon" className="aspect-square" />
+                                </Zoom>
+                            </div>
                         </div>
 
-                        <div className="my-auto -order-1 md:order-1">
-                            <Zoom>
-                                <img src="/assets/images/icon-5.svg" alt="hackathon" className="aspect-square" />
-                            </Zoom>
-                        </div>
-                    </div>
+                        <div className="grid grid-cols-1 lg:grid-cols-2 m-auto gap-5">
+                            <div className="my-auto">
+                                <Zoom>
+                                    <img src="/assets/images/icon-6.svg" alt="hackathon" className="aspect-square" />
+                                </Zoom>
+                            </div>
+                            <div className="my-auto max-w-2xl">
+                                <h3 className="text-4xl md:text-6xl text-white font-bold max-w-lg">
+                                    Why Gen Z <span className="text-primary-yellow italic">HackFest</span> <span className="text-primary-green italic">2022</span> ?
+                                </h3>
 
-                    <div className="grid grid-cols-1 lg:grid-cols-2 m-auto gap-5">
-                        <div className="my-auto">
-                            <Zoom>
-                                <img src="/assets/images/icon-6.svg" alt="hackathon" className="aspect-square" />
-                            </Zoom>
-                        </div>
-                        <div className="my-auto max-w-2xl">
-                            <h3 className="text-4xl md:text-6xl text-white font-bold max-w-lg">
-                                Why Gen Z <span className="text-primary-yellow italic">HackFest</span> <span className="text-primary-green italic">2022</span> ?
-                            </h3>
-
-                            <p className="text-lg md:text-2xl text-white font-bold leading-loose md:leading-loose my-5 text-justify">
-                                Our mission is to connect thousands of GenZ Techies in Africa to share ideas and collaborate and also connect GenZ Techies to opportunities and expose them to latest
-                                development in the technology ecosystem. We are set to achieve this through events that features workshops, talks, seminars, awareness, thus giving opportunities and
-                                empowerments to GenZ Techies.
-                            </p>
+                                <p className="text-lg md:text-2xl text-white font-bold leading-loose md:leading-loose my-5 text-justify">
+                                    Our mission is to connect thousands of GenZ Techies in Africa to share ideas and collaborate and also connect GenZ Techies to opportunities and expose them to
+                                    latest development in the technology ecosystem. We are set to achieve this through events that features workshops, talks, seminars, awareness, thus giving
+                                    opportunities and empowerments to GenZ Techies.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </section>
