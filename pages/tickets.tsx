@@ -5,9 +5,9 @@ import { Header, Footer } from "../components";
 const Tickets: NextPage = () => {
     return (
         <>
-            <div className="h-screen w-full bg-no-repeat bg-cover bg-[url('/assets/images/site-bg.jpeg')] fixed -z-50" />
-
             <Header />
+
+            <div className="h-screen w-full bg-no-repeat bg-cover bg-[url('/assets/images/site-bg.jpeg')] top-0 fixed -z-50" />
 
             <main>
                 <section>
