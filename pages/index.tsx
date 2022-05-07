@@ -142,7 +142,12 @@ const Home: NextPage = () => {
                                 Why Sponsor <span className="text-primary-green">Gen Z </span> <span className="text-primary-yellow">HackFest 2022?</span>
                             </h3>
                             <div className="lg:col-span-1 my-auto lg:ml-auto">
-                                <a href="" target="_blank" rel="noopener noreferrer" className="text-center text-white font-black px-6 py-3 bg-primary-green tracking-wide">
+                                <a
+                                    href={process.env.BECOME_A_SPONSOR_URL}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-center text-white font-black px-6 py-3 bg-primary-green tracking-wide"
+                                >
                                     Become a Sponsor →
                                 </a>
                             </div>

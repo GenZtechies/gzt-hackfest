@@ -29,10 +29,20 @@ const Tickets: NextPage = () => {
                 <section id="get-tickets" className="flex flex-col items-center min-h-screen p-10 py-0">
                     <div className="m-auto">
                         <div className="flex flex-col gap-5 justify-center my-10">
-                            <a href="" target="_blank" rel="noopener noreferrer" className="text-2xl md:text-4xl text-center rounded text-black font-black p-10 bg-primary-yellow tracking-wide">
+                            <a
+                                href={process.env.HACKATHON_REGISTRATION_URL}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-2xl md:text-4xl text-center rounded text-black font-black p-10 bg-primary-yellow tracking-wide"
+                            >
                                 Register for Hackathon →
                             </a>
-                            <a href="" target="_blank" rel="noopener noreferrer" className="text-2xl md:text-4xl text-center rounded text-white font-black p-10 bg-primary-green tracking-wide">
+                            <a
+                                href={process.env.CONFERENCE_REGISTRATION_URL}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-2xl md:text-4xl text-center rounded text-white font-black p-10 bg-primary-green tracking-wide"
+                            >
                                 Get Tickets for Conference →
                             </a>
                         </div>
