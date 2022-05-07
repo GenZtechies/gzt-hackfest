@@ -16,12 +16,17 @@ const faqs: any[] = [
     {
         type: "general",
         question: "How much does it cost?",
-        answer: "The three days virtual hackathon is free. However, tickets for the one day in-person conference cost N1,500 / $3 only"
+        answer: "The three days virtual hackathon is free. However, tickets for the one day in-person conference cost N1,500 / $3 only."
     },
     {
         type: "conference",
         question: "Where will the event take place?",
         answer: "The in-person conference will be taking place at Zone Tech Park, Lagos, Nigeria."
+    },
+    {
+        type: "conference",
+        question: "Will there be swag?",
+        answer: "Yes! Every attendee will receive a swag. They'll also be a lot of giveaways and prizes to be won throughout the event."
     },
     {
         type: "hackathon",
