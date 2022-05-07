@@ -7,7 +7,7 @@ const Tickets: NextPage = () => {
         <>
             <Header />
 
-            <div className="h-screen w-full bg-no-repeat bg-cover bg-[url('/assets/images/site-bg.jpeg')] top-0 fixed -z-50" />
+            <div className="h-screen w-full bg-primary-purple bg-no-repeat bg-cover bg-[url('/assets/images/site-bg.jpeg')] top-0 fixed -z-50" />
 
             <main>
                 <section>
@@ -26,7 +26,7 @@ const Tickets: NextPage = () => {
                     </div>
                 </section>
 
-                <section id="get-tickets" className="flex flex-col items-center min-h-screen p-10">
+                <section id="get-tickets" className="flex flex-col items-center min-h-screen p-10 py-0">
                     <div className="m-auto">
                         <div className="flex flex-col gap-5 justify-center my-10">
                             <a href="" target="_blank" rel="noopener noreferrer" className="text-2xl md:text-4xl text-center rounded text-black font-black p-10 bg-primary-yellow tracking-wide">
