@@ -5,6 +5,10 @@ import { NextPage } from "next";
 import Zoom from "react-reveal/Zoom";
 import { Header, Footer, FaqAccordion } from "../components";
 
+import faqs from "../data/faqs";
+import speakers from "../data/speakers";
+import sponsors from "../data/sponsors";
+
 const Home: NextPage = () => {
     return (
         <>
@@ -91,38 +95,47 @@ const Home: NextPage = () => {
                 <section id="judges" className="flex flex-col items-center min-h-screen p-10">
                     <div className="my-auto w-full max-w-6xl">
                         <h3 className="text-4xl md:text-6xl text-white font-bold">
-                            <span className="text-primary-green">Judges</span> and <span className="text-primary-yellow">Sponsors</span>
+                            <span className="text-primary-green">Judges</span> and <span className="text-primary-yellow">Speakers</span>
                         </h3>
 
-                        <p className="text-lg md:text-2xl text-white font-bold leading-loose md:leading-loose my-5 text-justify">Yet to be announced...</p>
+                        {speakers.length === 0 && <p className="text-lg md:text-2xl text-white font-bold leading-loose md:leading-loose my-5 text-justify">Yet to be announced...</p>}
 
-                        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-                        <div className="bg-primary-green p-2 rounded-lg shadow-lg hover:scale-105 transition duration-300">
-                            <img src="https://via.placeholder.com/600x600" alt="team-member" className="h-60 w-72 object-cover object-center rounded-lg pb-2" />
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 my-10">
+                            {speakers.map((speaker: any, index: number) => (
+                                <div key={index} className="bg-primary-green p-2 rounded-lg shadow-lg hover:scale-105 transition duration-300">
+                                    <img src={speaker.image} alt={speaker.fullname} className="w-full aspect-square object-contain object-center rounded-lg pb-2" />
 
-                            <h4 className="text-xl text-white font-bold px-1">Samantha Jane</h4>
-                            <p className="text-md text-white font-light px-1 italic">Software Developer</p>
-                            <p className="text-md text-white font-medium px-1">Microsoft</p>
+                                    <h4 className="text-xl text-white font-bold px-1">{speaker.fullname}</h4>
+                                    <p className="text-md text-white font-light px-1 italic">{speaker.role_title}</p>
+                                    <p className="text-md text-white font-medium px-1">{speaker.company}</p>
+                                </div>
+                            ))}
                         </div>
-
-                        <div className="bg-primary-green p-2 rounded-lg shadow-lg hover:scale-105 transition duration-300">
-                            <img src="https://via.placeholder.com/600x600" alt="team-member" className="h-60 w-72 object-cover object-center rounded-lg pb-2" />
-                            <h4 className="text-xl text-white font-bold px-1">Samantha Jane</h4>
-                            <p className="text-md text-white font-light px-1 italic">Software Developer</p>
-                            <p className="text-md text-white font-medium px-1">Microsoft</p>
-                        </div>
-
-                        <div className="bg-primary-green p-2 rounded-lg shadow-lg hover:scale-105 transition duration-300">
-                            <img src="https://via.placeholder.com/600x600" alt="team-member" className="h-60 w-72 object-cover object-center rounded-lg pb-2" />
-                            <h4 className="text-xl text-white font-bold px-1">Samantha Jane</h4>
-                            <p className="text-md text-white font-light px-1 italic">Software Developer</p>
-                            <p className="text-md text-white font-medium px-1">Microsoft</p>
-                        </div>
-                    </div> */}
                     </div>
                 </section>
 
-                <section id="sponsors" className="flex flex-col items-center min-h-screen p-10">
+                {sponsors.length > 0 && (
+                    <section id="sponsors" className="flex flex-col items-center min-h-screen p-10">
+                        <div className="my-auto w-full max-w-6xl">
+                            <h3 className="text-4xl md:text-6xl text-white font-bold">
+                                <span className="text-primary-yellow">Our </span>
+                                <span className="text-primary-green">Sponsors</span>
+                            </h3>
+
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 my-10">
+                                {sponsors.map((sponsor: any, index: number) => (
+                                    <div key={index} className="bg-primary-yellow bg-opacity-50 p-2 rounded-lg shadow-lg hover:scale-105 transition duration-300">
+                                        <a href={sponsor.reference_link} target="_blank" rel="noopener noreferrer" title={sponsor.name}>
+                                            <img src={sponsor.logo_image} alt={sponsor.name} className="w-full aspect-square object-contain object-center rounded-lg pb-2" />
+                                        </a>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </section>
+                )}
+
+                <section id="why_sponsors" className="flex flex-col items-center min-h-screen p-10">
                     <div className="my-auto w-full max-w-6xl">
                         <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
                             <h3 className="lg:col-span-2 text-4xl md:text-6xl text-white font-bold">
@@ -211,17 +224,9 @@ const Home: NextPage = () => {
                         </h3>
 
                         <div className="w-full flex flex-col my-5">
-                            <FaqAccordion
-                                question="How does registration work?"
-                                answer="HackFest is a hackathon that is held every year in the fall. It is a great way to learn new skills and get involved in the tech community."
-                            />
-                            <FaqAccordion question="What if I don't know coding?" answer="The hackathon is a 24 hour event where teams of around 5-10 people come together to build a project." />
-                            <FaqAccordion question="How will my code be judged?" answer="The theme of the hackathon is to build a product that will help people in need." />
-                            <FaqAccordion
-                                question="I live in different timezone and it will be hard for me to join?"
-                                answer="HackFest is beginner friendly! We have introductory workshops tailored to first-time hackers. If you want to fine tune your skills, join our community of learners on Discord."
-                            />
-                            <FaqAccordion question="Can I work with other people?" answer="Lorem ipsum dolor sit amet consectetur adipisicing elit." />
+                            {faqs.map((faq: any, index: number) => (
+                                <FaqAccordion key={index} question={faq.question} answer={faq.answer} />
+                            ))}
                         </div>
                     </div>
                 </section>
