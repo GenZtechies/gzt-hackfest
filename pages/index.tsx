@@ -224,9 +224,12 @@ const Home: NextPage = () => {
                         </h3>
 
                         <div className="w-full flex flex-col my-5">
-                            {faqs.map((faq: any, index: number) => (
-                                <FaqAccordion key={index} question={faq.question} answer={faq.answer} />
-                            ))}
+                            {faqs.map((faq: any, index: number) => {
+                                let question = faq.question;
+                                if (faq.type) question = `(${faq.type.toUpperCase()}) — ${question}`;
+
+                                return <FaqAccordion key={index} question={question} answer={faq.answer} />;
+                            })}
                         </div>
                     </div>
                 </section>

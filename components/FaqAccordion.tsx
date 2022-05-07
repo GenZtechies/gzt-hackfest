@@ -17,7 +17,7 @@ const FaqAccordion = ({ question, answer }: FaqAccordionType) => {
                 </svg>
             </button>
 
-            <p className={["text-lg text-gray-100", !isOpen && "hidden"].join(" ")}>{answer}</p>
+            <p className={["text-lg text-gray-100 p-5 bg-black/30 rounded-lg", !isOpen && "hidden"].join(" ")}>{answer}</p>
         </div>
     );
 };
