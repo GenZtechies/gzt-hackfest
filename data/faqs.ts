@@ -1,7 +1,7 @@
 const faqs: any[] = [
     {
         question: "What is Gen Z HackFest?",
-        answer: "Gen Z HackFest is a three-days virtual hackathon and one-day in-person conference aimed to connect Gen Z's in tech on a large scale. It's an event where ambitious Gen Z's come together to put their creative and coding skills to test, build solutions to problems in Africa and showcase what they can do!"
+        answer: "Gen Z HackFest is an annual three-day virtual hackathon and a one-day in-person conference aimed to connect Gen Z's in tech on a large scale. It's an event where ambitious Gen Z's come together to put their creative and coding skills to test, build solutions to problems in Africa and showcase what they can do!"
     },
     {
         type: "hackathon",
