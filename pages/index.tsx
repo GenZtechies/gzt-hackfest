@@ -59,8 +59,7 @@ const Home: NextPage = () => {
                                 </h3>
 
                                 <p className="text-lg md:text-2xl text-white font-bold leading-loose md:leading-loose my-5 text-justify">
-                                    Gen Z HackFest is an annual hybrid hackathon and conference aimed to connect Gen Z&apos;s in tech on a large scale. It&apos;s an event where bright and ambitious
-                                    Gen Z&apos;s come together to put their creative and coding skills to test, solve challenging problems in Africa and showcase what they can do!
+                                    Gen Z HackFest is an annual three days virtual hackathon and one day in-person conference aimed to connect Gen Z&apos;s in tech on a large scale. It&apos;s an event where ambitious Gen Z&apos;s come together to put their creative and coding skills to test, build solutions to problems in Africa and showcase what they can do!
                                 </p>
                             </div>
 
