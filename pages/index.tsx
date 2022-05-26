@@ -34,14 +34,20 @@ const Home: NextPage = () => {
                 <section id="home" className="flex flex-col items-center min-h-screen p-10">
                     <div className="m-auto">
                         <h1 className="text-6xl md:text-9xl text-white font-black text-center max-w-5xl tracking-wide">
-                            Gen Z <br /> <span className="text-primary-green">HackFest</span> <span className="text-primary-yellow">2022</span>
+                            Gen Z <br />{" "}
+                            <span className="text-primary-green" data-aos="fade-up">
+                                HackFest
+                            </span>{" "}
+                            <span className="text-primary-yellow" data-aos="fade-up">
+                                2022
+                            </span>
                         </h1>
 
                         <div className="flex flex-col md:flex-row gap-5 justify-center my-10">
                             <Link href="/tickets">
-                                <a className="text-center text-white font-black px-6 py-3 bg-primary-purple tracking-wide">Register for HackFest2022 →</a>
+                                <a className="text-center text-white font-black px-6 py-3 bg-primary-purple tracking-wide" data-aos="fade-right">Register for HackFest2022 →</a>
                             </Link>
-                            <a href="https://bit.ly/join-gzt" target="_blank" rel="noopener noreferrer" className="text-center text-white font-black px-6 py-3 bg-primary-purple tracking-wide">
+                            <a href="https://bit.ly/join-gzt" target="_blank" rel="noopener noreferrer" className="text-center text-white font-black px-6 py-3 bg-primary-purple tracking-wide" data-aos="fade-left">
                                 Join the Community →
                             </a>
                         </div>
@@ -52,11 +58,11 @@ const Home: NextPage = () => {
                     <div className="my-auto w-full max-w-6xl">
                         <div className="grid grid-cols-1 lg:grid-cols-2 m-auto gap-5">
                             <div className="my-auto max-w-2xl">
-                                <h3 className="text-4xl md:text-6xl text-white font-bold">
+                                <h3 className="text-4xl md:text-6xl text-white font-bold" data-aos="zoom-in-right">
                                     Come <span className="text-primary-yellow italic">Showcase</span> and <span className="text-primary-green italic">Connect</span> with other Gen-Z&apos;s
                                 </h3>
 
-                                <p className="text-lg md:text-2xl text-white font-bold leading-loose md:leading-loose my-5 text-justify">
+                                <p className="text-lg md:text-2xl text-white font-bold leading-loose md:leading-loose my-5 text-justify" data-aos="fade-right">
                                     Gen Z HackFest is an annual three-day virtual hackathon and a one-day in-person conference aimed to connect Gen Z&apos;s in tech on a large scale. It&apos;s an
                                     event where ambitious Gen Z&apos;s come together to put their creative and coding skills to test, build solutions to problems in Africa and showcase what they can
                                     do!
@@ -73,11 +79,11 @@ const Home: NextPage = () => {
                                 <img src="/assets/images/icon-6.svg" alt="hackathon" className="aspect-square" data-aos="zoom-in" />
                             </div>
                             <div className="my-auto max-w-2xl">
-                                <h3 className="text-4xl md:text-6xl text-white font-bold max-w-lg">
+                                <h3 className="text-4xl md:text-6xl text-white font-bold max-w-lg" data-aos="zoom-in-left">
                                     Why Gen Z <span className="text-primary-yellow italic">HackFest</span> <span className="text-primary-green italic">2022</span> ?
                                 </h3>
 
-                                <p className="text-lg md:text-2xl text-white font-bold leading-loose md:leading-loose my-5 text-justify">
+                                <p className="text-lg md:text-2xl text-white font-bold leading-loose md:leading-loose my-5 text-justify" data-aos="zoom-in-left">
                                     Our mission is to connect thousands of GenZ Techies in Africa to share ideas and collaborate and also connect GenZ Techies to opportunities and expose them to
                                     latest development in the technology ecosystem. We are set to achieve this through events that features workshops, talks, seminars, awareness, thus giving
                                     opportunities and empowerments to GenZ Techies.
@@ -89,7 +95,7 @@ const Home: NextPage = () => {
 
                 <section id="judges" className="flex flex-col items-center min-h-screen p-10">
                     <div className="my-auto w-full max-w-6xl">
-                        <h3 className="text-4xl md:text-6xl text-white font-bold">
+                        <h3 className="text-4xl md:text-6xl text-white font-bold" data-aos="fade-right">
                             <span className="text-primary-green">Judges</span> and <span className="text-primary-yellow">Speakers</span>
                         </h3>
 
@@ -97,7 +103,7 @@ const Home: NextPage = () => {
 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 my-10">
                             {speakers.map((speaker: any, index: number) => (
-                                <div key={index} className="bg-primary-green p-2 rounded-lg shadow-lg hover:scale-105 transition duration-300">
+                                <div key={index} className="bg-primary-green p-2 rounded-lg shadow-lg hover:scale-105 transition duration-300" data-aos="fade-up">
                                     <img src={speaker.image} alt={speaker.fullname} className="w-full aspect-square object-contain object-center rounded-lg pb-2" />
 
                                     <h4 className="text-xl text-white font-bold px-1">{speaker.fullname}</h4>
@@ -112,7 +118,7 @@ const Home: NextPage = () => {
                 {sponsors.length > 0 && (
                     <section id="sponsors" className="flex flex-col items-center min-h-screen p-10">
                         <div className="my-auto w-full max-w-6xl">
-                            <h3 className="text-4xl md:text-6xl text-white font-bold">
+                            <h3 className="text-4xl md:text-6xl text-white font-bold" data-aos="fade-right">
                                 <span className="text-primary-yellow">Our </span>
                                 <span className="text-primary-green">Sponsors</span>
                             </h3>
@@ -133,7 +139,7 @@ const Home: NextPage = () => {
                 <section id="why_sponsors" className="flex flex-col items-center min-h-screen p-10">
                     <div className="my-auto w-full max-w-6xl">
                         <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
-                            <h3 className="lg:col-span-2 text-4xl md:text-6xl text-white font-bold">
+                            <h3 className="lg:col-span-2 text-4xl md:text-6xl text-white font-bold" data-aos="fade-right">
                                 Why Sponsor <span className="text-primary-green">Gen Z </span> <span className="text-primary-yellow">HackFest 2022?</span>
                             </h3>
                             <div className="lg:col-span-1 my-auto lg:ml-auto">
@@ -149,7 +155,7 @@ const Home: NextPage = () => {
                         </div>
 
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 my-10">
-                            <div className="p-10 bg-white rounded-lg shadow-lg hover:scale-105 transition duration-300">
+                            <div className="p-10 bg-white rounded-lg shadow-lg hover:scale-105 transition duration-300" data-aos="zoom-in-up">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     className="h-12 w-12 bg-green-100 text-primary-green rounded-full mb-4 p-2"
@@ -173,7 +179,7 @@ const Home: NextPage = () => {
                                 </p>
                             </div>
 
-                            <div className="p-10 bg-white rounded-lg shadow-lg hover:scale-105 transition duration-300">
+                            <div className="p-10 bg-white rounded-lg shadow-lg hover:scale-105 transition duration-300" data-aos="zoom-in-up">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     className="h-12 w-12 bg-green-100 text-primary-green rounded-full mb-4 p-2"
@@ -193,7 +199,7 @@ const Home: NextPage = () => {
                                 </p>
                             </div>
 
-                            <div className="p-10 bg-white rounded-lg shadow-lg hover:scale-105 transition duration-300">
+                            <div className="p-10 bg-white rounded-lg shadow-lg hover:scale-105 transition duration-300" data-aos="zoom-in-up">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     className="h-12 w-12 bg-green-100 text-primary-green rounded-full mb-4 p-2"
@@ -219,7 +225,7 @@ const Home: NextPage = () => {
 
                 <section id="faq" className="flex flex-col items-center min-h-screen p-10">
                     <div className="my-auto w-full max-w-6xl">
-                        <h3 className="text-4xl md:text-6xl text-white font-bold">
+                        <h3 className="text-4xl md:text-6xl text-white font-bold" data-aos="fade-right">
                             <span className="text-primary-yellow">Frequently</span> Asked <span className="text-primary-green">Questions</span>
                         </h3>
 
