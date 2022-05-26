@@ -6,7 +6,7 @@ const nextConfig = {
 
         HACKATHON_REGISTRATION_URL: "https://forms.gle/x5UNkUcDCDryLdsLA",
         CONFERENCE_REGISTRATION_URL: "",
-        BECOME_A_SPONSOR_URL: ""
+        BECOME_A_SPONSOR_URL: "https://airtable.com/shr3eOxjfYoHDqi8s"
     }
 };
 
