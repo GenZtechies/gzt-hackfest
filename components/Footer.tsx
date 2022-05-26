@@ -51,7 +51,7 @@ const Footer = () => {
                     <a href="https://genztechies.com" target="_blank" rel="noopener noreferrer" className="underline">
                         GenZTechies
                     </a>
-                    . <br />Fiscally sponsored by The Hack Foundation Nonprofit EIN: 81-2908499.
+                    . <br /> <span className="text-sm">Fiscally sponsored by The Hack Foundation Nonprofit EIN: 81-2908499.</span>
                 </p>
             </div>
         </footer>
