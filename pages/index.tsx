@@ -1,8 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import { NextPage } from "next";
-// @ts-ignore
-import Zoom from "react-reveal/Zoom";
 import { Header, Footer, FaqAccordion } from "../components";
 
 import faqs from "../data/faqs";
@@ -59,22 +57,20 @@ const Home: NextPage = () => {
                                 </h3>
 
                                 <p className="text-lg md:text-2xl text-white font-bold leading-loose md:leading-loose my-5 text-justify">
-                                    Gen Z HackFest is an annual three-day virtual hackathon and a one-day in-person conference  aimed to connect Gen Z&apos;s in tech on a large scale. It&apos;s an event where ambitious Gen Z&apos;s come together to put their creative and coding skills to test, build solutions to problems in Africa and showcase what they can do!
+                                    Gen Z HackFest is an annual three-day virtual hackathon and a one-day in-person conference aimed to connect Gen Z&apos;s in tech on a large scale. It&apos;s an
+                                    event where ambitious Gen Z&apos;s come together to put their creative and coding skills to test, build solutions to problems in Africa and showcase what they can
+                                    do!
                                 </p>
                             </div>
 
                             <div className="my-auto -order-1 md:order-1">
-                                <Zoom>
-                                    <img src="/assets/images/icon-5.svg" alt="hackathon" className="aspect-square" />
-                                </Zoom>
+                                <img src="/assets/images/icon-5.svg" alt="hackathon" className="aspect-square" data-aos="zoom-in" />
                             </div>
                         </div>
 
                         <div className="grid grid-cols-1 lg:grid-cols-2 m-auto gap-5">
                             <div className="my-auto">
-                                <Zoom>
-                                    <img src="/assets/images/icon-6.svg" alt="hackathon" className="aspect-square" />
-                                </Zoom>
+                                <img src="/assets/images/icon-6.svg" alt="hackathon" className="aspect-square" data-aos="zoom-in" />
                             </div>
                             <div className="my-auto max-w-2xl">
                                 <h3 className="text-4xl md:text-6xl text-white font-bold max-w-lg">

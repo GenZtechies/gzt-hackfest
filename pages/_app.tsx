@@ -1,3 +1,4 @@
+import AOS from "aos";
 import React from "react";
 import Head from "next/head";
 import "../styles/globals.css";
@@ -6,6 +7,11 @@ import Script from "next/script";
 import type { AppProps } from "next/app";
 
 function MyApp({ Component, pageProps }: AppProps) {
+    React.useEffect(() => {
+        AOS.init({ duration: 1500 });
+        AOS.refresh();
+    }, []);
+
     return (
         <>
             <Head>
