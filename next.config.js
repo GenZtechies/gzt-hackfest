@@ -5,7 +5,7 @@ const nextConfig = {
         BACKEND_BASE_URL: process.env.BACKEND_BASE_URL || "http://localhost:4000",
 
         HACKATHON_REGISTRATION_URL: "https://forms.gle/x5UNkUcDCDryLdsLA",
-        CONFERENCE_REGISTRATION_URL: "",
+        CONFERENCE_REGISTRATION_URL: "https://eventprime.co/e/gen-z-hackfest-2022",
         BECOME_A_SPONSOR_URL: "https://airtable.com/shr3eOxjfYoHDqi8s"
     }
 };
