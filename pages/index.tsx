@@ -31,7 +31,7 @@ const Home: NextPage = () => {
                     </div>
                 </section>
 
-                <section id="home" className="flex flex-col items-center min-h-screen p-10">
+                <section id="home" className="flex flex-col items-center lg:min-h-screen p-10">
                     <div className="m-auto">
                         <h1 className="text-6xl md:text-9xl text-white font-black text-center max-w-5xl tracking-wide">
                             Gen Z <br />{" "}
@@ -45,12 +45,33 @@ const Home: NextPage = () => {
 
                         <div className="flex flex-col md:flex-row gap-5 justify-center my-10">
                             <Link href="/tickets">
-                                <a className="text-center text-white font-black px-6 py-3 bg-primary-purple tracking-wide" data-aos="fade-right">Register for HackFest2022 →</a>
+                                <a className="text-center text-white font-black px-6 py-3 bg-primary-purple tracking-wide" data-aos="fade-right">
+                                    Register for HackFest2022 →
+                                </a>
                             </Link>
-                            <a href="https://bit.ly/join-gzt" target="_blank" rel="noopener noreferrer" className="text-center text-white font-black px-6 py-3 bg-primary-purple tracking-wide" data-aos="fade-left">
+                            <a
+                                href="https://bit.ly/join-gzt"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-center text-white font-black px-6 py-3 bg-primary-purple tracking-wide"
+                                data-aos="fade-left"
+                            >
                                 Join the Community →
                             </a>
                         </div>
+                    </div>
+                </section>
+
+                <section id="video_intro" className="flex flex-col lg:min-h-screen items-center p-10">
+                    <div className="my-auto w-full max-w-6xl">
+                        <iframe
+                            src="https://www.youtube.com/embed/YQwja2nCLnY?playlist=YQwja2nCLnY&loop=0&rel=0"
+                            title="Gen Z HacKFest 2022"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            className="w-full aspect-video"
+                            allowFullScreen
+                            data-aos="zoom-in-up"
+                        ></iframe>
                     </div>
                 </section>
 
