@@ -16,7 +16,7 @@ const faqs: any[] = [
     {
         type: "general",
         question: "How much does it cost?",
-        answer: "The three days virtual hackathon is free. However, tickets for the one day in-person conference cost N1,500 / $3 only."
+        answer: "The three days virtual hackathon is free. However, tickets for the one day in-person conference cost N2,000 / $4 only."
     },
     {
         type: "conference",
