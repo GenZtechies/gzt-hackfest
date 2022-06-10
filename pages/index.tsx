@@ -144,11 +144,11 @@ const Home: NextPage = () => {
                                 <span className="text-primary-green">Sponsors</span>
                             </h3>
 
-                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 my-10">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 my-10">
                                 {sponsors.map((sponsor: any, index: number) => (
-                                    <div key={index} className="bg-white bg-opacity-40 p-2 rounded-lg shadow-lg hover:scale-105 transition duration-300">
+                                    <div key={index} className="bg-white bg-opacity-30 p-10 rounded-lg shadow-lg hover:scale-105 transition duration-300">
                                         <a href={sponsor.reference_link} target="_blank" rel="noopener noreferrer" title={sponsor.name}>
-                                            <img src={sponsor.logo_image} alt={sponsor.name} className="w-full aspect-square object-contain object-center rounded-lg pb-2" />
+                                            <img src={sponsor.logo_image} alt={sponsor.name} className="w-full aspect-video object-contain object-center rounded-lg pb-2" />
                                         </a>
                                     </div>
                                 ))}
