@@ -4,11 +4,11 @@ const sponsors: any[] = [
     //     logo_image: "https://via.placeholder.com/600x600",
     //     reference_link: "" // Can be Twitter | Linkedin | Github | Website
     // },
-    // {
-    //     name: "S.A.I.L",
-    //     logo_image: "https://pbs.twimg.com/profile_images/1480537531976462345/bodRfppd_400x400.jpg",
-    //     reference_link: "https://twitter.com/sailnigeria" // Can be Twitter | Linkedin | Github | Website
-    // },
+    {
+        name: "S.A.I.L",
+        logo_image: "https://pbs.twimg.com/profile_images/1480537531976462345/bodRfppd_400x400.jpg",
+        reference_link: "https://twitter.com/sailnigeria" // Can be Twitter | Linkedin | Github | Website
+    },
     {
         name: "Filecoin",
         logo_image: "https://docs.filecoin.io/logos/Filecoin-logo-blue+white.png",
