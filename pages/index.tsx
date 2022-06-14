@@ -6,6 +6,7 @@ import { Header, Footer, FaqAccordion } from "../components";
 import faqs from "../data/faqs";
 import speakers from "../data/speakers";
 import sponsors from "../data/sponsors";
+import partners from "../data/partners";
 
 const Home: NextPage = () => {
     return (
@@ -149,6 +150,28 @@ const Home: NextPage = () => {
                                     <div key={index} className="bg-white bg-opacity-30 p-10 rounded-lg shadow-lg hover:scale-105 transition duration-300">
                                         <a href={sponsor.reference_link} target="_blank" rel="noopener noreferrer" title={sponsor.name}>
                                             <img src={sponsor.logo_image} alt={sponsor.name} className="w-full aspect-video object-contain object-center rounded-lg pb-2" />
+                                        </a>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </section>
+                )}
+
+                {partners.length > 0 && (
+                    <section id="partners" className="flex flex-col items-center min-h-screen p-10">
+                        <div className="my-auto w-full max-w-6xl">
+                            <h3 className="text-4xl md:text-6xl text-white font-bold" data-aos="fade-right">
+                                <span className="text-primary-green">Media</span>
+                                <span className="text-white"> & </span>
+                                <span className="text-primary-yellow">Community Partners</span>
+                            </h3>
+
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 my-10">
+                                {partners.map((partner: any, index: number) => (
+                                    <div key={index} className="bg-white bg-opacity-30 p-10 rounded-lg shadow-lg hover:scale-105 transition duration-300">
+                                        <a href={partner.reference_link} target="_blank" rel="noopener noreferrer" title={partner.name}>
+                                            <img src={partner.logo_image} alt={partner.name} className="w-full aspect-video object-contain object-center rounded-lg pb-2" />
                                         </a>
                                     </div>
                                 ))}
