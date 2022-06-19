@@ -1,17 +1,17 @@
 const sponsors: any[] = [
     {
         name: "S.A.I.L",
-        logo_image: "https://pbs.twimg.com/profile_images/1480537531976462345/bodRfppd_400x400.jpg",
+        logo_image: "/assets/misc/sailnigeria.jpeg",
         reference_link: "https://twitter.com/sailnigeria" // Can be Twitter | Linkedin | Github | Website
     },
     {
         name: "Filecoin",
-        logo_image: "https://docs.filecoin.io/logos/Filecoin-logo-blue+white.png",
+        logo_image: "/assets/misc/filecoin.png",
         reference_link: "https://filecoin.io/" // Can be Twitter | Linkedin | Github | Website
     },
     {
         name: "Lazerpay",
-        logo_image: "https://res.cloudinary.com/njokuscript/image/upload/v1646279538/lazerpay_logo_no-bg_trkkye.png",
+        logo_image: "/assets/misc/lazerpay.png",
         reference_link: "https://www.lazerpay.finance/" // Can be Twitter | Linkedin | Github | Website
     }
     // {
