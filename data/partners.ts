@@ -15,15 +15,15 @@ const partners: any[] = [
         reference_link: "https://www.abcdevs.com/" // Can be Twitter | Linkedin | Github | Website
     },
     {
+        name: "Technext.ng",
+        logo_image: "/assets/misc/technext.png",
+        reference_link: "https://technext.ng/" // Can be Twitter | Linkedin | Github | Website
+    },
+    {
         name: "TechZie_",
         logo_image: "/assets/misc/techzie_.jpg",
         reference_link: "https://twitter.com/TechZie_" // Can be Twitter | Linkedin | Github | Website
     },
-    {
-        name: "Technext.ng",
-        logo_image: "/assets/misc/technext.png",
-        reference_link: "https://technext.ng/" // Can be Twitter | Linkedin | Github | Website
-    }
 ];
 
 export default partners;
