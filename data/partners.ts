@@ -19,11 +19,11 @@ const partners: any[] = [
         logo_image: "/assets/misc/techzie_.jpg",
         reference_link: "https://twitter.com/TechZie_" // Can be Twitter | Linkedin | Github | Website
     },
-    // {
-    //     name: "TechNext.Ng",
-    //     logo_image: "https://technext.ng/wp-content/uploads/2021/11/Technext-web-03.png",
-    //     reference_link: "https://technext.ng/" // Can be Twitter | Linkedin | Github | Website
-    // }
+    {
+        name: "Technext.ng",
+        logo_image: "/assets/misc/technext.png",
+        reference_link: "https://technext.ng/" // Can be Twitter | Linkedin | Github | Website
+    }
 ];
 
 export default partners;
