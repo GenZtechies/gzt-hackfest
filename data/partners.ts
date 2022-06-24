@@ -1,7 +1,7 @@
 const partners: any[] = [
     {
         name: "African Blockchain Centre for Developers",
-        logo_image: "/assets/misc/abcd.png",
+        logo_image: "/assets/misc/companies/abcd.png",
         reference_link: "https://www.abcdevs.com/" // Can be Twitter | Linkedin | Github | Website
     },
     // {
@@ -11,17 +11,17 @@ const partners: any[] = [
     // }
     {
         name: "Tech Steroid",
-        logo_image: "/assets/misc/techsteroid.png",
+        logo_image: "/assets/misc/companies/techsteroid.png",
         reference_link: "https://techsteroid.africa/" // Can be Twitter | Linkedin | Github | Website
     },
     {
         name: "Technext.ng",
-        logo_image: "/assets/misc/technext.png",
+        logo_image: "/assets/misc/companies/technext.png",
         reference_link: "https://technext.ng/" // Can be Twitter | Linkedin | Github | Website
     },
     {
         name: "TechZie_",
-        logo_image: "/assets/misc/techzie_.jpg",
+        logo_image: "/assets/misc/companies/techzie.jpg",
         reference_link: "https://twitter.com/TechZie_" // Can be Twitter | Linkedin | Github | Website
     },
 ];
