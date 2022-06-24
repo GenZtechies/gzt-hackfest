@@ -12,7 +12,7 @@ const partners: any[] = [
     {
         name: "Tech Steroid",
         logo_image: "/assets/misc/techsteroid.png",
-        reference_link: "https://www.abcdevs.com/" // Can be Twitter | Linkedin | Github | Website
+        reference_link: "https://techsteroid.africa/" // Can be Twitter | Linkedin | Github | Website
     },
     {
         name: "Technext.ng",
