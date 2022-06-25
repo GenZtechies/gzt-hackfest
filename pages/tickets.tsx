@@ -7,7 +7,7 @@ const Tickets: NextPage = () => {
         <>
             <Header />
 
-            <div className="h-screen w-full bg-primary-purple bg-no-repeat bg-cover top-0 fixed -z-50" />
+            <div className="h-screen w-full bg-primary-purple bg-[url('/assets/images/site-bg.svg')] bg-no-repeat bg-cover top-0 fixed -z-50" />
 
             <main>
                 <section>
