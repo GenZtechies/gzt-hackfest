@@ -55,16 +55,13 @@ const Home: NextPage = () => {
 
                         <div className="flex flex-col md:flex-row gap-5 justify-center my-10 py-10">
                             <Link href="/tickets">
-                                <a className="text-center text-white font-black px-6 py-3 bg-primary-purple tracking-wide border-4" data-aos="fade-right">
-                                    Register for HackFest2022 →
-                                </a>
+                                <a className="text-lg text-center text-white font-black px-6 py-3 bg-primary-purple tracking-wide border-4">Register for HackFest2022 →</a>
                             </Link>
                             <a
                                 href="https://bit.ly/join-gzt"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-center text-white font-black px-6 py-3 bg-primary-purple tracking-wide border-4"
-                                data-aos="fade-left"
+                                className="text-lg text-center text-white font-black px-6 py-3 bg-primary-purple tracking-wide border-4"
                             >
                                 Join the Community →
                             </a>
