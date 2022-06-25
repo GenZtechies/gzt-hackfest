@@ -121,6 +121,40 @@ const Home: NextPage = () => {
                     </div>
                 </section>
 
+                <section id="prizes" className="flex flex-col items-center min-h-screen p-10">
+                    <div className="my-auto w-full max-w-6xl">
+                        <h3 className="text-4xl md:text-6xl text-white font-bold" data-aos="fade-right">
+                            <span className="text-primary-yellow">Hackathon</span> <span className="text-primary-green">Prizes</span>
+                        </h3>
+
+                        <div className="w-full flex flex-col my-5">
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-5 my-10">
+                                <div className="border-4 hover:bg-primary-green w-full p-10 aspect-square rounded-lg ">
+                                    <h4 className="text-lg font-bold text-white uppercase">
+                                        <span className="text-9xl">1</span> st
+                                    </h4>
+                                    <p className="text-white text-2xl uppercase">place</p>
+                                    <h3 className="text-white text-6xl mt-5">NGN 250,000</h3>
+                                </div>
+                                <div className="border-4 hover:bg-primary-green w-full p-10 aspect-square rounded-lg ">
+                                    <h4 className="text-lg font-bold text-white uppercase">
+                                        <span className="text-9xl">2</span> nd
+                                    </h4>
+                                    <p className="text-white text-2xl uppercase">place</p>
+                                    <h3 className="text-white text-6xl mt-5">NGN 150,000</h3>
+                                </div>
+                                <div className="border-4 hover:bg-primary-green w-full p-10 aspect-square rounded-lg ">
+                                    <h4 className="text-lg font-bold text-white uppercase">
+                                        <span className="text-9xl">3</span> rd
+                                    </h4>
+                                    <p className="text-white text-2xl uppercase">place</p>
+                                    <h3 className="text-white text-6xl mt-5">NGN 100,000</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
                 <section id="judges" className="flex flex-col items-center min-h-screen p-10">
                     <div className="my-auto w-full max-w-6xl">
                         <h3 className="text-4xl md:text-6xl text-white font-bold" data-aos="fade-right">
