@@ -44,6 +44,15 @@ const Home: NextPage = () => {
                             </span>
                         </h1>
 
+                        <p className="text-lg md:text-3xl text-white text-center font-semibold mt-5">
+                            Hackathon: 1st - 3rd of July 2022{" "}
+                            <span className="hidden md:inline text-5xl">
+                                |
+                                <br className="md:hidden" />
+                            </span>{" "}
+                            Conference: 9th of July 2022
+                        </p>
+
                         <div className="flex flex-col md:flex-row gap-5 justify-center my-10 py-10">
                             <Link href="/tickets">
                                 <a className="text-center text-white font-black px-6 py-3 bg-primary-purple tracking-wide border-4" data-aos="fade-right">
