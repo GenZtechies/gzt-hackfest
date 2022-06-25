@@ -118,7 +118,9 @@ const Home: NextPage = () => {
                 <section id="judges" className="flex flex-col items-center min-h-screen p-10">
                     <div className="my-auto w-full max-w-6xl">
                         <h3 className="text-4xl md:text-6xl text-white font-bold" data-aos="fade-right">
-                            Guests, <span className="text-primary-green">Judges</span> &amp; <span className="text-primary-yellow">Speakers</span>
+                            Judges,
+                            <span className="text-primary-green"> Panelist </span>
+                            &amp; <span className="text-primary-yellow">Speakers</span>
                         </h3>
 
                         {speakers.length === 0 && <p className="text-lg md:text-2xl text-white font-bold leading-loose md:leading-loose my-5 text-justify">Yet to be announced...</p>}
@@ -126,9 +128,17 @@ const Home: NextPage = () => {
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 my-10">
                             {speakers.map((speaker: any, index: number) => (
                                 <div key={index} className="bg-primary-green p-2 rounded-lg shadow-lg hover:scale-105 transition duration-300" data-aos="fade-up">
-                                    <img src={speaker.image} alt={speaker.fullname} className="w-full aspect-square object-contain object-center rounded-lg pb-2" />
+                                    <img src={speaker.image} alt={speaker.fullname} className="w-full aspect-square object-cover object-center rounded-lg pb-2" />
 
-                                    <h4 className="text-xl text-white font-bold px-1">{speaker.fullname}</h4>
+                                    <h4 className={["text-xl text-white font-bold px-1", speaker.reference_link && "underline"].join(" ")}>
+                                        {speaker.reference_link ? (
+                                            <a href={speaker.reference_link} target="_blank" rel="noopener noreferrer">
+                                                {speaker.fullname}
+                                            </a>
+                                        ) : (
+                                            <>{speaker.fullname}</>
+                                        )}
+                                    </h4>
                                     <p className="text-md text-white font-light px-1 italic">{speaker.role_title}</p>
                                     <p className="text-md text-white font-medium px-1">{speaker.company}</p>
                                 </div>
