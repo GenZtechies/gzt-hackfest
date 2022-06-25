@@ -13,7 +13,7 @@ const Home: NextPage = () => {
         <>
             <Header />
 
-            <div className="h-screen w-full bg-primary-purple bg-no-repeat bg-cover bg-[url('/assets/images/site-bg.jpeg')] top-0 fixed -z-50" />
+            <div className="h-screen w-full bg-primary-purple bg-no-repeat bg-cover top-0 fixed -z-50" />
 
             <main>
                 <section>
@@ -34,7 +34,7 @@ const Home: NextPage = () => {
 
                 <section id="home" className="flex flex-col items-center lg:min-h-screen p-10">
                     <div className="m-auto">
-                        <h1 className="text-6xl md:text-9xl text-white font-black text-center max-w-5xl tracking-wide">
+                        <h1 className="text-6xl md:text-9xl lg:text-[9rem] text-white font-black text-center max-w-5xl lg:max-w-6xl tracking-wide">
                             Gen Z <br />{" "}
                             <span className="text-primary-green" data-aos="fade-up">
                                 HackFest
@@ -44,9 +44,9 @@ const Home: NextPage = () => {
                             </span>
                         </h1>
 
-                        <div className="flex flex-col md:flex-row gap-5 justify-center my-10">
+                        <div className="flex flex-col md:flex-row gap-5 justify-center my-10 py-10">
                             <Link href="/tickets">
-                                <a className="text-center text-white font-black px-6 py-3 bg-primary-purple tracking-wide" data-aos="fade-right">
+                                <a className="text-center text-white font-black px-6 py-3 bg-primary-purple tracking-wide border-4" data-aos="fade-right">
                                     Register for HackFest2022 →
                                 </a>
                             </Link>
@@ -54,7 +54,7 @@ const Home: NextPage = () => {
                                 href="https://bit.ly/join-gzt"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-center text-white font-black px-6 py-3 bg-primary-purple tracking-wide"
+                                className="text-center text-white font-black px-6 py-3 bg-primary-purple tracking-wide border-4"
                                 data-aos="fade-left"
                             >
                                 Join the Community →
@@ -64,7 +64,7 @@ const Home: NextPage = () => {
                 </section>
 
                 <section id="video_intro" className="flex flex-col lg:min-h-screen items-center p-10">
-                    <div className="my-auto w-full max-w-6xl">
+                    <div className="my-auto w-full max-w-6xl border-4">
                         <iframe
                             src="https://www.youtube.com/embed/YQwja2nCLnY?playlist=YQwja2nCLnY&loop=0&rel=0"
                             title="Gen Z HacKFest 2022"
@@ -118,7 +118,7 @@ const Home: NextPage = () => {
                 <section id="judges" className="flex flex-col items-center min-h-screen p-10">
                     <div className="my-auto w-full max-w-6xl">
                         <h3 className="text-4xl md:text-6xl text-white font-bold" data-aos="fade-right">
-                            <span className="text-primary-green">Judges</span> and <span className="text-primary-yellow">Speakers</span>
+                            Guests, <span className="text-primary-green">Judges</span> &amp; <span className="text-primary-yellow">Speakers</span>
                         </h3>
 
                         {speakers.length === 0 && <p className="text-lg md:text-2xl text-white font-bold leading-loose md:leading-loose my-5 text-justify">Yet to be announced...</p>}
@@ -180,7 +180,7 @@ const Home: NextPage = () => {
                     </section>
                 )}
 
-                <section id="why_sponsors" className="flex flex-col items-center min-h-screen p-10">
+                {/* <section id="why_sponsors" className="flex flex-col items-center min-h-screen p-10">
                     <div className="my-auto w-full max-w-6xl">
                         <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
                             <h3 className="lg:col-span-2 text-4xl md:text-6xl text-white font-bold" data-aos="fade-right">
@@ -265,7 +265,7 @@ const Home: NextPage = () => {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
 
                 <section id="faq" className="flex flex-col items-center min-h-screen p-10">
                     <div className="my-auto w-full max-w-6xl">
