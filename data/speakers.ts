@@ -18,7 +18,7 @@ const speakers: any[] = [
         role_title: "Co-founder & CEO",
         company: "GetEquity",
         image: "/assets/misc/people/jude-dike.jpeg",
-        reference_link: "https://www.tokunboabiru.org/" // Can be Twitter | Linkedin | Github | Website
+        reference_link: "https://twitter.com/bigbrutha_" // Can be Twitter | Linkedin | Github | Website
     },
     {
         fullname: "Csaba Zoltan Moldovan",
