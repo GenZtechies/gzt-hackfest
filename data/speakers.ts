@@ -35,6 +35,13 @@ const speakers: any[] = [
         reference_link: "https://twitter.com/SenseiFavour" // Can be Twitter | Linkedin | Github | Website
     },
     // {
+    //     fullname: "Deji Abisola",
+    //     role_title: "Hub Manager",
+    //     company: "SAIL",
+    //     image: "/assets/misc/people/favour-chukwuedo.jpeg",
+    //     reference_link: "https://twitter.com/SenseiFavour" // Can be Twitter | Linkedin | Github | Website
+    // },
+    // {
     //     fullname: "Seun Runsewe",
     //     role_title: "Senior Product Manager",
     //     company: "Chipper Cash",
