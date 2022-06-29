@@ -1,12 +1,4 @@
 const speakers: any[] = [
-    // {
-    //     fullname: "Samantha Jane",
-    //     role_title: "Software Developer",
-    //     type: "" // Can be speaker | judge
-    //     company: "Microsoft",
-    //     image: "https://via.placeholder.com/600x600",
-    //     reference_link: "" // Can be Twitter | Linkedin | Github | Website
-    // },
     {
         fullname: "Sen. Tokunbo Abiru",
         role_title: "Lagos State Senator",
@@ -79,14 +71,6 @@ const speakers: any[] = [
         image: "/assets/misc/people/seun-adebayo.jpg",
         reference_link: "https://www.linkedin.com/in/seunbayo/" // Can be Twitter | Linkedin | Github | Website
     }
-    // {
-    //     fullname: "Michael Okoh",
-    //     role_title: "Co-Founder & CTO",
-    //     type: "speaker", // Can be speaker | judge
-    //     company: "Thepeer",
-    //     image: "https://naijabiography.com/wp-content/uploads/2022/06/Trojan.jpg",
-    //     reference_link: "https://twitter.com/ichtrojan" // Can be Twitter | Linkedin | Github | Website
-    // },
     // {
     //     fullname: "Akintunde Sultan",
     //     role_title: "Co-Founder & CTO",
