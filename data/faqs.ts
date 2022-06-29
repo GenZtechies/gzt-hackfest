@@ -51,7 +51,7 @@ const faqs: any[] = [
     {
         type: "hackathon",
         question: "What are the prizes?",
-        answer: "The prizes in total worth over N500,000 / $1,000 in monetary and in-kind prizes. Prizes will be awarded to the top 5 projects/teams."
+        answer: "The prizes in total worth over N600,000 / $1,000 in monetary prizes. Prizes will be awarded to the top 5 projects/teams."
     },
     {
         type: "general",
