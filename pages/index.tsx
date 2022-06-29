@@ -158,9 +158,7 @@ const Home: NextPage = () => {
                 <section id="judges" className="flex flex-col items-center min-h-screen p-10">
                     <div className="my-auto w-full max-w-6xl">
                         <h3 className="text-4xl md:text-6xl text-white font-bold" data-aos="fade-right">
-                            Judges,
-                            <span className="text-primary-green"> Panelist </span>
-                            &amp; <span className="text-primary-yellow">Speakers</span>
+                            <span className="text-primary-green"> Speakers </span> &amp; <span className="text-primary-yellow">Judges</span>
                         </h3>
 
                         {speakers.length === 0 && <p className="text-lg md:text-2xl text-white font-bold leading-loose md:leading-loose my-5 text-justify">Yet to be announced...</p>}

@@ -16,6 +16,14 @@ const speakers: any[] = [
         reference_link: "https://www.tokunboabiru.org/" // Can be Twitter | Linkedin | Github | Website
     },
     {
+        fullname: "Kelvin Umechukwu",
+        role_title: "Co-Founder & CEO",
+        type: "speaker", // Can be speaker | judge
+        company: "Bumpa",
+        image: "/assets/misc/people/kelvin-umechukwu.jpeg",
+        reference_link: "https://twitter.com/tushgeek" // Can be Twitter | Linkedin | Github | Website
+    },
+    {
         fullname: "Jude Dike",
         role_title: "Co-founder & CEO",
         type: "judge", // Can be speaker | judge
@@ -32,12 +40,28 @@ const speakers: any[] = [
         reference_link: "https://www.linkedin.com/in/csabamoldovan/" // Can be Twitter | Linkedin | Github | Website
     },
     {
+        fullname: "Seun Runsewe",
+        role_title: "Senior Product Manager",
+        type: "speaker", // Can be speaker | judge
+        company: "Chipper Cash",
+        image: "/assets/misc/people/seun-runsewe.jpeg",
+        reference_link: "https://www.linkedin.com/in/oluwaseun-runsewe/" // Can be Twitter | Linkedin | Github | Website
+    },
+    {
         fullname: "Favour Chukwuedo",
         role_title: "Tech Founder & CTO",
         type: "speaker", // Can be speaker | judge
         company: "DigiLearns",
         image: "/assets/misc/people/favour-chukwuedo.jpeg",
         reference_link: "https://twitter.com/SenseiFavour" // Can be Twitter | Linkedin | Github | Website
+    },
+    {
+        fullname: "Chukwuemeka Enoch Mbaebie",
+        role_title: "Orbit Community Ambassador, Devcon V Alumni, ETH Nigeria Convener",
+        type: "judge", // Can be speaker | judge
+        company: "",
+        image: "/assets/misc/people/chukwuemeka-enoch.jpg",
+        reference_link: "" // Can be Twitter | Linkedin | Github | Website
     },
     {
         fullname: "Deji Abisola",
@@ -54,23 +78,7 @@ const speakers: any[] = [
         company: "Spheron",
         image: "/assets/misc/people/seun-adebayo.jpg",
         reference_link: "https://www.linkedin.com/in/seunbayo/" // Can be Twitter | Linkedin | Github | Website
-    },
-    {
-        fullname: "Chukwuemeka Enoch Mbaebie",
-        role_title: "Orbit Community Ambassador, Devcon V Alumni, ETH Nigeria Convener",
-        type: "judge", // Can be speaker | judge
-        company: "",
-        image: "/assets/misc/people/chukwuemeka-enoch.jpg",
-        reference_link: "" // Can be Twitter | Linkedin | Github | Website
     }
-    // {
-    //     fullname: "Seun Runsewe",
-    //     role_title: "Senior Product Manager",
-    //     type: "speaker", // Can be speaker | judge
-    //     company: "Chipper Cash",
-    //     image: "/assets/misc/people/seun-runsewe.jpeg",
-    //     reference_link: "https://www.linkedin.com/in/oluwaseun-runsewe/" // Can be Twitter | Linkedin | Github | Website
-    // },
     // {
     //     fullname: "Michael Okoh",
     //     role_title: "Co-Founder & CTO",
@@ -86,22 +94,6 @@ const speakers: any[] = [
     //     company: "AltSchool Africa",
     //     image: "https://pbs.twimg.com/profile_images/1451624172266868739/lpi5wPb4_400x400.jpg",
     //     reference_link: "https://twitter.com/hackSultan" // Can be Twitter | Linkedin | Github | Website
-    // },
-    // {
-    //     fullname: "Kelvin Umechukwu",
-    //     role_title: "Co-Founder & CEO",
-    //     type: "speaker", // Can be speaker | judge
-    //     company: "Bumpa",
-    //     image: "https://pbs.twimg.com/profile_images/1503092079727157257/ZYjFgsqD_400x400.jpg",
-    //     reference_link: "https://twitter.com/tushgeek" // Can be Twitter | Linkedin | Github | Website
-    // },
-    // {
-    //     fullname: "Ada Nduka Oyom",
-    //     role_title: "Founder",
-    //     type: "speaker", // Can be speaker | judge
-    //     company: "SheCodeAfrica",
-    //     image: "https://media-exp2.licdn.com/dms/image/C4E03AQELKicJ50jt0Q/profile-displayphoto-shrink_800_800/0/1643457844278?e=1661385600&v=beta&t=DIdkryfwHXg32qaYx3fLhL68nEkbCg7YKNhQJGHI3Q4",
-    //     reference_link: "https://twitter.com/Kolokodess" // Can be Twitter | Linkedin | Github | Website
     // },
     // {
     //     fullname: "Luqman Edu",
