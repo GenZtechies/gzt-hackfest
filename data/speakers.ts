@@ -1,7 +1,7 @@
 const speakers: any[] = [
     {
         fullname: "Sen. Tokunbo Abiru",
-        role_title: "Lagos State Senator",
+        role_title: "Lagos East Senator",
         type: "speaker", // Can be speaker | judge
         company: "",
         image: "/assets/misc/people/tokunbo-abiru.jpeg",

@@ -44,6 +44,11 @@ const Home: NextPage = () => {
                             </span>
                         </h1>
 
+                        <div className="flex justify-center md:justify-end items-center gap-5 mt-4 mb-10">
+                            <p className="text-lg md:text-lg text-white font-semibold">Powered By:</p>
+                            <img src="/assets/misc/companies/sailnigeria.jpeg" className="h-20" alt="sail-logo" />
+                        </div>
+
                         <p className="text-lg md:text-3xl text-white text-center font-semibold mt-5">
                             Hackathon: 1st - 3rd of July 2022{" "}
                             <span className="hidden md:inline text-5xl">
