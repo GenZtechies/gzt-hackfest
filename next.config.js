@@ -6,7 +6,9 @@ const nextConfig = {
 
         HACKATHON_REGISTRATION_URL: "https://forms.gle/x5UNkUcDCDryLdsLA",
         CONFERENCE_REGISTRATION_URL: "https://eventprime.co/e/gen-z-hackfest-2022",
-        BECOME_A_SPONSOR_URL: "https://airtable.com/shr3eOxjfYoHDqi8s"
+        BECOME_A_SPONSOR_URL: "https://airtable.com/shr3eOxjfYoHDqi8s",
+
+        SCHEDULE_URL: "https://genztechies.notion.site/Gen-Z-Hackfest-2022-Schedule-14eb7071e734426ba744d9f6838e200f",
     },
     async redirects() {
         return [
