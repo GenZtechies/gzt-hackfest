@@ -27,7 +27,7 @@ const Header = () => {
                     </Link>
                 </li>
                 <li className="text-2xl text-white font-bold hover:text-primary-green transition-all mx-4">
-                    <a href={process.env.SCHEDULE_URL}>Schedule</a>
+                    <a href="/schedule">Schedule</a>
                 </li>
                 <li className="text-2xl text-white font-bold hover:text-primary-green transition-all mx-4">
                     <Link href="/#sponsors">

@@ -27,6 +27,11 @@ const nextConfig = {
                 destination: "https://docs.google.com/forms/d/1zn8NLGRVAXA05_yeHwClTDnlFH_z2uzTr9M0cXl4wV4/edit?usp=sharing",
                 permanent: false,
             },
+            {
+                source: "/schedule",
+                destination: "https://genztechies.notion.site/Gen-Z-Hackfest-2022-Schedule-14eb7071e734426ba744d9f6838e200f",
+                permanent: false,
+            },
         ];
     },
 };
