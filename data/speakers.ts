@@ -64,6 +64,14 @@ const speakers: any[] = [
         reference_link: "" // Can be Twitter | Linkedin | Github | Website
     },
     {
+        fullname: "Oluwaseun Sokeye",
+        role_title: "Product Manager",
+        type: "speaker", // Can be speaker | judge
+        company: "Africa Prudential",
+        image: "/assets/misc/people/seun-sokeye.jpg",
+        reference_link: "" // Can be Twitter | Linkedin | Github | Website
+    },
+    {
         fullname: "Adebayo Oluwaseun",
         role_title: "Developer Relations",
         type: "judge", // Can be speaker | judge
@@ -78,14 +86,6 @@ const speakers: any[] = [
     //     company: "AltSchool Africa",
     //     image: "https://pbs.twimg.com/profile_images/1451624172266868739/lpi5wPb4_400x400.jpg",
     //     reference_link: "https://twitter.com/hackSultan" // Can be Twitter | Linkedin | Github | Website
-    // },
-    // {
-    //     fullname: "Luqman Edu",
-    //     role_title: "Partner",
-    //     type: "speaker", // Can be speaker | judge
-    //     company: "Talencity",
-    //     image: "https://media-exp2.licdn.com/dms/image/C5603AQHmXWh_kWifAQ/profile-displayphoto-shrink_800_800/0/1536957429587?e=1661385600&v=beta&t=UMtE3f-mFQjExTB93LpYa70VmvXuNsRLKiLtYn2NR88",
-    //     reference_link: "https://www.linkedin.com/in/luqman-edu-07711451" // Can be Twitter | Linkedin | Github | Website
     // },
     // {
     //     fullname: "Njoku Emmanuel",
