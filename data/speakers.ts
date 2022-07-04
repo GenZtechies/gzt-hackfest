@@ -40,6 +40,14 @@ const speakers: any[] = [
         reference_link: "https://www.linkedin.com/in/oluwaseun-runsewe/" // Can be Twitter | Linkedin | Github | Website
     },
     {
+        fullname: "Luqman Edu",
+        role_title: "Partner",
+        type: "speaker", // Can be speaker | judge
+        company: "Talencity",
+        image: "/assets/misc/people/luqman-edu.jpeg",
+        reference_link: "https://www.linkedin.com/in/luqman-edu-07711451" // Can be Twitter | Linkedin | Github | Website
+    },
+    {
         fullname: "Favour Chukwuedo",
         role_title: "Tech Founder & CTO",
         type: "speaker", // Can be speaker | judge
