@@ -43,7 +43,7 @@ const speakers: any[] = [
         fullname: "Luqman Edu",
         role_title: "Partner",
         type: "speaker", // Can be speaker | judge
-        company: "Talencity",
+        company: "Talent City",
         image: "/assets/misc/people/luqman-edu.jpeg",
         reference_link: "https://www.linkedin.com/in/luqman-edu-07711451" // Can be Twitter | Linkedin | Github | Website
     },
