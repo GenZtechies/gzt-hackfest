@@ -55,7 +55,7 @@ const Home: NextPage = () => {
                                 |
                                 <br className="md:hidden" />
                             </span>{" "}
-                            Conference: 9th of July 2022
+                            Conference: 11th of July 2022
                         </p>
 
                         <div className="flex flex-col md:flex-row gap-5 justify-center my-10 py-10">

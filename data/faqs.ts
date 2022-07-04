@@ -56,7 +56,7 @@ const faqs: any[] = [
     {
         type: "general",
         question: "When is the event?",
-        answer: "The three days virtual hackathon is from July 1 to July 3, 2022. The one day in-person conference is on July 9, 2022."
+        answer: "The three days virtual hackathon is from 1st — 3rd of July, 2022. The one day in-person conference is on the 11th of July, 2022."
     },
     {
         question: "I still have a question 🥲",
