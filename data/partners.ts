@@ -16,7 +16,7 @@ const partners: any[] = [
     },
     {
         name: "Zuri Training",
-        logo_image: "/assets/misc/companies/zuri.png",
+        logo_image: "/assets/misc/companies/zuri.svg",
         reference_link: "https://training.zuri.team/" // Can be Twitter | Linkedin | Github | Website
     },
     {
