@@ -27,14 +27,14 @@ function MyApp({ Component, pageProps }: AppProps) {
                 <meta property="og:url" content="https://hackfest2022.genztechies.com/" />
                 <meta property="og:title" content="Gen Z Hackfest 2022" />
                 <meta property="og:description" content="Gen Z Hackfest is an annual hybrid event, 3-days hackathon and 1-day conference aimed at connecting Gen Z’s in tech on a large scale." />
-                <meta property="og:image" content="https://hackfest2022.genztechies.com/assets/site-preview.png" />
+                <meta property="og:image" content="https://hackfest2022.genztechies.com/assets/site-preview.png?update=1" />
 
                 {/* Twitter */}
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:url" content="https://hackfest2022.genztechies.com/" />
                 <meta property="twitter:title" content="Gen Z Hackfest 2022" />
                 <meta property="twitter:description" content="Gen Z Hackfest is an annual hybrid event, 3-days hackathon and 1-day conference aimed at connecting Gen Z’s in tech on a large scale." />
-                <meta property="twitter:image" content="https://hackfest2022.genztechies.com/assets/site-preview.png" />
+                <meta property="twitter:image" content="https://hackfest2022.genztechies.com/assets/site-preview.png?update=1" />
             </Head>
 
             <Component {...pageProps} />
