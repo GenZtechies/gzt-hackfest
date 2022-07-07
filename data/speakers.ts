@@ -86,7 +86,15 @@ const speakers: any[] = [
         company: "Spheron",
         image: "/assets/misc/people/seun-adebayo.jpg",
         reference_link: "https://www.linkedin.com/in/seunbayo/" // Can be Twitter | Linkedin | Github | Website
-    }
+    },
+    {
+        fullname: "Haneefah Abdurrahman",
+        role_title: "Community Manager",
+        type: "Speaker", // Can be speaker | judge
+        company: "Ingressive for Good",
+        image: "/assets/misc/people/haneefah-abdurrahman.jpg",
+        reference_link: "https://www.linkedin.com/in/haneefah-abdurrahman-lekki/" // Can be Twitter | Linkedin | Github | Website
+    },
     // {
     //     fullname: "Akintunde Sultan",
     //     role_title: "Co-Founder & CTO",
