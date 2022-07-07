@@ -1,7 +1,7 @@
 const sponsors: any[] = [
     {
         name: "S.A.I.L",
-        logo_image: "/assets/misc/companies/sailnigeria.jpeg",
+        logo_image: "/assets/misc/companies/sailnigeria.png",
         reference_link: "https://twitter.com/sailnigeria" // Can be Twitter | Linkedin | Github | Website
     },
     {
