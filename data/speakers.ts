@@ -56,12 +56,12 @@ const speakers: any[] = [
         reference_link: "https://twitter.com/SenseiFavour" // Can be Twitter | Linkedin | Github | Website
     },
     {
-        fullname: "Chukwuemeka Enoch Mbaebie",
-        role_title: "Orbit Community Ambassador, Devcon V Alumni, ETH Nigeria Convener",
-        type: "judge", // Can be speaker | judge
-        company: "",
-        image: "/assets/misc/people/chukwuemeka-enoch.jpg",
-        reference_link: "" // Can be Twitter | Linkedin | Github | Website
+        fullname: "Haneefah Abdurrahman",
+        role_title: "Community Manager",
+        type: "Speaker", // Can be speaker | judge
+        company: "Ingressive for Good",
+        image: "/assets/misc/people/haneefah-abdurrahman.jpg",
+        reference_link: "https://www.linkedin.com/in/haneefah-abdurrahman-lekki/" // Can be Twitter | Linkedin | Github | Website
     },
     {
         fullname: "Deji Abisola",
@@ -77,7 +77,7 @@ const speakers: any[] = [
         type: "speaker", // Can be speaker | judge
         company: "Africa Prudential",
         image: "/assets/misc/people/seun-sokeye.jpeg",
-        reference_link: "" // Can be Twitter | Linkedin | Github | Website
+        reference_link: "http://www.linkedin.com/in/oluwaseun-sokeye" // Can be Twitter | Linkedin | Github | Website
     },
     {
         fullname: "Adebayo Oluwaseun",
@@ -88,13 +88,22 @@ const speakers: any[] = [
         reference_link: "https://www.linkedin.com/in/seunbayo/" // Can be Twitter | Linkedin | Github | Website
     },
     {
-        fullname: "Haneefah Abdurrahman",
-        role_title: "Community Manager",
-        type: "Speaker", // Can be speaker | judge
-        company: "Ingressive for Good",
-        image: "/assets/misc/people/haneefah-abdurrahman.jpg",
-        reference_link: "https://www.linkedin.com/in/haneefah-abdurrahman-lekki/" // Can be Twitter | Linkedin | Github | Website
+        fullname: "Feranmi Okafor",
+        role_title: "Founder and Growth Marketer",
+        type: "speaker", // Can be speaker | judge
+        company: "Tech Marketers Hub",
+        image: "/assets/misc/people/feranmi-okafor.jpeg",
+        reference_link: "" // Can be Twitter | Linkedin | Github | Website
     },
+    {
+        fullname: "Chukwuemeka Enoch Mbaebie",
+        role_title: "Orbit Community Ambassador, Devcon V Alumni, ETH Nigeria Convener",
+        type: "judge", // Can be speaker | judge
+        company: "",
+        image: "/assets/misc/people/chukwuemeka-enoch.jpg",
+        reference_link: "" // Can be Twitter | Linkedin | Github | Website
+    },
+
 ];
 
 export default speakers;
