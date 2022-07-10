@@ -25,6 +25,11 @@ const partners: any[] = [
         reference_link: "https://www.abcdevs.com/" // Can be Twitter | Linkedin | Github | Website
     },
     {
+        name: "Gameverse",
+        logo_image: "/assets/misc/companies/gameverse.png",
+        reference_link: "" // Can be Twitter | Linkedin | Github | Website
+    },
+    {
         name: "TechZie_",
         logo_image: "/assets/misc/companies/techzie.jpg",
         reference_link: "https://twitter.com/TechZie_" // Can be Twitter | Linkedin | Github | Website
