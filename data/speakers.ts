@@ -93,7 +93,7 @@ const speakers: any[] = [
         type: "speaker", // Can be speaker | judge
         company: "Tech Marketers Hub",
         image: "/assets/misc/people/feranmi-okafor.jpeg",
-        reference_link: "" // Can be Twitter | Linkedin | Github | Website
+        reference_link: "https://www.feranmiokafor.com/" // Can be Twitter | Linkedin | Github | Website
     },
     {
         fullname: "Chukwuemeka Enoch Mbaebie",
@@ -103,6 +103,14 @@ const speakers: any[] = [
         image: "/assets/misc/people/chukwuemeka-enoch.jpg",
         reference_link: "" // Can be Twitter | Linkedin | Github | Website
     },
+    {
+        fullname: "Jennifer Ahize",
+        role_title: "Product Manager",
+        type: "speaker", // Can be speaker | judge
+        company: "Lazerpay",
+        image: "/assets/misc/people/jennifer-ahize.jpeg",
+        reference_link: "https://www.linkedin.com/in/jennifer-a-6a0329179/" // Can be Twitter | Linkedin | Github | Website
+    }
 
 ];
 
