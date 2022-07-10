@@ -76,7 +76,7 @@ const speakers: any[] = [
         role_title: "Product Manager",
         type: "speaker", // Can be speaker | judge
         company: "Africa Prudential",
-        image: "/assets/misc/people/seun-sokeye.jpg",
+        image: "/assets/misc/people/seun-sokeye.jpeg",
         reference_link: "" // Can be Twitter | Linkedin | Github | Website
     },
     {
@@ -95,22 +95,6 @@ const speakers: any[] = [
         image: "/assets/misc/people/haneefah-abdurrahman.jpg",
         reference_link: "https://www.linkedin.com/in/haneefah-abdurrahman-lekki/" // Can be Twitter | Linkedin | Github | Website
     },
-    // {
-    //     fullname: "Akintunde Sultan",
-    //     role_title: "Co-Founder & CTO",
-    //     type: "speaker", // Can be speaker | judge
-    //     company: "AltSchool Africa",
-    //     image: "https://pbs.twimg.com/profile_images/1451624172266868739/lpi5wPb4_400x400.jpg",
-    //     reference_link: "https://twitter.com/hackSultan" // Can be Twitter | Linkedin | Github | Website
-    // },
-    // {
-    //     fullname: "Njoku Emmanuel",
-    //     role_title: "Founder & CEO",
-    //     type: "speaker", // Can be speaker | judge
-    //     company: "Lazerpay Finance",
-    //     image: "https://i0.wp.com/cryptonewsherald.com/wp-content/uploads/2022/02/lazer.jpg?resize=886%2C570&ssl=1",
-    //     reference_link: "https://www.linkedin.com/in/luqman-edu-07711451" // Can be Twitter | Linkedin | Github | Website
-    // }
 ];
 
 export default speakers;
