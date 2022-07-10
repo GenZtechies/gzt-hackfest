@@ -46,7 +46,7 @@ const Home: NextPage = () => {
 
                         <div className="flex justify-center md:justify-end items-center gap-5 mt-4 mb-10">
                             <p className="text-lg md:text-lg text-white font-semibold">Powered By:</p>
-                            <img src="/assets/misc/companies/sailnigeria.png" className="h-20" alt="sail-logo" />
+                            <img src="/assets/misc/companies/sailnigeria.png" className="h-14" alt="sail-logo" />
                         </div>
 
                         <p className="text-lg md:text-3xl text-white text-center font-semibold mt-5">
@@ -57,6 +57,12 @@ const Home: NextPage = () => {
                             </span>{" "}
                             Conference: 11th of July 2022
                         </p>
+
+                        <div className="xl:flex justify-center items-center align-middle text-md text-white text-center font-semibold mt-5">
+                            <img src="/assets/images/location.svg" className="h-4 md:h-7 aspect-square mx-2 my-auto inline-block" alt="location-icon" />
+                            <b className="md:text-2xl">Zone Tech Park</b>
+                            <span className="md:text-lg">&nbsp;&mdash; <a href="https://goo.gl/maps/MV8zobHyfuaVN6Y77" className="underline">Plot 9 Gbagada Industrial Scheme, Beside UPS, Gbagada Expressway, Lagos, Nigeria</a>.</span>
+                        </div>
 
                         <div className="flex flex-col md:flex-row gap-5 justify-center my-10 py-10">
                             <Link href="/tickets">
