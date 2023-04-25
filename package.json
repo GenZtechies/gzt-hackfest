@@ -1,9 +1,7 @@
 {
-    "name": "gzt-hackFest2022",
+    "name": "gzt-hackfest",
     "version": "1.0.0",
-    "description": "This is gzt-hackFest2022 powered by NextJs, Tailwindcss and Typescript",
     "private": true,
-    "license": "MIT",
     "scripts": {
         "dev": "next dev",
         "build": "next build",
@@ -12,23 +10,21 @@
     },
     "dependencies": {
         "aos": "^2.3.4",
-        "axios": "^0.26.0",
-        "next": "12.1.0",
-        "react": "17.0.2",
-        "react-dom": "17.0.2"
+        "daisyui": "^2.51.6",
+        "next": "13.3.1",
+        "react": "18.2.0",
+        "react-dom": "18.2.0"
     },
     "devDependencies": {
         "@types/aos": "^3.0.4",
-        "@types/node": "17.0.21",
-        "@types/react": "17.0.39",
-        "autoprefixer": "^10.4.4",
-        "cssnano": "^5.1.0",
-        "eslint": "8.10.0",
-        "eslint-config-next": "12.1.0",
-        "postcss": "^8.4.12",
-        "postcss-preset-env": "^7.4.2",
-        "prettier": "2.6.2",
-        "tailwindcss": "^3.0.23",
-        "typescript": "4.6.2"
+        "@types/node": "18.16.0",
+        "@types/react": "18.2.0",
+        "@types/react-dom": "18.2.0",
+        "autoprefixer": "10.4.14",
+        "eslint": "8.39.0",
+        "eslint-config-next": "13.3.1",
+        "postcss": "8.4.23",
+        "tailwindcss": "3.3.1",
+        "typescript": "5.0.4"
     }
 }

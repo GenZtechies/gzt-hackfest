@@ -1,3 +1,1 @@
-export { default as Header } from "./Header";
-export { default as Footer } from "./Footer";
-export { default as FaqAccordion } from "./FaqAccordion";
+export { default as Seo } from "./Seo";

@@ -1,3 +1,3 @@
-# gzt-hackFest2022
+# gzt-hackfest
 
-This is gzt-hackFest2022 built with NextJS, Typescript and TailwindCSS
+This is gzt-hackfest website.
