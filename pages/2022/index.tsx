@@ -11,7 +11,7 @@ export default function Home() {
             <Seo
                 // breaker
                 title="Gen Z Hackfest 2022"
-                image="assets/2022/site-metaimage.png"
+                image="/assets/2022/site-metaimage.png"
                 description="Gen Z Hackfest 2022 is a 3-days hackathon and 1-day conference aimed at connecting Gen Z’s in tech on a large scale."
             />
 
