@@ -8,7 +8,6 @@ export default function Home() {
                 // breaker
                 title="Gen Z Hackfest 2023"
                 description="Gen Z Hackfest 2023 is an annual hybrid event organised by the GenZtechies Community 🚀"
-                image="/assets/"
             />
 
             <div className="flex flex-col items-center min-h-screen p-5 bg-primary-purple">
