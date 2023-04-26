@@ -19,8 +19,8 @@ export default function Home() {
                 description="Gen Z Hackfest 2023 is an annual hybrid event organised by the GenZtechies Community 🚀"
             />
 
-            {/* <div className="h-screen w-full bg-black/80 bg-blend-overlay bg-[url('/assets/2023/images/site-bg.png')] bg-no-repeat bg-cover bg-center top-0 fixed -z-50" /> */}
-            <div className="h-screen w-full bg-black/20 bg-blend-overlay bg-[url('/assets/2023/images/site-bg-2.png')] bg-no-repeat bg-cover bg-center top-0 fixed -z-50" />
+            <div className="h-screen w-full bg-black/70 bg-blend-overlay bg-[url('/assets/2023/images/site-bg.png')] bg-no-repeat bg-cover bg-center top-0 fixed -z-50" />
+            {/* <div className="h-screen w-full bg-black/20 bg-blend-overlay bg-[url('/assets/2023/images/site-bg-2.png')] bg-no-repeat bg-cover bg-center top-0 fixed -z-50" /> */}
 
             <div className="flex flex-col items-center min-h-screen p-5">
                 <div className="m-auto w-full space-y-10">
@@ -38,24 +38,24 @@ export default function Home() {
                     </div>
 
                     <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:pt-10">
-                        <Link href="/sponsorship-guide-2023.pdf" className="btn btn-lg btn-wide bg-white hover:bg-white border-none normal-case text-primary-purple gap-4">
+                        <Link href="/sponsorship-guide-2023.pdf" className="btn btn-lg btn-wide bg-white hover:bg-white border-none normal-case text-primary-purple font-sora gap-4">
                             Become a Sponsor
                         </Link>
-                        <Link href="" className="btn btn-lg btn-wide bg-transparent hover:bg-transparent border-white hover:border-white normal-case text-white gap-4">
+                        <Link href="" className="btn btn-lg btn-wide bg-transparent hover:bg-transparent border-white hover:border-white normal-case text-white font-sora gap-4">
                             Speak at HackFest
                         </Link>
                     </div>
 
                     <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:pt-10">
-                        <Link href="" className="btn md:btn-lg btn-ghost hover:bg-transparent normal-case text-white no-animation gap-4">
+                        <Link href="" className="btn md:btn-lg btn-ghost hover:bg-transparent normal-case text-white no-animation font-sora gap-4">
                             Get Tickets
                             <ArrowSvg />
                         </Link>
-                        <Link href="" className="btn md:btn-lg btn-ghost hover:bg-transparent normal-case text-white no-animation gap-4">
+                        <Link href="" className="btn md:btn-lg btn-ghost hover:bg-transparent normal-case text-white no-animation font-sora gap-4">
                             View past pictures
                             <ArrowSvg />
                         </Link>
-                        <Link href="" className="btn md:btn-lg btn-ghost hover:bg-transparent normal-case text-white no-animation gap-4">
+                        <Link href="" className="btn md:btn-lg btn-ghost hover:bg-transparent normal-case text-white no-animation font-sora gap-4">
                             Tweets from 2022
                             <ArrowSvg />
                         </Link>
