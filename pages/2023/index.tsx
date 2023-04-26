@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import { Seo } from "../../components";
-import { BUY_CONFERENCE_TICKET_URL, HACKFEST_2022_PICTURES_URL, TWEETS_FROM_HACKFEST_2022_URL } from "../../data/2023";
+import { BUY_CONFERENCE_TICKET_URL, HACKATHON_REGISTRATION_URL, HACKFEST_2022_PICTURES_URL, TWEETS_FROM_HACKFEST_2022_URL } from "../../data/2023";
 
 const ArrowSvg = () => (
     <svg className="w-3 aspect-square animate-bounce" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -50,7 +50,11 @@ export default function Home() {
 
                     <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:pt-10">
                         <Link href={BUY_CONFERENCE_TICKET_URL} className="btn btn-md md:btn-lg btn-ghost hover:bg-transparent normal-case text-white no-animation font-sora gap-4">
-                            Get Tickets
+                            Get Conference Tickets
+                            <ArrowSvg />
+                        </Link>
+                        <Link href={HACKATHON_REGISTRATION_URL} className="btn btn-md md:btn-lg btn-ghost hover:bg-transparent normal-case text-white no-animation font-sora gap-4">
+                            Register for Hackathon
                             <ArrowSvg />
                         </Link>
                         <Link href={HACKFEST_2022_PICTURES_URL} className="btn btn-md md:btn-lg btn-ghost hover:bg-transparent normal-case text-white no-animation font-sora gap-4">
