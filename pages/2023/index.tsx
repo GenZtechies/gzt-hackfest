@@ -50,7 +50,7 @@ export default function Home() {
 
                     <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:pt-10">
                         <Link href={BUY_CONFERENCE_TICKET_URL} className="btn btn-md md:btn-lg btn-ghost hover:bg-transparent normal-case text-white no-animation font-sora gap-4">
-                            Get Conference Tickets
+                            Get conference Tickets
                             <ArrowSvg />
                         </Link>
                         <Link href={HACKATHON_REGISTRATION_URL} className="btn btn-md md:btn-lg btn-ghost hover:bg-transparent normal-case text-white no-animation font-sora gap-4">
