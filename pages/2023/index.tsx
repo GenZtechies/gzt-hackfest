@@ -33,7 +33,7 @@ export default function Home() {
                     </h2>
 
                     <div className="flex flex-col justify-center space-y-2">
-                        <h3 className="text-center text-xl md:text-2xl font-sora font-light text-white">August 21 &mdash; 26, 2023</h3>
+                        <h3 className="text-center text-xl md:text-2xl font-sora font-light text-white">August 21st &mdash; 26th</h3>
                         <h3 className="text-center text-3xl md:text-4xl font-sora font-medium text-white">Lagos, Nigeria</h3>
                     </div>
 
