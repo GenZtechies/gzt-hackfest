@@ -47,15 +47,15 @@ export default function Home() {
                     </div>
 
                     <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:pt-10">
-                        <Link href="" className="btn md:btn-lg btn-ghost hover:bg-transparent normal-case text-white no-animation font-sora gap-4">
+                        <Link href="" className="btn btn-md md:btn-lg btn-ghost hover:bg-transparent normal-case text-white no-animation font-sora gap-4">
                             Get Tickets
                             <ArrowSvg />
                         </Link>
-                        <Link href="" className="btn md:btn-lg btn-ghost hover:bg-transparent normal-case text-white no-animation font-sora gap-4">
+                        <Link href="https://photos.app.goo.gl/MnLqmyVyAn8ivCc19" className="btn btn-md md:btn-lg btn-ghost hover:bg-transparent normal-case text-white no-animation font-sora gap-4">
                             View past pictures
                             <ArrowSvg />
                         </Link>
-                        <Link href="" className="btn md:btn-lg btn-ghost hover:bg-transparent normal-case text-white no-animation font-sora gap-4">
+                        <Link href="https://twitter.com/hashtag/GenZHackfest2022?src=hashtag_click" className="btn btn-md md:btn-lg btn-ghost hover:bg-transparent normal-case text-white no-animation font-sora gap-4">
                             Tweets from 2022
                             <ArrowSvg />
                         </Link>
