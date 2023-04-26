@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import { Seo } from "../../components";
-import { BUY_CONFERENCE_TICKET_URL, HACKATHON_REGISTRATION_URL, HACKFEST_2022_PICTURES_URL, TWEETS_FROM_HACKFEST_2022_URL } from "../../data/2023";
+import { BUY_CONFERENCE_TICKET_URL, HACKATHON_REGISTRATION_URL, HACKFEST_2022_PICTURES_URL } from "../../data/2023";
 
 const ArrowSvg = () => (
     <svg className="w-3 aspect-square animate-bounce" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -58,11 +58,7 @@ export default function Home() {
                             <ArrowSvg />
                         </Link>
                         <Link href={HACKFEST_2022_PICTURES_URL} className="btn btn-md md:btn-lg btn-ghost hover:bg-transparent normal-case text-white no-animation font-sora gap-4">
-                            View past pictures
-                            <ArrowSvg />
-                        </Link>
-                        <Link href={TWEETS_FROM_HACKFEST_2022_URL} className="btn btn-md md:btn-lg btn-ghost hover:bg-transparent normal-case text-white no-animation font-sora gap-4">
-                            Tweets from 2022
+                            View past Pictures
                             <ArrowSvg />
                         </Link>
                     </div>
