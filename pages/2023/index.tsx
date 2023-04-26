@@ -1,5 +1,7 @@
 import Link from "next/link";
+
 import { Seo } from "../../components";
+import { BUY_CONFERENCE_TICKET_URL, HACKFEST_2022_PICTURES_URL, TWEETS_FROM_HACKFEST_2022_URL } from "../../data/2023";
 
 const ArrowSvg = () => (
     <svg className="w-3 aspect-square animate-bounce" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -47,15 +49,15 @@ export default function Home() {
                     </div>
 
                     <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:pt-10">
-                        <Link href="" className="btn btn-md md:btn-lg btn-ghost hover:bg-transparent normal-case text-white no-animation font-sora gap-4">
+                        <Link href={BUY_CONFERENCE_TICKET_URL} className="btn btn-md md:btn-lg btn-ghost hover:bg-transparent normal-case text-white no-animation font-sora gap-4">
                             Get Tickets
                             <ArrowSvg />
                         </Link>
-                        <Link href="https://photos.app.goo.gl/MnLqmyVyAn8ivCc19" className="btn btn-md md:btn-lg btn-ghost hover:bg-transparent normal-case text-white no-animation font-sora gap-4">
+                        <Link href={HACKFEST_2022_PICTURES_URL} className="btn btn-md md:btn-lg btn-ghost hover:bg-transparent normal-case text-white no-animation font-sora gap-4">
                             View past pictures
                             <ArrowSvg />
                         </Link>
-                        <Link href="https://twitter.com/hashtag/GenZHackfest2022?src=hashtag_click" className="btn btn-md md:btn-lg btn-ghost hover:bg-transparent normal-case text-white no-animation font-sora gap-4">
+                        <Link href={TWEETS_FROM_HACKFEST_2022_URL} className="btn btn-md md:btn-lg btn-ghost hover:bg-transparent normal-case text-white no-animation font-sora gap-4">
                             Tweets from 2022
                             <ArrowSvg />
                         </Link>
