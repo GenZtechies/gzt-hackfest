@@ -43,7 +43,7 @@ export default function Home() {
                         <Link href="https://docsend.com/view/x3t5y66xybdyyxwq" className="btn btn-lg btn-wide bg-white hover:bg-white border-none normal-case text-primary-purple font-sora gap-4">
                             Become a Sponsor
                         </Link>
-                        <Link href="" className="btn btn-lg btn-wide bg-transparent hover:bg-transparent border-white hover:border-white normal-case text-white font-sora gap-4">
+                        <Link href="https://sessionize.com/genzhackfest-2023" className="btn btn-lg btn-wide bg-transparent hover:bg-transparent border-white hover:border-white normal-case text-white font-sora gap-4">
                             Speak at HackFest
                         </Link>
                     </div>
