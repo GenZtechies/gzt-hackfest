@@ -41,17 +41,17 @@ export default function Home() {
                     </div>
 
                     <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:pt-10">
-                        <Link href="/sponsorship-guide-2023.pdf" className="btn btn-lg btn-wide bg-white hover:bg-white border-none normal-case text-primary-purple font-sora gap-4">
+                        <Link href="https://docsend.com/view/x3t5y66xybdyyxwq" className="btn btn-lg btn-wide bg-white hover:bg-white border-none normal-case text-primary-purple font-sora gap-4">
                             Become a Sponsor
                         </Link>
-                        <Link href="" className="btn btn-lg btn-wide bg-transparent hover:bg-transparent border-white hover:border-white normal-case text-white font-sora gap-4">
+                        <Link href="https://sessionize.com/genzhackfest-2023" className="btn btn-lg btn-wide bg-transparent hover:bg-transparent border-white hover:border-white normal-case text-white font-sora gap-4">
                             Speak at HackFest
                         </Link>
                     </div>
 
                     <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:pt-10">
                         <Link href={BUY_CONFERENCE_TICKET_URL} className="btn btn-md md:btn-lg btn-ghost hover:bg-transparent normal-case text-white no-animation font-sora gap-4">
-                            Get Conference Tickets
+                            Get conference Tickets
                             <ArrowSvg />
                         </Link>
                         <Link href={HACKATHON_REGISTRATION_URL} className="btn btn-md md:btn-lg btn-ghost hover:bg-transparent normal-case text-white no-animation font-sora gap-4">
