@@ -1,3 +1,3 @@
-# gzt-hackfest
+# Gen Z Hackfest
 
-This is gzt-hackfest website.
+An annual conference & hackathon organised by the GenZtechies Community 🚀
