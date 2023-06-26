@@ -29,4 +29,22 @@
         margin: 0;
         -webkit-appearance: none;
     }
+
+    .text-stroke {
+        color: #2f2d2d; /* Stroke color */
+        text-shadow: -6px -6px 0 #5d5cd6, 6px -6px 0 #5d5cd6, -6px 6px 0 #5d5cd6, 6px 6px 0 #5d5cd6;
+        /* -webkit-text-stroke: 6px #5d5cd6;
+        text-stroke: 6px #5d5cd6;
+        -webkit-text-fill-color: #2f2d2d;
+        color: #2f2d2d; */
+    }
+
+    .text-stroke-sm {
+        color: #2f2d2d; /* Stroke color */
+        text-shadow: -3px -3px 0 #5d5cd6, 3px -3px 0 #5d5cd6, -3px 3px 0 #5d5cd6, 3px 3px 0 #5d5cd6;
+        /* -webkit-text-stroke: 3px #5d5cd6;
+        text-stroke: 3px #5d5cd6;
+        -webkit-text-fill-color: #2f2d2d;
+        color: #2f2d2d; */
+    }
 }

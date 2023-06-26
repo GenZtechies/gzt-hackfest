@@ -7,6 +7,17 @@ module.exports = {
         "./components/**/*.{js,ts,jsx,tsx,mdx}"
     ],
     theme: {
+        container: {
+            center: true,
+            padding: {
+                DEFAULT: "1rem",
+                sm: "2rem",
+                md: "3rem",
+                lg: "4rem",
+                xl: "5rem",
+                "2xl": "6rem"
+            }
+        },
         extend: {
             colors: {
                 // custom color schemes here
@@ -15,7 +26,9 @@ module.exports = {
                     yellow: "#FFB800",
                     green: "#0DBF6A",
                     dark: "#151452",
-                    light: "#D6D6F5"
+                    light: "#D6D6F5",
+                    "light-bg": "#F8F8FD",
+                    "text-dark": "#2F2D2D"
                 }
             },
             fontFamily: {

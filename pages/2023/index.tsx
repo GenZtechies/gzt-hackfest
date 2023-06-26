@@ -1,70 +1,114 @@
+import React from "react";
+import Image from "next/image";
 import Link from "next/link";
+import { Balancer } from "react-wrap-balancer";
+import { Button } from "../../components/2023";
+import { clsx } from "class-flex";
 
-import { Seo } from "../../components";
-import { BUY_CONFERENCE_TICKET_URL, HACKATHON_REGISTRATION_URL, HACKFEST_2022_PICTURES_URL } from "../../data/2023";
+const links = [
+    {
+        name: "About",
+        href: "#about"
+    },
+    {
+        name: "Speakers",
+        href: "#speakers"
+    },
+    {
+        name: "Community",
+        href: "#community"
+    },
+    {
+        name: "hackathon",
+        href: "#hackathon"
+    },
+    {
+        name: "events",
+        href: "#events"
+    }
+];
 
-const ArrowSvg = () => (
-    <svg className="w-3 aspect-square animate-bounce" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-            d="M24.7132 1.99999C24.7132 1.17157 24.0416 0.499992 23.2132 0.499992H9.7132C8.88478 0.499992 8.2132 1.17157 8.2132 1.99999C8.2132 2.82842 8.88478 3.49999 9.7132 3.49999L21.7132 3.49999L21.7132 15.5C21.7132 16.3284 22.3848 17 23.2132 17C24.0416 17 24.7132 16.3284 24.7132 15.5V1.99999ZM3.06066 24.2739L24.2739 3.06065L22.1525 0.939332L0.93934 22.1525L3.06066 24.2739Z"
-            fill="white"
-        />
-    </svg>
-);
+const Main = () => {
+    const [active, setActive] = React.useState(1);
 
-export default function Home() {
+    React.useEffect(() => {
+        const interval = setInterval(() => {
+            setActive(active >= 6 ? 1 : active + 1);
+        }, 2000);
+
+        return () => {
+            clearInterval(interval);
+        };
+    }, [active]);
+
     return (
-        <>
-            <Seo
-                // breaker
-                title="Gen Z Hackfest 2023"
-                image="/assets/2023/site-metaimage.png"
-                description="Gen Z Hackfest 2023 is an annual hybrid event organised by the GenZtechies Community 🚀"
-            />
-
-            <div className="h-screen w-full bg-black/70 bg-blend-overlay bg-[url('/assets/2023/images/site-bg.png')] bg-no-repeat bg-cover bg-center top-0 fixed -z-50" />
-            {/* <div className="h-screen w-full bg-black/20 bg-blend-overlay bg-[url('/assets/2023/images/site-bg-2.png')] bg-no-repeat bg-cover bg-center top-0 fixed -z-50" /> */}
-
-            <div className="flex flex-col items-center min-h-screen p-5">
-                <div className="m-auto w-full space-y-10">
-                    <h2 className="text-center text-5xl md:text-8xl font-rubik font-extrabold text-white leading-tight">
-                        <span className="block">Gen Z </span>
-                        <span>HackFest &nbsp; </span>
-                        <span className="block lg:inline">
-                            2<b className="text-5xl md:text-8xl">🚀</b>23
-                        </span>
-                    </h2>
-
-                    <div className="flex flex-col justify-center space-y-2">
-                        <h3 className="text-center text-xl md:text-2xl font-sora font-light text-white">August 21st &mdash; 26th</h3>
-                        <h3 className="text-center text-3xl md:text-4xl font-sora font-medium text-white">Lagos, Nigeria</h3>
-                    </div>
-
-                    <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:pt-10">
-                        <Link href="https://docsend.com/view/x3t5y66xybdyyxwq" className="btn btn-lg btn-wide bg-white hover:bg-white border-none normal-case text-primary-purple font-sora gap-4">
-                            Become a Sponsor
-                        </Link>
-                        <Link href="https://sessionize.com/genzhackfest-2023" className="btn btn-lg btn-wide bg-transparent hover:bg-transparent border-white hover:border-white normal-case text-white font-sora gap-4">
-                            Speak at HackFest
-                        </Link>
-                    </div>
-
-                    <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:pt-10">
-                        <Link href={BUY_CONFERENCE_TICKET_URL} className="btn btn-md md:btn-lg btn-ghost hover:bg-transparent normal-case text-white no-animation font-sora gap-4">
-                            Get conference Tickets
-                            <ArrowSvg />
-                        </Link>
-                        <Link href={HACKATHON_REGISTRATION_URL} className="btn btn-md md:btn-lg btn-ghost hover:bg-transparent normal-case text-white no-animation font-sora gap-4">
-                            Register for Hackathon
-                            <ArrowSvg />
-                        </Link>
-                        <Link href={HACKFEST_2022_PICTURES_URL} className="btn btn-md md:btn-lg btn-ghost hover:bg-transparent normal-case text-white no-animation font-sora gap-4">
-                            View past Pictures
-                            <ArrowSvg />
-                        </Link>
+        <main className="flex flex-col justify-between w-screen h-screen bg-primary-light-bg">
+            <nav className="w-full">
+                <ul className="container flex items-center justify-between py-2">
+                    <li>
+                        <Image src={"https://assets.genztechies.com/logo-coloured.svg"} alt="Logo" width={84} height={40} />
+                    </li>
+                    <li>
+                        <ul className="flex items-center space-x-1">
+                            {links.map((link, index) => (
+                                <li key={index} className="p-4 font-semibold uppercase text-primary-dark font-rubik">
+                                    <Link href={link.href}>{link.name}</Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </li>
+                    <li>
+                        <Button withArrow className="w-full md:flex-grow" size="sm">
+                            Register
+                        </Button>
+                    </li>
+                </ul>
+            </nav>
+            <div className="container grid items-center justify-center flex-grow w-full grid-cols-1 gap-10 md:grid-cols-5">
+                <div className="flex flex-col justify-around w-full col-span-3 space-y-5 h-4/5">
+                    <h1>
+                        <Balancer>
+                            <span className="font-extrabold font-sora leading-none text-stroke-sm md:text-stroke text-6xl md:text-[112px]">GEN Z HACKFEST 2023</span>
+                            <span className="inline-block ml-5">
+                                <span className="text-sm font-medium tracking-wider md:text-xl text-primary-dark font-rubik">August 21st - 26th.</span> <br />
+                                <span className="text-lg font-semibold tracking-widest capitalize md:text-4xl text-primary-dark font-rubik">lagos, Nigeria</span>
+                            </span>
+                        </Balancer>
+                    </h1>
+                    <div className="flex flex-col items-center w-full space-y-5 md:space-y-0 md:space-x-5 md:flex-row">
+                        <Button withArrow className="w-full md:flex-grow">
+                            Become a sponsor
+                        </Button>
+                        <Button withArrow className="w-full md:flex-grow" variant="outlined">
+                            speak at hackfest
+                        </Button>
                     </div>
                 </div>
+                <div className="relative w-full h-full col-span-2">
+                    <Images active={active} />
+                </div>
             </div>
+        </main>
+    );
+};
+
+export default Main;
+
+const Images = ({ active }: { active: number }) => {
+    return (
+        <>
+            {Array.from({ length: 6 }).map((_, index) => (
+                <Image
+                    className={clsx("object-contain transition-all duration-1000 ease-in-out", {
+                        "opacity-0": active !== index + 1,
+                        "opacity-100": active === index + 1
+                    })}
+                    key={index}
+                    fill
+                    src={require(`../../public/assets/2023/images/emoji-${index + 1}.png`)}
+                    alt="Emoji"
+                />
+            ))}
         </>
     );
-}
+};
