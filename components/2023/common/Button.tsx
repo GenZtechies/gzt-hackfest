@@ -1,4 +1,4 @@
-import { clf } from "class-flex";
+import { clf, clsx } from "class-flex";
 import React from "react";
 
 interface ButtonProps extends React.HtmlHTMLAttributes<HTMLButtonElement> {
@@ -24,7 +24,7 @@ const btn = clf("font-medium font-rubik text-base uppercase rounded-full flex it
 
 const Button = ({ children, variant = "contained", className, withArrow, size = "md", ...props }: ButtonProps) => {
     return (
-        <button className={btn({ variant, className, size })} {...props}>
+        <button className={clsx(btn({ variant, size }), className)} {...props}>
             {children} {withArrow ? <ArrowIcon className="scale-75" /> : null}
         </button>
     );

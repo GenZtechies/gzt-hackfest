@@ -43,27 +43,7 @@ const Main = () => {
 
     return (
         <main className="flex flex-col justify-between w-screen h-screen bg-primary-light-bg">
-            <nav className="w-full">
-                <ul className="container flex items-center justify-between py-2">
-                    <li>
-                        <Image src={"https://assets.genztechies.com/logo-coloured.svg"} alt="Logo" width={84} height={40} />
-                    </li>
-                    <li>
-                        <ul className="items-center hidden space-x-1 md:flex">
-                            {links.map((link, index) => (
-                                <li key={index} className="p-4 font-semibold uppercase text-primary-dark font-rubik">
-                                    <Link href={link.href}>{link.name}</Link>
-                                </li>
-                            ))}
-                        </ul>
-                    </li>
-                    <li>
-                        <Button withArrow className="w-full md:flex-grow" size="sm">
-                            Register
-                        </Button>
-                    </li>
-                </ul>
-            </nav>
+            <Navigation />
             <div className="container grid items-center justify-center flex-grow w-full grid-cols-1 gap-10 md:grid-cols-5">
                 <div className="flex flex-col justify-around w-full col-span-3 space-y-5 h-4/5">
                     <h1>
@@ -76,10 +56,10 @@ const Main = () => {
                         </Balancer>
                     </h1>
                     <div className="flex flex-col items-center w-full space-y-5 md:space-y-0 md:space-x-5 md:flex-row">
-                        <Button withArrow className="w-full md:flex-grow">
+                        <Button withArrow className="">
                             Become a sponsor
                         </Button>
-                        <Button withArrow className="w-full md:flex-grow" variant="outlined">
+                        <Button withArrow className="" variant="outlined">
                             speak at hackfest
                         </Button>
                     </div>
@@ -93,6 +73,52 @@ const Main = () => {
 };
 
 export default Main;
+
+const Navigation = () => {
+    const [open, setOpen] = React.useState(false);
+    return (
+        <nav className="relative w-full">
+            <ul className="container flex items-center justify-between py-2">
+                <li>
+                    <Image src={"https://assets.genztechies.com/logo-coloured.svg"} alt="Logo" width={84} height={40} />
+                </li>
+                <li>
+                    <ul className="items-center hidden space-x-1 md:flex">
+                        {links.map((link, index) => (
+                            <li key={index} className="p-4 font-semibold uppercase text-primary-dark font-rubik">
+                                <Link href={link.href}>{link.name}</Link>
+                            </li>
+                        ))}
+                    </ul>
+                </li>
+                <li>
+                    <button className="rounded-full md:hidden text-primary-purple" onClick={() => setOpen(!open)}>
+                        <MenuIcon />
+                    </button>
+                    <Button withArrow className="hidden md:flex" size="sm">
+                        Register
+                    </Button>
+                </li>
+            </ul>
+            <ul
+                className={clsx("container z-50 absolute flex flex-col w-full md:hidden top-full shadow-md bg-primary-light-bg max-h-0 transition-all duration-300 ease-in-out overflow-hidden", {
+                    "max-h-96 pb-10": open
+                })}
+            >
+                {links.map((link, index) => (
+                    <li key={index} className="p-4 font-semibold uppercase text-primary-dark font-rubik">
+                        <Link href={link.href}>{link.name}</Link>
+                    </li>
+                ))}
+                <li>
+                    <Button withArrow className="w-full" size="sm">
+                        Register
+                    </Button>
+                </li>
+            </ul>
+        </nav>
+    );
+};
 
 const Images = ({ active }: { active: number }) => {
     return (
@@ -112,3 +138,11 @@ const Images = ({ active }: { active: number }) => {
         </>
     );
 };
+
+const MenuIcon = ({ className }: { className?: string }) => (
+    <svg viewBox="0 0 25 19" className={clsx("w-6 h-6", className)} stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0.285645" y1="1.89285" x2="24.2856" y2="1.89285" stroke="currentColor" strokeWidth="2.5"></line>
+        <line x1="6.28564" y1="9.60715" x2="24.2856" y2="9.60715" stroke="currentColor" strokeWidth="2.5"></line>
+        <line x1="12.2949" y1="17.3214" x2="24.2949" y2="17.3214" stroke="currentColor" strokeWidth="2.5"></line>
+    </svg>
+);
