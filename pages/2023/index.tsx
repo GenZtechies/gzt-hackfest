@@ -77,7 +77,7 @@ const Main = () => {
                             </Link>
                         </div>
                     </div>
-                    <div className="relative w-full h-full col-span-2">
+                    <div className="relative hidden w-full h-full col-span-2 md:block">
                         <Images active={active} />
                     </div>
                 </div>
@@ -98,9 +98,11 @@ const Main = () => {
                     </div>
                     <div className="space-y-5 md:-mt-52">
                         <p className="text-lg font-normal tracking-wider uppercase text-primary-blue-dark">we are a community of Gen Z developers, founders, designers, and techies across Africa where we connect, learn, and discover life-changing opportunities.</p>
-                        <Button withArrow className="w-full md:w-fit">
-                            Join the community
-                        </Button>
+                        <Link target={"_blank"} href={HACKATHON_REGISTRATION_URL}>
+                            <Button withArrow className="w-full md:w-fit">
+                                Join the community
+                            </Button>
+                        </Link>
                     </div>
                 </div>
             </section>
