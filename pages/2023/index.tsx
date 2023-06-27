@@ -49,7 +49,7 @@ const Main = () => {
                         <Image src={"https://assets.genztechies.com/logo-coloured.svg"} alt="Logo" width={84} height={40} />
                     </li>
                     <li>
-                        <ul className="flex items-center space-x-1">
+                        <ul className="items-center hidden space-x-1 md:flex">
                             {links.map((link, index) => (
                                 <li key={index} className="p-4 font-semibold uppercase text-primary-dark font-rubik">
                                     <Link href={link.href}>{link.name}</Link>
