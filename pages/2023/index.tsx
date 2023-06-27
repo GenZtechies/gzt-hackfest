@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { Balancer } from "react-wrap-balancer";
 import { Button } from "../../components/2023";
 import { Seo } from "../../components";
@@ -38,6 +39,7 @@ const links = [
 
 const Main = () => {
     const [active, setActive] = React.useState(1);
+    const router = useRouter();
 
     React.useEffect(() => {
         const interval = setInterval(() => {
@@ -65,16 +67,16 @@ const Main = () => {
                             </Balancer>
                         </h1>
                         <div className="flex flex-col items-center w-full space-y-5 md:space-y-0 md:space-x-5 md:flex-row">
-                            <Link target={"_blank"} href={"https://docsend.com/view/x3t5y66xybdyyxwq"}>
-                                <Button withArrow className="">
+                            <Button withArrow className="">
+                                <Link target={"_blank"} href={"https://docsend.com/view/x3t5y66xybdyyxwq"}>
                                     Become a sponsor
-                                </Button>
-                            </Link>
-                            <Link target={"_blank"} href="https://sessionize.com/genzhackfest-2023">
-                                <Button withArrow className="" variant="outlined">
+                                </Link>
+                            </Button>
+                            <Button withArrow className="" variant="outlined">
+                                <Link target={"_blank"} href="https://sessionize.com/genzhackfest-2023">
                                     speak at hackfest
-                                </Button>
-                            </Link>
+                                </Link>
+                            </Button>
                         </div>
                     </div>
                     <div className="relative hidden w-full h-full col-span-2 md:block">
@@ -96,13 +98,14 @@ const Main = () => {
                             <Image src={"/assets/2023/images/site-bg.png"} alt="About us" fill className="object-cover object-left-top rounded-md" />
                         </div>
                     </div>
-                    <div className="space-y-5 md:-mt-52">
+                    <div className="space-y-10 md:-mt-52">
                         <p className="text-lg font-normal tracking-wider uppercase text-primary-blue-dark">we are a community of Gen Z developers, founders, designers, and techies across Africa where we connect, learn, and discover life-changing opportunities.</p>
-                        <Link target={"_blank"} href={HACKATHON_REGISTRATION_URL}>
-                            <Button withArrow className="w-full md:w-fit">
+
+                        <Button withArrow className="w-full md:w-fit">
+                            <Link target={"_blank"} href={HACKATHON_REGISTRATION_URL}>
                                 Join the community
-                            </Button>
-                        </Link>
+                            </Link>
+                        </Button>
                     </div>
                 </div>
             </section>
@@ -144,7 +147,7 @@ const Main = () => {
                             PREPARE TO HACK<span className="text-primary-purple">.</span>
                         </Balancer>
                     </h1>
-                    <div className="space-y-5 md:-mt-52">
+                    <div className="space-y-10 md:-mt-52">
                         <p className="text-lg font-normal tracking-wider uppercase text-primary-blue-dark">
                             The hackathon aims to address a specific problem in Africa that is often neglected. It brings together individuals from various fields to collaborate and find innovative solutions. By leveraging their diverse skills and expertise, participants work towards creating tangible and impactful outcomes.
                         </p>

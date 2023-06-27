@@ -8,6 +8,7 @@
     html {
         scroll-behavior: smooth;
         font-family: "Rubik", sans-serif;
+        overflow-x: hidden;
     }
 
     /* Remove daisy ui outline on form elements */
