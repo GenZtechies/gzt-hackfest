@@ -79,13 +79,13 @@ const Main = () => {
                             </Button>
                         </div>
                     </div>
-                    <div className="relative hidden w-full h-full col-span-2 md:block">
+                    <div className="relative hidden w-full h-full col-span-2 lg:block">
                         <Images active={active} />
                     </div>
                 </div>
             </main>
             <section className="py-10 border-b-4 bg-primary-light-bg border-primary-blue-dark">
-                <div className="container grid items-center justify-center min-h-screen grid-cols-1 gap-5 md:grid-cols-2">
+                <div className="container grid items-center justify-center grid-cols-1 gap-5 min-h-fit lg:grid-cols-2">
                     <h1 className="md:text-[112px] text-6xl text-primary-blue-dark leading-none font-bold font-sora ">
                         <Balancer>
                             ABOUT <br />
@@ -94,14 +94,14 @@ const Main = () => {
                     </h1>
 
                     <div className="row-span-2 pt-2 pb-4 pl-2 pr-4 rounded-lg bg-primary-blue-dark">
-                        <div className="relative w-full h-72 md:h-[500px]">
+                        <div className="relative w-full h-72 lg:h-[500px]">
                             <Image src={"/assets/2023/images/site-bg.png"} alt="About us" fill className="object-cover object-left-top rounded-md" />
                         </div>
                     </div>
-                    <div className="space-y-10 md:-mt-52">
+                    <div className="space-y-5">
                         <p className="text-lg font-normal tracking-wider uppercase text-primary-blue-dark">we are a community of Gen Z developers, founders, designers, and techies across Africa where we connect, learn, and discover life-changing opportunities.</p>
 
-                        <Button withArrow className="w-full md:w-fit">
+                        <Button withArrow className="w-full lg:w-fit">
                             <Link target={"_blank"} href={HACKATHON_REGISTRATION_URL}>
                                 Join the community
                             </Link>
@@ -130,28 +130,28 @@ const Main = () => {
                 </div>
             </section>
             <section className="py-10 border-b-4 bg-primary-light-bg border-primary-blue-dark">
-                <div className="container grid flex-col-reverse items-center justify-center min-h-screen grid-cols-1 gap-5 md:grid-cols-2 ">
-                    <h1 className="md:text-[100px] text-6xl text-primary-blue-dark leading-none font-bold font-sora md:hidden">
+                <div className="container grid flex-col-reverse items-center justify-center grid-cols-1 gap-5 min-h-fit lg:grid-cols-2 ">
+                    <h1 className="md:text-[100px] text-6xl text-primary-blue-dark leading-none font-bold font-sora lg:hidden">
                         <Balancer>
                             PREPARE TO HACK<span className="text-primary-purple">.</span>
                         </Balancer>
                     </h1>
 
-                    <div className="row-span-2 pt-2 pb-4 pl-2 pr-4 rounded-lg bg-primary-blue-dark">
+                    <div className="row-span-3 pt-2 pb-4 pl-2 pr-4 rounded-lg bg-primary-blue-dark">
                         <div className="relative w-full h-72 md:h-[500px]">
                             <Image src={"/assets/2023/images/genzhackfest-74.jpg"} alt="About us" fill className="object-cover rounded-md" />
                         </div>
                     </div>
-                    <h1 className="md:text-[100px] text-6xl text-primary-blue-dark leading-none font-bold font-sora hidden md:block">
+                    <h1 className="md:text-[100px] text-6xl text-primary-blue-dark leading-none font-bold font-sora hidden lg:block">
                         <Balancer>
                             PREPARE TO HACK<span className="text-primary-purple">.</span>
                         </Balancer>
                     </h1>
-                    <div className="space-y-10 md:-mt-52">
+                    <div className="row-span-2 space-y-5">
                         <p className="text-lg font-normal tracking-wider uppercase text-primary-blue-dark">
                             The hackathon aims to address a specific problem in Africa that is often neglected. It brings together individuals from various fields to collaborate and find innovative solutions. By leveraging their diverse skills and expertise, participants work towards creating tangible and impactful outcomes.
                         </p>
-                        <Button withArrow className="w-full md:w-fit">
+                        <Button withArrow className="w-full lg:w-fit">
                             Join the hackathon
                         </Button>
                     </div>
@@ -182,7 +182,7 @@ const Navigation = () => {
                     <Image src={"https://assets.genztechies.com/logo-coloured.svg"} alt="Logo" width={84} height={40} />
                 </li>
                 <li>
-                    <ul className="items-center hidden space-x-1 md:flex">
+                    <ul className="items-center hidden space-x-1 lg:flex">
                         {links.map((link, index) => (
                             <li key={index} className="p-4 font-semibold uppercase text-primary-dark font-rubik">
                                 <Link target={link.target || "_self"} href={link.href}>
@@ -193,12 +193,12 @@ const Navigation = () => {
                     </ul>
                 </li>
                 <li>
-                    <button className="rounded-full md:hidden text-primary-purple" onClick={() => setOpen(!open)}>
+                    <button className="rounded-full lg:hidden text-primary-purple" onClick={() => setOpen(!open)}>
                         <MenuIcon />
                     </button>
 
                     <Link target={"_blank"} href={HACKATHON_REGISTRATION_URL}>
-                        <Button withArrow className="hidden md:flex" size="sm">
+                        <Button withArrow className="hidden lg:flex" size="sm">
                             Register
                         </Button>
                     </Link>
@@ -206,7 +206,7 @@ const Navigation = () => {
             </ul>
 
             <ul
-                className={clsx("container z-50 absolute flex flex-col w-full md:hidden top-full shadow-md bg-primary-light-bg max-h-0 transition-all duration-300 ease-in-out overflow-hidden", {
+                className={clsx("container z-50 absolute flex flex-col w-full lg:hidden top-full shadow-md bg-primary-light-bg max-h-0 transition-all duration-300 ease-in-out overflow-hidden", {
                     "max-h-screen pb-10": open
                 })}
             >
