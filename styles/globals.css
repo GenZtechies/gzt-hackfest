@@ -48,3 +48,30 @@
         color: #2f2d2d; */
     }
 }
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.marquee-content {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee-animation 15s linear infinite;
+}
+
+.marquee-content-2 {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee-animation 15s linear infinite;
+    animation-delay: 15s;
+}
+
+@keyframes marquee-animation {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

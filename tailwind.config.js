@@ -28,7 +28,8 @@ module.exports = {
                     dark: "#151452",
                     light: "#D6D6F5",
                     "light-bg": "#F8F8FD",
-                    "text-dark": "#2F2D2D"
+                    "text-dark": "#2F2D2D",
+                    "blue-dark": "#0D0C24"
                 }
             },
             fontFamily: {

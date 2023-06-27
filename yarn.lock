@@ -289,6 +289,13 @@
     "@typescript-eslint/types" "5.59.1"
     eslint-visitor-keys "^3.3.0"
 
+"@usmangurowa/rcal@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@usmangurowa/rcal/-/rcal-1.0.1.tgz#6b350de2584f21f329357be1edc32acdbd7d362d"
+  integrity sha512-OgydlIqYxsbZXpKgs36Q0J1X8oe9a4+GyANeBfIApQx0LbproPvwndr3ZJM4uXbYOF3uXNCbCrInmYiiFgy0Ag==
+  dependencies:
+    react "^18.2.0"
+
 acorn-jsx@^5.3.2:
   version "5.3.2"
   resolved "https://registry.yarnpkg.com/acorn-jsx/-/acorn-jsx-5.3.2.tgz#7ed5bb55908b3b2f1bc55c6af1653bada7f07937"
@@ -2049,7 +2056,7 @@ react-wrap-balancer@^1.0.0:
   resolved "https://registry.yarnpkg.com/react-wrap-balancer/-/react-wrap-balancer-1.0.0.tgz#f45f8af7cf68d9d54d16a8cf271047b75d1431d7"
   integrity sha512-yjDH+I8WGyDfh95gKhX/6ckfSBAltwQkxiYxtLPlyIRQNUVSjvz1uHR6Hpy+zHyOkJQw6GEC5RPglA41QXvzyw==
 
-react@18.2.0:
+react@18.2.0, react@^18.2.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react/-/react-18.2.0.tgz#555bd98592883255fa00de14f1151a917b5d77d5"
   integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
