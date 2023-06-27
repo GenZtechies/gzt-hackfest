@@ -116,7 +116,7 @@ const Main = () => {
                             SPONSORS<span className="text-primary-yellow">.</span>
                         </Balancer>
                     </h1>
-                    <div className="grid grid-cols-2 gap-5 md:grid-cols-4">
+                    <div className="grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-4">
                         {supporters.map((supporter) => (
                             <div key={supporter.title} className="relative w-full px-8 border border-b-4 rounded-md h-52 bg-primary-light-bg border-primary-blue-dark " data-aos="fade-up">
                                 <Link href={supporter.link} target={"_blank"} className="relative w-full h-full">
