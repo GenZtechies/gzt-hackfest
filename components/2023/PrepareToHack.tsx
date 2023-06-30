@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 import { HiArrowRight } from "react-icons/hi";
+import SectionHeader from "./SectionHeader";
 
 type Props = {};
 
@@ -12,9 +13,7 @@ const PrepareToHack = (props: Props) => {
                 <Image src="/assets/2023/images/prepare-to-hack.png" className="object-contain" fill alt="paystack tour" />
             </div>
             <div className="w-full lg:basis-1/2">
-                <p className="text-[#0D0C24] text-5xl md:text-7xl font-extrabold uppercase lg:leading-[100px]">
-                    prepare to hack<span className="text-indigo-500 inline-block">.</span>
-                </p>
+                <SectionHeader text="prepare to hack" />
                 <p className="mt-4 text-lg text-[#2F2D2D] uppercase leading-[200.5%]">
                     The hackathon aims to address a specific problem in Africa that is often neglected. It brings together individuals from various fields to collaborate and find innovative solutions. By leveraging their diverse skills and expertise, participants work towards creating tangible and impactful outcomes.
                 </p>
