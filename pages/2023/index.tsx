@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { Balancer } from "react-wrap-balancer";
-import { Button } from "../../components/2023";
+import { Button, PastEvents, Speakers } from "@/components/2023";
 import { Seo } from "../../components";
 import { clsx } from "class-flex";
 
@@ -157,6 +157,8 @@ const Main = () => {
                     </div>
                 </div>
             </section>
+            <Speakers />
+            <PastEvents />
             {/* <section className="py-10 bg-primary-light-bg">
                 <div className="marquee-container">
                     <div className="marquee-content">
