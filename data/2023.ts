@@ -1,3 +1,4 @@
+import { PastEventsCardProps } from "@/components/2023/PastEventsCard";
 import { SpeakerCardProps } from "@/components/2023/SpeakerCard";
 
 export const BUY_CONFERENCE_TICKET_URL = "https://eventprime.co/e/gen-z-hackfest-2023";
@@ -19,5 +20,18 @@ export const SPEAKERS: SpeakerCardProps[] = [
         name: "Rukayat yaro",
         imgSrc: "/assets/2023/images/Rukayat-yaro.png",
         role: "product designer"
+    }
+];
+
+export const PAST_EVENTS: PastEventsCardProps[] = [
+    {
+        eventTitle: "hackfest 2022",
+        imgSrc: "/assets/2023/images/event-1.png",
+        link: "https://google.com"
+    },
+    {
+        eventTitle: "hackfest 2022",
+        imgSrc: "/assets/2023/images/event-2.png",
+        link: "https://google.com"
     }
 ];

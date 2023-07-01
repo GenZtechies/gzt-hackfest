@@ -1,5 +1,5 @@
 import { Seo } from "@/components";
-import { PrepareToHack, Speakers } from "@/components/2023";
+import { PastEvents, PrepareToHack, Speakers } from "@/components/2023";
 
 export default function Home() {
     return (
@@ -13,6 +13,7 @@ export default function Home() {
 
             <PrepareToHack />
             <Speakers />
+            <PastEvents />
         </>
     );
 }
