@@ -11,10 +11,10 @@ export type PastEventsCardProps = {
 const PastEventsCard = ({ imgSrc, eventTitle, link }: PastEventsCardProps) => {
     return (
         <div className="basis-1/2 flex flex-col items-center space-y-12">
-            <div className="relative w-full h-full">
+            <div className="relative w-full h-full flex justify-center">
                 <Image src={imgSrc} width={632} height={545} alt={eventTitle} />
 
-                <p className="bg-white text-primary-dark font-bold text-sm px-7 py-4 rounded-full uppercase absolute top-7 right-7 sm:right-20 md:right-7">{eventTitle}</p>
+                <p className="bg-white text-primary-dark font-bold text-sm px-7 py-4 rounded-full uppercase absolute top-7 right-7 xl:right-[calc((100%-632px+28px)/2)]">{eventTitle}</p>
             </div>
             <a href={link} target="_blank">
                 <button className="bg-white text-primary-purple font-medium uppercase px-16 py-4 rounded-full shadow-sm flex items-center">
