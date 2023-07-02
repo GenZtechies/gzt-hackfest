@@ -13,7 +13,7 @@
         "@usmangurowa/rcal": "^1.0.1",
         "aos": "^2.3.4",
         "class-flex": "^1.0.3",
-        "daisyui": "^2.51.6",
+        "daisyui": "^3.1.7",
         "next": "13.3.1",
         "next-sitemap": "^4.0.7",
         "react": "18.2.0",

@@ -1,4 +1,4 @@
-import { Button, PastEventsCard, SectionHeader, SpeakerCard } from "@/components/2023";
+import { Button, FAQCard, PastEventsCard, SectionHeader, SpeakerCard } from "@/components/2023";
 import { clsx } from "class-flex";
 import Image from "next/image";
 import Link from "next/link";
@@ -6,7 +6,8 @@ import { useRouter } from "next/router";
 import React from "react";
 import { Balancer } from "react-wrap-balancer";
 
-import { BUY_CONFERENCE_TICKET_URL, HACKATHON_REGISTRATION_URL, PAST_EVENTS, SPEAKERS } from "@/data/2023";
+import { BUY_CONFERENCE_TICKET_URL, FAQS_DATA, HACKATHON_REGISTRATION_URL, PAST_EVENTS, SPEAKERS } from "@/data/2023";
+import arrayFns from "@/utils/array-fns";
 
 const links = [
     {
@@ -169,10 +170,10 @@ const Main = () => {
             <section className="py-10 bg-primary-light-bg border-b-4 border-b-primary-blue-dark">
                 <div className="marquee-container">
                     <div className="marquee-content">
-                        <h1 className="md:text-[100px] text-6xl text-primary-blue-dark leading-none font-bold font-sora uppercase">see you at hackfest 2023 &bull; see you at hackfest 2023 &bull; see you at hackfest 2023 </h1>
+                        <h1 className="text-6xl md:text-[100px] text-primary-blue-dark leading-none font-bold font-sora uppercase">see you at hackfest 2023 &bull; see you at hackfest 2023 &bull; see you at hackfest 2023 </h1>
                     </div>
                     <div className="marquee-content-2">
-                        <h1 className="md:text-[100px] text-6xl text-primary-blue-dark leading-none font-bold font-sora uppercase">see you at hackfest 2023 &bull; see you at hackfest 2023 &bull; see you at hackfest 2023 </h1>
+                        <h1 className="text-6xl md:text-[100px] text-primary-blue-dark leading-none font-bold font-sora uppercase">see you at hackfest 2023 &bull; see you at hackfest 2023 &bull; see you at hackfest 2023 </h1>
                     </div>
                 </div>
             </section>
@@ -182,6 +183,21 @@ const Main = () => {
                 <div className="mt-[56px] flex flex-col md:flex-row basis-1/2 gap-6">
                     {PAST_EVENTS.map((event, i) => (
                         <PastEventsCard key={i} {...event} />
+                    ))}
+                </div>
+            </section>
+
+            {/* FAQs */}
+            <section className="px-6 py-20 md:px-20 md:py-[90px] bg-[#EAEAEE]">
+                <h1 className="text-center text-[48px] md:text-[64px] text-primary-blue-dark leading-none font-bold font-sora">FAQs</h1>
+
+                <div className="mt-[90px] grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    {arrayFns.divideArrayIntoTwo(FAQS_DATA).map((data, i) => (
+                        <div key={i} className="join join-vertical w-full rounded-none">
+                            {data.map((faq, i) => (
+                                <FAQCard key={i} {...faq} />
+                            ))}
+                        </div>
                     ))}
                 </div>
             </section>
