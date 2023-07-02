@@ -1,13 +1,12 @@
-import React from "react";
+import { Button, PastEventsCard, SectionHeader, SpeakerCard } from "@/components/2023";
+import { clsx } from "class-flex";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import React from "react";
 import { Balancer } from "react-wrap-balancer";
-import { Button, PastEvents, Speakers } from "@/components/2023";
-import { Seo } from "../../components";
-import { clsx } from "class-flex";
 
-import { BUY_CONFERENCE_TICKET_URL, HACKATHON_REGISTRATION_URL, HACKFEST_2022_PICTURES_URL } from "../../data/2023";
+import { BUY_CONFERENCE_TICKET_URL, HACKATHON_REGISTRATION_URL, PAST_EVENTS, SPEAKERS } from "@/data/2023";
 
 const links = [
     {
@@ -157,7 +156,16 @@ const Main = () => {
                     </div>
                 </div>
             </section>
-            <Speakers />
+            <section className="px-6 py-20 md:px-20 md:py-[90px] bg-[#EAEAEE] border-b-4 border-b-[#0D0C24]">
+                <SectionHeader text="speakers" />
+
+                {/* Speakers */}
+                <div className="mt-[100px] flex space-x-4 overflow-x-auto scrollbar-none">
+                    {SPEAKERS.map((speaker, i) => (
+                        <SpeakerCard key={i} {...speaker} />
+                    ))}
+                </div>
+            </section>
             <section className="py-10 bg-primary-light-bg border-b-4 border-b-primary-blue-dark">
                 <div className="marquee-container">
                     <div className="marquee-content">
@@ -168,7 +176,15 @@ const Main = () => {
                     </div>
                 </div>
             </section>
-            <PastEvents />
+            <section className="px-6 py-20 md:px-20 md:py-[90px] bg-[#EAEAEE]">
+                <SectionHeader text="Past Events" />
+
+                <div className="mt-[56px] flex flex-col md:flex-row basis-1/2 gap-6">
+                    {PAST_EVENTS.map((event, i) => (
+                        <PastEventsCard key={i} {...event} />
+                    ))}
+                </div>
+            </section>
         </>
     );
 };
