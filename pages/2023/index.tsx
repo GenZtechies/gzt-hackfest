@@ -51,10 +51,6 @@ const Main = () => {
         };
     }, [active]);
 
-    React.useEffect(() => {
-        console.log(FOOTER_LINKS);
-    }, []);
-
     return (
         <>
             <main className="flex flex-col justify-between w-screen h-screen border-b-4 bg-primary-light-bg border-primary-blue-dark">
