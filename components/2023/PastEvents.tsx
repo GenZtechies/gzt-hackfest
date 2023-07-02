@@ -7,7 +7,7 @@ type Props = {};
 
 const PastEvents = (props: Props) => {
     return (
-        <div className="px-6 py-20 md:px-20 md:py-[90px] bg-[#EAEAEE]">
+        <section className="px-6 py-20 md:px-20 md:py-[90px] bg-[#EAEAEE]">
             <SectionHeader text="Past Events" />
 
             <div className="mt-[56px] flex flex-col md:flex-row basis-1/2 gap-6">
@@ -15,7 +15,7 @@ const PastEvents = (props: Props) => {
                     <PastEventsCard key={i} {...event} />
                 ))}
             </div>
-        </div>
+        </section>
     );
 };
 

@@ -7,7 +7,7 @@ type Props = {};
 
 const Speakers = (_props: Props) => {
     return (
-        <div className="px-6 py-20 md:px-20 md:py-[90px] bg-[#EAEAEE] border-b-4 border-b-[#0D0C24]">
+        <section className="px-6 py-20 md:px-20 md:py-[90px] bg-[#EAEAEE] border-b-4 border-b-[#0D0C24]">
             <SectionHeader text="speakers" />
 
             {/* Speakers */}
@@ -16,7 +16,7 @@ const Speakers = (_props: Props) => {
                     <SpeakerCard key={i} {...speaker} />
                 ))}
             </div>
-        </div>
+        </section>
     );
 };
 

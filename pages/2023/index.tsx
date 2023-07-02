@@ -158,8 +158,7 @@ const Main = () => {
                 </div>
             </section>
             <Speakers />
-            <PastEvents />
-            {/* <section className="py-10 bg-primary-light-bg">
+            <section className="py-10 bg-primary-light-bg border-b-4 border-b-primary-blue-dark">
                 <div className="marquee-container">
                     <div className="marquee-content">
                         <h1 className="md:text-[100px] text-6xl text-primary-blue-dark leading-none font-bold font-sora uppercase">see you at hackfest 2023 &bull; see you at hackfest 2023 &bull; see you at hackfest 2023 </h1>
@@ -168,7 +167,8 @@ const Main = () => {
                         <h1 className="md:text-[100px] text-6xl text-primary-blue-dark leading-none font-bold font-sora uppercase">see you at hackfest 2023 &bull; see you at hackfest 2023 &bull; see you at hackfest 2023 </h1>
                     </div>
                 </div>
-            </section> */}
+            </section>
+            <PastEvents />
         </>
     );
 };
