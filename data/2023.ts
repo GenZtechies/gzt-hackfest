@@ -102,3 +102,55 @@ export const FAQS_DATA: FAQCardProps[] = [
         answer: "Email us at hello@genztechies.com with any questions you may have and we'll get back to you ASAP."
     }
 ];
+export const FOOTER_LINKS = [
+    {
+        category: "Quick Links",
+        links: [
+            {
+                title: "Initiate",
+                href: "https://initiate.genztechies.com"
+            },
+            {
+                title: "Donate",
+                href: "https://donate.genztechies.com"
+            },
+            {
+                title: "Store",
+                href: "https://store.genztechies.com"
+            },
+            {
+                title: "Gallery",
+                href: "https://photos.app.goo.gl/MnLqmyVyAn8ivCc19"
+            },
+            {
+                title: "Press",
+                href: "https://press.genztechies.com"
+            }
+        ]
+    },
+    {
+        category: "Contact",
+        links: [
+            {
+                title: "Twitter",
+                href: "https://twitter.com/genztechies"
+            },
+            {
+                title: "Instagram",
+                href: "https://instagram.com/genztechies"
+            },
+            {
+                title: "LinkedIn",
+                href: "https://linkedin.com/company/genztechies"
+            },
+            {
+                title: "Facebook",
+                href: "https://facebook.com/genztechies"
+            },
+            {
+                title: "Genz@gmail.com",
+                href: "mailto:hello@gentechies.com"
+            }
+        ]
+    }
+];

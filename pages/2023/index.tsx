@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 import React from "react";
 import { Balancer } from "react-wrap-balancer";
 
-import { BUY_CONFERENCE_TICKET_URL, FAQS_DATA, HACKATHON_REGISTRATION_URL, PAST_EVENTS, SPEAKERS } from "@/data/2023";
+import { BUY_CONFERENCE_TICKET_URL, FAQS_DATA, FOOTER_LINKS, HACKATHON_REGISTRATION_URL, PAST_EVENTS, SPEAKERS } from "@/data/2023";
 import arrayFns from "@/utils/array-fns";
 
 const links = [
@@ -50,6 +50,10 @@ const Main = () => {
             clearInterval(interval);
         };
     }, [active]);
+
+    React.useEffect(() => {
+        console.log(FOOTER_LINKS);
+    }, []);
 
     return (
         <>
@@ -201,6 +205,41 @@ const Main = () => {
                     ))}
                 </div>
             </section>
+
+            <footer className="px-6 py-20 md:px-20 md:py-[90px] bg-primary-purple space-y-[100px] text-white">
+                <div className="flex flex-col md:flex-row md:justify-between">
+                    <div className="space-y-6">
+                        <Image className="-ml-6" src={"/assets/2023/images/footer-logo.svg"} alt="Logo" width={150} height={150} />
+                        <p className="w-[250px] sm:w-[300px] uppercase tracking-wider">GenZtechies is a nonprofit community fiscally sponsored by The Hack Foundation Nonprofit EIN: 81-2908499.</p>
+                    </div>
+
+                    <div className="space-x-[32px] md:space-x-[64px] lg:space-x-[110px] flex mt-[40px] md:mt-0">
+                        {FOOTER_LINKS.map((link, i) => (
+                            <div key={i}>
+                                <h3 className="text-white font-2xl font-sora font-bold uppercase">{link.category}</h3>
+                                <ul className="mt-12 space-y-6">
+                                    {link.links.map((link, i) => (
+                                        <li key={i}>
+                                            <Link className="text-white uppercase" href={link.href}>
+                                                {link.title}
+                                            </Link>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                <div className="flex justify-center">
+                    {/* <div>
+                            <h3 className="text-white font-2xl font-sora font-bold uppercase">GET ALL LATEST UPDATES</h3>
+                        <form className="">
+                        </form>
+                    </div> */}
+                    <SectionHeader text="thank you" textClassName="text-white" dotClassName="text-primary-green" />
+                </div>
+            </footer>
         </>
     );
 };
