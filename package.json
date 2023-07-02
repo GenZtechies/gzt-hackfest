@@ -13,12 +13,13 @@
         "@usmangurowa/rcal": "^1.0.1",
         "aos": "^2.3.4",
         "class-flex": "^1.0.3",
-        "daisyui": "^2.51.6",
+        "daisyui": "^3.1.7",
         "next": "13.3.1",
         "next-sitemap": "^4.0.7",
         "react": "18.2.0",
         "react-dom": "18.2.0",
-        "react-wrap-balancer": "^1.0.0"
+        "react-wrap-balancer": "^1.0.0",
+        "react-icons": "^4.10.1"
     },
     "devDependencies": {
         "@types/aos": "^3.0.4",
@@ -29,6 +30,7 @@
         "eslint": "8.39.0",
         "eslint-config-next": "13.3.1",
         "postcss": "8.4.23",
+        "tailwind-scrollbar": "^3.0.4",
         "tailwindcss": "3.3.1",
         "typescript": "5.0.4"
     }

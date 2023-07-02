@@ -1,13 +1,13 @@
-import React from "react";
+import { Button, FAQCard, PastEventsCard, SectionHeader, SpeakerCard } from "@/components/2023";
+import { clsx } from "class-flex";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import React from "react";
 import { Balancer } from "react-wrap-balancer";
-import { Button } from "../../components/2023";
-import { Seo } from "../../components";
-import { clsx } from "class-flex";
 
-import { BUY_CONFERENCE_TICKET_URL, HACKATHON_REGISTRATION_URL, HACKFEST_2022_PICTURES_URL } from "../../data/2023";
+import { BUY_CONFERENCE_TICKET_URL, FAQS_DATA, FOOTER_LINKS, HACKATHON_REGISTRATION_URL, PAST_EVENTS, SPEAKERS } from "@/data/2023";
+import arrayFns from "@/utils/array-fns";
 
 const links = [
     {
@@ -157,16 +157,85 @@ const Main = () => {
                     </div>
                 </div>
             </section>
-            {/* <section className="py-10 bg-primary-light-bg">
+            <section className="px-6 py-20 md:px-20 md:py-[90px] bg-[#EAEAEE] border-b-4 border-b-[#0D0C24]">
+                <SectionHeader text="speakers" />
+
+                {/* Speakers */}
+                <div className="mt-[100px] flex space-x-4 overflow-x-auto scrollbar-none">
+                    {SPEAKERS.map((speaker, i) => (
+                        <SpeakerCard key={i} {...speaker} />
+                    ))}
+                </div>
+            </section>
+            <section className="py-10 bg-primary-light-bg border-b-4 border-b-primary-blue-dark">
                 <div className="marquee-container">
                     <div className="marquee-content">
-                        <h1 className="md:text-[100px] text-6xl text-primary-blue-dark leading-none font-bold font-sora uppercase">see you at hackfest 2023 &bull; see you at hackfest 2023 &bull; see you at hackfest 2023 </h1>
+                        <h1 className="text-6xl md:text-[100px] text-primary-blue-dark leading-none font-bold font-sora uppercase">see you at hackfest 2023 &bull; see you at hackfest 2023 &bull; see you at hackfest 2023 </h1>
                     </div>
                     <div className="marquee-content-2">
-                        <h1 className="md:text-[100px] text-6xl text-primary-blue-dark leading-none font-bold font-sora uppercase">see you at hackfest 2023 &bull; see you at hackfest 2023 &bull; see you at hackfest 2023 </h1>
+                        <h1 className="text-6xl md:text-[100px] text-primary-blue-dark leading-none font-bold font-sora uppercase">see you at hackfest 2023 &bull; see you at hackfest 2023 &bull; see you at hackfest 2023 </h1>
                     </div>
                 </div>
-            </section> */}
+            </section>
+            <section className="px-6 py-20 md:px-20 md:py-[90px] bg-[#EAEAEE]">
+                <SectionHeader text="Past Events" />
+
+                <div className="mt-[56px] flex flex-col md:flex-row basis-1/2 gap-6">
+                    {PAST_EVENTS.map((event, i) => (
+                        <PastEventsCard key={i} {...event} />
+                    ))}
+                </div>
+            </section>
+
+            {/* FAQs */}
+            <section className="px-6 py-20 md:px-20 md:py-[90px] bg-[#EAEAEE]">
+                <h1 className="text-center text-[48px] md:text-[64px] text-primary-blue-dark leading-none font-bold font-sora">FAQs</h1>
+
+                <div className="mt-[90px] grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    {arrayFns.divideArrayIntoTwo(FAQS_DATA).map((data, i) => (
+                        <div key={i} className="join join-vertical w-full rounded-none">
+                            {data.map((faq, i) => (
+                                <FAQCard key={i} {...faq} />
+                            ))}
+                        </div>
+                    ))}
+                </div>
+            </section>
+
+            <footer className="px-6 py-20 md:px-20 md:py-[90px] bg-primary-purple space-y-[100px] text-white">
+                <div className="flex flex-col md:flex-row md:justify-between">
+                    <div className="space-y-6">
+                        <Image className="-ml-6" src={"/assets/2023/images/footer-logo.svg"} alt="Logo" width={150} height={150} />
+                        <p className="w-[250px] sm:w-[300px] uppercase tracking-wider">GenZtechies is a nonprofit community fiscally sponsored by The Hack Foundation Nonprofit EIN: 81-2908499.</p>
+                    </div>
+
+                    <div className="space-x-[32px] md:space-x-[64px] lg:space-x-[110px] flex mt-[40px] md:mt-0">
+                        {FOOTER_LINKS.map((link, i) => (
+                            <div key={i}>
+                                <h3 className="text-white font-2xl font-sora font-bold uppercase">{link.category}</h3>
+                                <ul className="mt-12 space-y-6">
+                                    {link.links.map((link, i) => (
+                                        <li key={i}>
+                                            <Link className="text-white uppercase" href={link.href}>
+                                                {link.title}
+                                            </Link>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                <div className="flex justify-center">
+                    {/* <div>
+                            <h3 className="text-white font-2xl font-sora font-bold uppercase">GET ALL LATEST UPDATES</h3>
+                        <form className="">
+                        </form>
+                    </div> */}
+                    <SectionHeader text="thank you" textClassName="text-white" dotClassName="text-primary-green" />
+                </div>
+            </footer>
         </>
     );
 };
