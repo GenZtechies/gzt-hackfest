@@ -544,10 +544,10 @@ chokidar@^3.5.3:
   optionalDependencies:
     fsevents "~2.3.2"
 
-class-flex@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/class-flex/-/class-flex-1.0.3.tgz#2ce3a306699d54af464397690c01410cc5743802"
-  integrity sha512-IxzsP8lo8qgpUkNo+TcxJjF2qQ3O2+vRn5cnPuf0JgY5EzUQAjyvvg39ColJ2BSiSFkfe3Qmx+jK+ArBYCtbUQ==
+class-flex@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/class-flex/-/class-flex-1.0.4.tgz#b63ec342135df2eb86c2430347da4c46d1342bc3"
+  integrity sha512-7/4N9d33NaRf5G5Wk24oHfoYE/rM6ffcVkOL8l/LIL2vB9iMmT1D4E3Gqjtj2JTplM2vMYQZjKP1uFpwdUMx+Q==
   dependencies:
     clsx "^1.2.1"
     tailwind-merge "^1.13.2"
