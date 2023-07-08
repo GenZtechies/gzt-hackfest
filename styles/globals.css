@@ -50,27 +50,21 @@
     }
 }
 
-.marquee-container {
+.marquee {
     width: 100%;
     overflow: hidden;
-}
-
-.marquee-content {
-    display: inline-block;
     white-space: nowrap;
-    animation: marquee-animation 15s linear infinite;
+    display: flex;
 }
 
-.marquee-content-2 {
-    display: inline-block;
-    white-space: nowrap;
-    animation: marquee-animation 15s linear infinite;
-    animation-delay: 15s;
+.marquee span {
+    animation: marquee 10s linear infinite;
+    padding-right: 100vw;
 }
 
-@keyframes marquee-animation {
+@keyframes marquee {
     0% {
-        transform: translateX(100%);
+        transform: translateX(0%);
     }
     100% {
         transform: translateX(-100%);
