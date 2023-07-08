@@ -1,70 +1,278 @@
+import React from "react";
 import Link from "next/link";
+import Image from "next/image";
+import { clsx } from "class-flex";
+import { Balancer } from "react-wrap-balancer";
 
-import { Seo } from "../../components";
-import { BUY_CONFERENCE_TICKET_URL, HACKATHON_REGISTRATION_URL, HACKFEST_2022_PICTURES_URL } from "../../data/2023";
+import { Seo } from "@/components";
+import arrayFns from "@/utils/array-fns";
+import { Button, FAQCard, PastEventsCard, SectionHeader, SpeakerCard } from "@/components/2023";
+import { JOIN_THE_COMMUNITY_URL, BUY_CONFERENCE_TICKET_URL, FAQS_DATA, TOP_NAV_LINKS, FOOTER_LINKS, HACKATHON_REGISTRATION_URL, PAST_EVENTS, SPEAKERS, PREVIOUS_PARTNERS, SPONSORSHIP_DECK_URL, SESSIONIZE_URL } from "@/data/2023";
 
-const ArrowSvg = () => (
-    <svg className="w-3 aspect-square animate-bounce" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-            d="M24.7132 1.99999C24.7132 1.17157 24.0416 0.499992 23.2132 0.499992H9.7132C8.88478 0.499992 8.2132 1.17157 8.2132 1.99999C8.2132 2.82842 8.88478 3.49999 9.7132 3.49999L21.7132 3.49999L21.7132 15.5C21.7132 16.3284 22.3848 17 23.2132 17C24.0416 17 24.7132 16.3284 24.7132 15.5V1.99999ZM3.06066 24.2739L24.2739 3.06065L22.1525 0.939332L0.93934 22.1525L3.06066 24.2739Z"
-            fill="white"
-        />
-    </svg>
-);
+const Main = () => {
+    const [open, setOpen] = React.useState(false);
+    const [active, setActive] = React.useState(1);
 
-export default function Home() {
+    React.useEffect(() => {
+        const interval = setInterval(() => setActive(active >= 6 ? 1 : active + 1), 2000);
+
+        return () => {
+            clearInterval(interval);
+        };
+    }, [active]);
+
     return (
         <>
             <Seo
                 // breaker
                 title="Gen Z Hackfest 2023"
                 image="/assets/2023/site-metaimage.png"
-                description="Gen Z Hackfest 2023 is an annual hybrid event organised by the GenZtechies Community 🚀"
+                description="Gen Z Hackfest 2023 is a week-long hackathon and one-day conference aimed at connecting Gen Z’s in tech on a large scale."
             />
 
-            <div className="h-screen w-full bg-black/70 bg-blend-overlay bg-[url('/assets/2023/images/site-bg.png')] bg-no-repeat bg-cover bg-center top-0 fixed -z-50" />
-            {/* <div className="h-screen w-full bg-black/20 bg-blend-overlay bg-[url('/assets/2023/images/site-bg-2.png')] bg-no-repeat bg-cover bg-center top-0 fixed -z-50" /> */}
+            <main id="home" className="flex flex-col justify-between w-screen h-screen border-b-4 bg-primary-light-bg border-primary-blue-dark">
+                <nav className="relative w-full">
+                    <ul className="container flex items-center justify-between py-2">
+                        <li>
+                            <Image src={"https://assets.genztechies.com/logo-coloured.svg"} alt="Logo" width={84} height={40} />
+                        </li>
 
-            <div className="flex flex-col items-center min-h-screen p-5">
-                <div className="m-auto w-full space-y-10">
-                    <h2 className="text-center text-5xl md:text-8xl font-rubik font-extrabold text-white leading-tight">
-                        <span className="block">Gen Z </span>
-                        <span>HackFest &nbsp; </span>
-                        <span className="block lg:inline">
-                            2<b className="text-5xl md:text-8xl">🚀</b>23
-                        </span>
-                    </h2>
+                        <li>
+                            <ul className="items-center hidden space-x-1 lg:flex">
+                                {TOP_NAV_LINKS.map((link, index) => (
+                                    <li key={index} className="p-4 font-semibold uppercase text-primary-dark font-rubik">
+                                        <Link href={link.href}>{link.name}</Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        </li>
 
-                    <div className="flex flex-col justify-center space-y-2">
-                        <h3 className="text-center text-xl md:text-2xl font-sora font-light text-white">August 21st &mdash; 26th</h3>
-                        <h3 className="text-center text-3xl md:text-4xl font-sora font-medium text-white">Lagos, Nigeria</h3>
+                        <li>
+                            <button className="rounded-full lg:hidden text-primary-purple" onClick={() => setOpen(!open)}>
+                                <svg viewBox="0 0 25 19" className={clsx("w-6 h-6")} stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="0.285645" y1="1.89285" x2="24.2856" y2="1.89285" stroke="currentColor" strokeWidth="2.5"></line>
+                                    <line x1="6.28564" y1="9.60715" x2="24.2856" y2="9.60715" stroke="currentColor" strokeWidth="2.5"></line>
+                                    <line x1="12.2949" y1="17.3214" x2="24.2949" y2="17.3214" stroke="currentColor" strokeWidth="2.5"></line>
+                                </svg>
+                            </button>
+
+                            <Link target="_blank" passHref href={BUY_CONFERENCE_TICKET_URL}>
+                                <Button withArrow className="hidden lg:flex" size="sm">
+                                    Get Tickets
+                                </Button>
+                            </Link>
+                        </li>
+                    </ul>
+
+                    <ul className={clsx("container z-50 absolute flex flex-col w-full lg:hidden top-full shadow-md bg-primary-light-bg max-h-0 transition-all duration-300 ease-in-out overflow-hidden", { "max-h-screen pb-10": open })}>
+                        {TOP_NAV_LINKS.map((link, index) => (
+                            <li key={index} className="p-4 font-semibold uppercase text-primary-dark font-rubik">
+                                <Link href={link.href}>{link.name}</Link>
+                            </li>
+                        ))}
+
+                        <li>
+                            <Link href={BUY_CONFERENCE_TICKET_URL} passHref>
+                                <Button withArrow className="w-full" size="sm">
+                                    Get Tickets
+                                </Button>
+                            </Link>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div className="container grid items-center justify-center flex-grow w-full grid-cols-1 gap-10 md:grid-cols-5">
+                    <div className="flex flex-col justify-around w-full col-span-3 space-y-5 h-4/5">
+                        <h1>
+                            <Balancer>
+                                <span className="font-extrabold font-sora leading-none text-stroke-sm md:text-stroke text-6xl md:text-[112px]">GEN Z HACKFEST 2023</span>
+
+                                <span className="inline-block ml-5">
+                                    <span className="text-sm font-medium tracking-wider md:text-xl text-primary-dark font-rubik">August 21st - 26th.</span> <br />
+                                    <span className="text-lg font-semibold tracking-widest capitalize md:text-4xl text-primary-dark font-rubik">lagos, Nigeria</span>
+                                </span>
+                            </Balancer>
+                        </h1>
+
+                        <div className="flex flex-col items-center w-full space-y-5 md:space-y-0 md:space-x-5 md:flex-row">
+                            <Link target="_blank" passHref href={HACKATHON_REGISTRATION_URL}>
+                                <Button withArrow>Register For Hackathon</Button>
+                            </Link>
+
+                            {/* <Link target="_blank" passHref href={SESSIONIZE_URL}>
+                                <Button withArrow variant="outlined">
+                                    speak at hackfest
+                                </Button>
+                            </Link> */}
+
+                            <Link target="_blank" passHref href={BUY_CONFERENCE_TICKET_URL}>
+                                <Button withArrow variant="outlined">
+                                    Get Conference Tickets
+                                </Button>
+                            </Link>
+                        </div>
                     </div>
 
-                    <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:pt-10">
-                        <Link href="https://docsend.com/view/x3t5y66xybdyyxwq" className="btn btn-lg btn-wide bg-white hover:bg-white border-none normal-case text-primary-purple font-sora gap-4">
-                            Become a Sponsor
-                        </Link>
-                        <Link href="https://sessionize.com/genzhackfest-2023" className="btn btn-lg btn-wide bg-transparent hover:bg-transparent border-white hover:border-white normal-case text-white font-sora gap-4">
-                            Speak at HackFest
-                        </Link>
-                    </div>
-
-                    <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:pt-10">
-                        <Link href={BUY_CONFERENCE_TICKET_URL} className="btn btn-md md:btn-lg btn-ghost hover:bg-transparent normal-case text-white no-animation font-sora gap-4">
-                            Get conference Tickets
-                            <ArrowSvg />
-                        </Link>
-                        <Link href={HACKATHON_REGISTRATION_URL} className="btn btn-md md:btn-lg btn-ghost hover:bg-transparent normal-case text-white no-animation font-sora gap-4">
-                            Register for Hackathon
-                            <ArrowSvg />
-                        </Link>
-                        <Link href={HACKFEST_2022_PICTURES_URL} className="btn btn-md md:btn-lg btn-ghost hover:bg-transparent normal-case text-white no-animation font-sora gap-4">
-                            View past Pictures
-                            <ArrowSvg />
-                        </Link>
+                    <div className="relative hidden w-full h-full col-span-2 lg:block">
+                        {Array.from({ length: 6 }).map((_, index) => (
+                            <Image
+                                fill
+                                key={index}
+                                alt={`Emoji-${index + 1}`}
+                                src={require(`../../public/assets/2023/images/emoji-${index + 1}.png`)}
+                                className={clsx("object-contain transition-all duration-1000 ease-in-out", {
+                                    "opacity-0": active !== index + 1,
+                                    "opacity-100": active === index + 1
+                                })}
+                            />
+                        ))}
                     </div>
                 </div>
-            </div>
+            </main>
+
+            <section id="about-us" className="px-6 py-24 md:px-20 bg-[#FBFBFF] flex flex-col-reverse lg:flex-row justify-center items-center lg:space-x-20">
+                <div className="w-full lg:basis-1/2">
+                    <SectionHeader text="about us" textClassName="md:text-[112px] text-6xl" dotClassName="text-primary-purple" />
+
+                    <p className="text-lg text-[#2F2D2D] uppercase leading-[200.5%] py-10">we are a community of Gen Z developers, founders, designers, and techies across Africa where we connect, learn, and discover life-changing opportunities.</p>
+
+                    <Link target="_blank" passHref href={JOIN_THE_COMMUNITY_URL} className="inline-block py-4">
+                        <Button withArrow className="w-full lg:w-fit">
+                            Join the community
+                        </Button>
+                    </Link>
+                </div>
+
+                <div className="relative w-full lg:basis-1/2 aspect-square">
+                    <Image fill alt="About us" className="object-contain rounded-md" src={require(`../../public/assets/2023/images/about-us.png`)} />
+                </div>
+            </section>
+
+            <section id="previous-partners" className="py-20 border-b-4 bg-primary-purple border-primary-blue-dark">
+                <div className="container space-y-10">
+                    <h1 className="md:text-[80px] text-4xl text-white leading-none font-bold font-sora text-center">
+                        <SectionHeader text="previous partners" textClassName="text-white" dotClassName="text-primary-yellow" />
+                    </h1>
+
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+                        {PREVIOUS_PARTNERS.map((partner) => (
+                            <div key={partner.title} className="relative md:w-full px-8 border border-b-4 rounded-md aspect-square md:h-52 bg-primary-light-bg border-primary-blue-dark" data-aos="fade-up">
+                                <Link href={partner.link} target="_blank">
+                                    <div className="relative w-full h-full">
+                                        <Image src={`/assets/2023/images/previous_partners/${partner.title}.svg`} fill alt="company-logo" />
+                                    </div>
+                                </Link>
+                            </div>
+                        ))}
+
+                        <div className="col-span-2 md:col-span-3 lg:col-span-4 pt-10">
+                            <div className="py-5 mx-auto space-y-3 md:w-4/5">
+                                <h1 className="text-4xl md:text-5xl font-extrabold text-center text-white uppercase font-sora">Sponsor hackfest 2023</h1>
+                                <p className="mx-auto text-lg text-center text-white">Become a sponsor of the largest Gen Z developers, founders, designers, and techies festival.</p>
+                            </div>
+
+                            <Link target="_blank" href={SPONSORSHIP_DECK_URL} passHref>
+                                <Button className="mx-auto bg-primary-green hover:bg-primary-green/80 ">Become a sponsor</Button>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="hackathon" className="px-6 py-24 md:px-20 bg-[#FBFBFF] flex flex-col lg:flex-row justify-center items-center lg:space-x-20">
+                <div className="relative w-full lg:basis-1/2 aspect-square">
+                    <Image src="/assets/2023/images/prepare-to-hack.png" className="object-contain" fill alt="paystack tour" />
+                </div>
+
+                <div className="w-full lg:basis-1/2">
+                    <SectionHeader text="prepare to hack" dotClassName="text-primary-purple" />
+
+                    <p className="text-lg text-[#2F2D2D] uppercase leading-[200.5%] py-5">
+                        The hackathon aims to address a specific problem in Africa that is often neglected. It brings together individuals from various fields to collaborate and find innovative solutions. By leveraging their diverse skills and expertise, participants work towards creating tangible and impactful outcomes.
+                    </p>
+
+                    <Link target="_blank" passHref href={HACKATHON_REGISTRATION_URL} className="inline-block py-4">
+                        <Button withArrow className="w-full lg:w-fit">
+                            Join the hackathon
+                        </Button>
+                    </Link>
+                </div>
+            </section>
+
+            {SPEAKERS.length > 0 && (
+                <section id="speakers" className="px-6 py-24 md:px-20 bg-[#EAEAEE]">
+                    <SectionHeader text="speakers" />
+
+                    <div className="mt-[56px] flex flex-col md:flex-row gap-4 md:overflow-x-auto md:scrollbar-none">
+                        {SPEAKERS.map((speaker, i) => (
+                            <SpeakerCard key={i} {...speaker} />
+                        ))}
+                    </div>
+                </section>
+            )}
+
+            <section id="see-you-soon-marquee" className="py-10 bg-primary-light-bg marquee border-y-4 border-y-primary-blue-dark">
+                <span className="text-6xl md:text-[100px] text-primary-blue-dark leading-none font-bold font-sora uppercase">&bull; See you at the hackathon &bull; See you at the hackathon &bull;</span>
+                <span className="text-6xl md:text-[100px] text-primary-blue-dark leading-none font-bold font-sora uppercase">&bull; See you at the hackathon &bull; See you at the hackathon &bull;</span>
+            </section>
+
+            <section id="past-events" className="px-6 py-24 md:px-20 bg-[#EAEAEE]">
+                <SectionHeader text="Past Events" />
+
+                <div className="mt-[56px] flex flex-col md:flex-row basis-1/2 gap-6">
+                    {PAST_EVENTS.map((event, i) => (
+                        <PastEventsCard key={i} {...event} />
+                    ))}
+                </div>
+            </section>
+
+            <section id="faqs" className="px-6 py-24 md:px-20 bg-[#EAEAEE] border-t-4">
+                <SectionHeader text="FAQs" textClassName="text-center" />
+
+                <div className="mt-[56px] grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    {arrayFns.divideArrayIntoTwo(FAQS_DATA).map((data, i) => (
+                        <div key={i} className="w-full rounded-none join join-vertical">
+                            {data.map((faq, i) => (
+                                <FAQCard key={i} {...faq} />
+                            ))}
+                        </div>
+                    ))}
+                </div>
+            </section>
+
+            <footer id="footer" className="px-6 py-24 md:px-20 bg-primary-purple space-y-[100px] text-white">
+                <div className="flex flex-col md:flex-row md:justify-between">
+                    <div className="space-y-6">
+                        <Image className="-ml-6" src={"https://assets.genztechies.com/icon-coloured.svg"} alt="Logo" width={150} height={150} />
+
+                        <p className="w-[250px] sm:w-[300px] uppercase tracking-wider">GenZtechies is a nonprofit community fiscally sponsored by The Hack Foundation Nonprofit EIN: 81-2908499.</p>
+                    </div>
+
+                    <div className="space-x-[32px] md:space-x-[64px] lg:space-x-[110px] flex mt-[40px] md:mt-0">
+                        {FOOTER_LINKS.map((link, i) => (
+                            <div key={i}>
+                                <h3 className="font-bold text-white uppercase font-2xl font-sora">{link.category}</h3>
+
+                                <ul className="mt-12 space-y-6">
+                                    {link.links.map((link, i) => (
+                                        <li key={i}>
+                                            <Link className="text-white uppercase" href={link.href}>
+                                                {link.title}
+                                            </Link>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                <div className="flex justify-center">
+                    <SectionHeader text="thank you" textClassName="text-white" dotClassName="text-primary-green" />
+                </div>
+            </footer>
         </>
     );
-}
+};
+
+export default Main;

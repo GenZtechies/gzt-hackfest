@@ -8,6 +8,7 @@
     html {
         scroll-behavior: smooth;
         font-family: "Rubik", sans-serif;
+        overflow-x: hidden;
     }
 
     /* Remove daisy ui outline on form elements */
@@ -28,5 +29,44 @@
     input[type="number"]::-webkit-outer-spin-button {
         margin: 0;
         -webkit-appearance: none;
+    }
+
+    .text-stroke {
+        color: #2f2d2d; /* Stroke color */
+        text-shadow: -6px -6px 0 #5d5cd6, 6px -6px 0 #5d5cd6, -6px 6px 0 #5d5cd6, 6px 6px 0 #5d5cd6;
+        /* -webkit-text-stroke: 6px #5d5cd6;
+        text-stroke: 6px #5d5cd6;
+        -webkit-text-fill-color: #2f2d2d;
+        color: #2f2d2d; */
+    }
+
+    .text-stroke-sm {
+        color: #2f2d2d; /* Stroke color */
+        text-shadow: -3px -3px 0 #5d5cd6, 3px -3px 0 #5d5cd6, -3px 3px 0 #5d5cd6, 3px 3px 0 #5d5cd6;
+        /* -webkit-text-stroke: 3px #5d5cd6;
+        text-stroke: 3px #5d5cd6;
+        -webkit-text-fill-color: #2f2d2d;
+        color: #2f2d2d; */
+    }
+}
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+}
+
+.marquee span {
+    animation: marquee 10s linear infinite;
+    padding-right: 100vw;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
     }
 }
