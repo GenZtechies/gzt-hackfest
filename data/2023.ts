@@ -1,26 +1,21 @@
 import { FAQCardProps } from "@/components/2023/FAQCard";
-import { PastEventsCardProps } from "@/components/2023/PastEventsCard";
 import { SpeakerCardProps } from "@/components/2023/SpeakerCard";
+import { PastEventsCardProps } from "@/components/2023/PastEventsCard";
 
 export const BUY_CONFERENCE_TICKET_URL = "https://eventprime.co/e/gen-z-hackfest-2023";
 export const HACKATHON_REGISTRATION_URL = "https://forms.gle/y5wRgVRFh1HabQrj7";
 export const HACKFEST_2022_PICTURES_URL = "https://photos.app.goo.gl/MnLqmyVyAn8ivCc19";
 
 export const SPEAKERS: SpeakerCardProps[] = [
-    {
-        name: "davio white",
-        imgSrc: "/assets/2023/images/davio-white.png",
-        role: "product designer"
-    },
+    // {
+    //     name: "davio white",
+    //     imgSrc: "/assets/2023/images/davio-white.png",
+    //     role: "product designer"
+    // },
     {
         name: "edidiong asikpo",
         imgSrc: "/assets/2023/images/edidiong-asikpo.png",
         role: "senior developer advocate"
-    },
-    {
-        name: "Rukayat yaro",
-        imgSrc: "/assets/2023/images/Rukayat-yaro.png",
-        role: "product designer"
     }
 ];
 
@@ -28,12 +23,12 @@ export const PAST_EVENTS: PastEventsCardProps[] = [
     {
         eventTitle: "hackfest 2022",
         imgSrc: "/assets/2023/images/event-1.png",
-        link: "https://google.com"
+        link: "https://photos.app.goo.gl/MnLqmyVyAn8ivCc19"
     },
     {
         eventTitle: "hackfest 2022",
         imgSrc: "/assets/2023/images/event-2.png",
-        link: "https://google.com"
+        link: "https://photos.app.goo.gl/MnLqmyVyAn8ivCc19"
     }
 ];
 
@@ -55,7 +50,7 @@ export const FAQS_DATA: FAQCardProps[] = [
     {
         type: "general",
         question: "How much does it cost?",
-        answer: "The three days virtual hackathon is free. However, tickets for the one day in-person conference cost N2,000 / $4 only."
+        answer: "The three days virtual hackathon is free. However, tickets for the one day in-person conference cost N3,000 / $4 only (Early Bird) and N5,000 / $7 (General)."
     },
     {
         type: "conference",
@@ -102,29 +97,26 @@ export const FAQS_DATA: FAQCardProps[] = [
         answer: "Email us at hello@genztechies.com with any questions you may have and we'll get back to you ASAP."
     }
 ];
+
 export const FOOTER_LINKS = [
     {
         category: "Quick Links",
         links: [
             {
-                title: "Initiate",
-                href: "https://initiate.genztechies.com"
+                title: "Initiatives",
+                href: "https://www.genztechies.com/initiatives"
             },
             {
                 title: "Donate",
-                href: "https://donate.genztechies.com"
-            },
-            {
-                title: "Store",
-                href: "https://store.genztechies.com"
+                href: "https://www.genztechies.com/donate"
             },
             {
                 title: "Gallery",
-                href: "https://photos.app.goo.gl/MnLqmyVyAn8ivCc19"
+                href: "#events"
             },
             {
                 title: "Press",
-                href: "https://press.genztechies.com"
+                href: "https://www.genztechies.com/press"
             }
         ]
     },
@@ -148,8 +140,8 @@ export const FOOTER_LINKS = [
                 href: "https://facebook.com/genztechies"
             },
             {
-                title: "Genz@gmail.com",
-                href: "mailto:hello@gentechies.com"
+                title: "hello@genztechies.com",
+                href: "mailto:hello@genztechies.com"
             }
         ]
     }
