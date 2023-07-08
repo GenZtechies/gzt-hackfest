@@ -19,7 +19,7 @@ export const SPEAKERS: SpeakerCardProps[] = [
     },
     {
         name: "Rukayat yaro",
-        imgSrc: "/assets/2023/images/Rukayat-yaro.png",
+        imgSrc: "/assets/2023/images/rukayat-yaro.png",
         role: "product designer"
     }
 ];
