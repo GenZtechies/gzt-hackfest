@@ -2,21 +2,19 @@ import { FAQCardProps } from "@/components/2023/FAQCard";
 import { SpeakerCardProps } from "@/components/2023/SpeakerCard";
 import { PastEventsCardProps } from "@/components/2023/PastEventsCard";
 
-export const BUY_CONFERENCE_TICKET_URL = "https://eventprime.co/e/gen-z-hackfest-2023";
+export const JOIN_THE_COMMUNITY_URL = "https://www.genztechies.com";
+export const SESSIONIZE_URL = "https://sessionize.com/genzhackfest-2023";
+export const SPONSORSHIP_DECK_URL = "https://docsend.com/view/x3t5y66xybdyyxwq";
 export const HACKATHON_REGISTRATION_URL = "https://forms.gle/y5wRgVRFh1HabQrj7";
+export const BUY_CONFERENCE_TICKET_URL = "https://eventprime.co/e/gen-z-hackfest-2023";
 export const HACKFEST_2022_PICTURES_URL = "https://photos.app.goo.gl/MnLqmyVyAn8ivCc19";
 
 export const SPEAKERS: SpeakerCardProps[] = [
     // {
-    //     name: "davio white",
-    //     imgSrc: "/assets/2023/images/davio-white.png",
-    //     role: "product designer"
-    // },
-    {
-        name: "edidiong asikpo",
-        imgSrc: "/assets/2023/images/edidiong-asikpo.png",
-        role: "senior developer advocate"
-    }
+    //     name: "edidiong asikpo",
+    //     imgSrc: "/assets/2023/images/speakers/edidiong-asikpo.png",
+    //     role: "senior developer advocate"
+    // }
 ];
 
 export const PAST_EVENTS: PastEventsCardProps[] = [
@@ -35,7 +33,17 @@ export const PAST_EVENTS: PastEventsCardProps[] = [
 export const FAQS_DATA: FAQCardProps[] = [
     {
         question: "What is Gen Z HackFest?",
-        answer: "Gen Z HackFest is an annual three-day virtual hackathon and a one-day in-person conference aimed to connect Gen Z's in tech on a large scale. It's an event where ambitious Gen Z's come together to put their creative and coding skills to test, build solutions to problems in Africa and showcase what they can do!"
+        answer: "Gen Z HackFest is an annual week-long hackathon and a one-day in-person conference aimed to connect Gen Z's in tech on a large scale. It's an event where ambitious Gen Z's come together to put their creative and coding skills to test, build solutions to problems in Africa and showcase what they can do!"
+    },
+    {
+        type: "general",
+        question: "How much does it cost?",
+        answer: "The week-long hackathon is free. However, tickets for the one day in-person conference cost N3,000 / $4 only (Early Bird) and N5,000 / $7 (General)."
+    },
+    {
+        type: "general",
+        question: "When is the event?",
+        answer: "The week-long hackathon is from 19th — 24th of August, 2023. The one day in-person conference is on the 26th of August, 2023."
     },
     {
         type: "hackathon",
@@ -48,19 +56,19 @@ export const FAQS_DATA: FAQCardProps[] = [
         answer: "Any Gen Z is welcome! No prior experience in tech is required. Students, developers, designers, founders and any other interested individuals are welcome to attend the conference."
     },
     {
-        type: "general",
-        question: "How much does it cost?",
-        answer: "The three days virtual hackathon is free. However, tickets for the one day in-person conference cost N3,000 / $4 only (Early Bird) and N5,000 / $7 (General)."
-    },
-    {
-        type: "conference",
-        question: "Where will the event take place?",
-        answer: "The in-person conference will be taking place at Zone Tech Park, Lagos, Nigeria."
-    },
-    {
         type: "conference",
         question: "Will there be swag?",
         answer: "Yes! Every attendee will receive a swag. They'll also be a lot of giveaways and prizes to be won throughout the event."
+    },
+    {
+        type: "hackathon",
+        question: "What happens if I encounter technical issues or need assistance during the hackathon?",
+        answer: "The hackathon team will be available to provide support and assistance throughout the event. You can reach out to them through the designated slack channel for the hackathon."
+    },
+    {
+        type: "hackathon",
+        question: "Can I attend the hackathon remotely, or is physical attendance required?",
+        answer: "The hackathon is designed to be accessible remotely. Participants can join and contribute from anywhere with an internet connection. There is no requirement for physical attendance at any location. However, we are partnering with tech hubs across the country to provide access to basic utilities, e.g Electricity, Internet, etc."
     },
     {
         type: "hackathon",
@@ -74,23 +82,43 @@ export const FAQS_DATA: FAQCardProps[] = [
     },
     {
         type: "hackathon",
-        question: "How will I submit my project?",
-        answer: "Projects will be submitted digitally. A video demo and basic description of the project is required, and all code written must also be accessible (whether through Github or some other means)."
+        question: "Can I attend the hackathon remotely, or is physical attendance required?",
+        answer: "The hackathon is designed to be accessible remotely. Participants can join and contribute from anywhere with an internet connection. There is no requirement for physical attendance at any location. However, we are partnering with tech hubs across the country to provide access to basic utilities, e.g Electricity, Internet, etc."
     },
     {
         type: "hackathon",
-        question: "How will prizes be awarded?",
-        answer: "All projects must be completed within the timeframe of the hackathon and be submitted before the deadline. If you are a beginner or have less experience in programming that will be taken into account while judging your project, so everyone has a fair chance regardless of their knowledge before that hackathon."
+        question: "Can I participate in the hackathon individually, or do I need to form a team?",
+        answer: "The hackathon encourages team participation, and the maximum team size allowed is 3 members. However, if you prefer to participate individually, you are welcome to do so."
     },
     {
         type: "hackathon",
-        question: "What are the prizes?",
-        answer: "The prizes in total worth over N600,000 / $1,000 in monetary prizes. Prizes will be awarded to the top 5 projects/teams."
+        question: "How do I form a team or find team members for the hackathon?",
+        answer: "You can reach out to fellow participants through slack to find team members. Alternatively, you can form a team with friends or colleagues who are also interested in participating and have registered. You are free to change teammates if any of them “ghost” the project."
     },
     {
-        type: "general",
-        question: "When is the event?",
-        answer: "The three days virtual hackathon is from 1st — 3rd of July, 2022. The one day in-person conference is on the 11th of July, 2022."
+        type: "hackathon",
+        question: "Where will the Hackathon take place?",
+        answer: "The hackathon will take place virtually. All links to community calls will be sent prior to the call."
+    },
+    {
+        type: "hackathon",
+        question: "Can I work on a project that I have already started before the hackathon?",
+        answer: "The hackathon promotes the creation of new projects during the event. It is recommended you work on a new idea / solution for the hackathon."
+    },
+    {
+        type: "hackathon",
+        question: "How are the winners selected?",
+        answer: "Projects will be judged based on a set of predetermined criteria.  The judging will be unbiased."
+    },
+    {
+        type: "hackathon",
+        question: "What programming languages or technologies can I use for my project?",
+        answer: "The hackathon is open to participants from various technical backgrounds. You can choose any programming language or technology stack that best suits your project requirements and expertise. There are no specific restrictions on the tools or technologies you can use. You can even use brainf***"
+    },
+    {
+        type: "hackathon",
+        question: "What happens after the hackathon ends?",
+        answer: "After the hackathon concludes, the judging process will take place to evaluate the projects. Winners will be announced and awarded prizes on the conference day!"
     },
     {
         question: "I still have a question 🥲",
@@ -98,7 +126,26 @@ export const FAQS_DATA: FAQCardProps[] = [
     }
 ];
 
-export const FOOTER_LINKS = [
+export const TOP_NAV_LINKS: { name: string; href: string }[] = [
+    {
+        name: "About",
+        href: "#about-us"
+    },
+    {
+        name: "Speakers",
+        href: "#speakers"
+    },
+    {
+        name: "hackathon",
+        href: "#faqs"
+    },
+    {
+        name: "events",
+        href: "#past-events"
+    }
+];
+
+export const FOOTER_LINKS: { category: string; links: { title: string; href: string }[] }[] = [
     {
         category: "Quick Links",
         links: [
@@ -112,7 +159,7 @@ export const FOOTER_LINKS = [
             },
             {
                 title: "Gallery",
-                href: "#events"
+                href: "#past-events"
             },
             {
                 title: "Press",
@@ -144,5 +191,48 @@ export const FOOTER_LINKS = [
                 href: "mailto:hello@genztechies.com"
             }
         ]
+    }
+];
+
+export const PREVIOUS_PARTNERS: { title: string; link: string }[] = [
+    {
+        title: "vercel",
+        link: "https://vercel.com/?utm_source=genztechies&utm_campaign=oss"
+    },
+    {
+        title: "lazerpay",
+        link: "https://lazerpay.finance/"
+    },
+    {
+        title: "filecoin",
+        link: "https://filecoin.io/"
+    },
+    {
+        title: "sail",
+        link: "https://www.tokunboabiru.org/sail"
+    },
+    {
+        title: "spheron",
+        link: "https://spheron.network/"
+    },
+    {
+        title: "technext",
+        link: "https://technext.ng/"
+    },
+    {
+        title: "i4g",
+        link: "https://ingressive.org/"
+    },
+    {
+        title: "zeddpay",
+        link: "https://www.zeddpay.com/"
+    },
+    {
+        title: "techsteroid",
+        link: "https://techsteroid.africa/"
+    },
+    {
+        title: "zuri",
+        link: "https://www.zuri.team/"
     }
 ];

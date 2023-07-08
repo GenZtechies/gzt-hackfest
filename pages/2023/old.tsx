@@ -23,7 +23,6 @@ export default function Home() {
             />
 
             <div className="h-screen w-full bg-black/70 bg-blend-overlay bg-[url('/assets/2023/images/site-bg.png')] bg-no-repeat bg-cover bg-center top-0 fixed -z-50" />
-            {/* <div className="h-screen w-full bg-black/20 bg-blend-overlay bg-[url('/assets/2023/images/site-bg-2.png')] bg-no-repeat bg-cover bg-center top-0 fixed -z-50" /> */}
 
             <div className="flex flex-col items-center min-h-screen p-5">
                 <div className="m-auto w-full space-y-10">

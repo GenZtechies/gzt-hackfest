@@ -15,7 +15,7 @@ const SpeakerCard = ({ name, imgSrc, role }: SpeakerCardProps) => {
             </div>
 
             <div className="space-y-1">
-                <p className="uppercase text-[#0D0C24] font-extrabold text-2xl font-sora">{name}</p>
+                <p className="uppercase text-primary-blue-dark font-extrabold text-2xl font-sora">{name}</p>
                 <p className="uppercase text-[#2F2D2D]">{role}</p>
             </div>
         </div>
