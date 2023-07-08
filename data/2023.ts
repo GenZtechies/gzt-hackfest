@@ -108,23 +108,23 @@ export const FOOTER_LINKS = [
         links: [
             {
                 title: "Initiate",
-                href: "https://initiate.genztechies.com"
+                href: "https://www.genztechies.com/initiatives"
             },
             {
                 title: "Donate",
-                href: "https://donate.genztechies.com"
+                href: "https://www.genztechies.com/donate"
             },
             {
                 title: "Store",
-                href: "https://store.genztechies.com"
+                href: "https://www.genztechies.com/store"
             },
             {
                 title: "Gallery",
-                href: "https://photos.app.goo.gl/MnLqmyVyAn8ivCc19"
+                href: "#events"
             },
             {
                 title: "Press",
-                href: "https://press.genztechies.com"
+                href: "https://www.genztechies.com/press"
             }
         ]
     },
@@ -148,7 +148,7 @@ export const FOOTER_LINKS = [
                 href: "https://facebook.com/genztechies"
             },
             {
-                title: "Genz@gmail.com",
+                title: "Hello@gmail.com",
                 href: "mailto:hello@gentechies.com"
             }
         ]

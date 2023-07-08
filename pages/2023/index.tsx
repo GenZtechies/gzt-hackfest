@@ -157,7 +157,7 @@ const Main = () => {
                     </div>
                 </div>
             </section>
-            <section className="px-6 py-20 md:px-20 md:py-[90px] bg-[#EAEAEE] border-b-4 border-b-[#0D0C24]">
+            <section id="speakers" className="px-6 py-20 md:px-20 md:py-[90px] bg-[#EAEAEE] border-b-4 border-b-[#0D0C24]">
                 <SectionHeader text="speakers" />
 
                 {/* Speakers */}
@@ -167,7 +167,7 @@ const Main = () => {
                     ))}
                 </div>
             </section>
-            <section className="py-10 bg-primary-light-bg border-b-4 border-b-primary-blue-dark">
+            <section id="marquee" className="py-10 bg-primary-light-bg border-b-4 border-b-primary-blue-dark">
                 <div className="marquee-container">
                     <div className="marquee-content">
                         <h1 className="text-6xl md:text-[100px] text-primary-blue-dark leading-none font-bold font-sora uppercase">see you at hackfest 2023 &bull; see you at hackfest 2023 &bull; see you at hackfest 2023 </h1>
@@ -177,7 +177,7 @@ const Main = () => {
                     </div>
                 </div>
             </section>
-            <section className="px-6 py-20 md:px-20 md:py-[90px] bg-[#EAEAEE]">
+            <section id="events" className="px-6 py-20 md:px-20 md:py-[90px] bg-[#EAEAEE]">
                 <SectionHeader text="Past Events" />
 
                 <div className="mt-[56px] flex flex-col md:flex-row basis-1/2 gap-6">
@@ -188,7 +188,7 @@ const Main = () => {
             </section>
 
             {/* FAQs */}
-            <section className="px-6 py-20 md:px-20 md:py-[90px] bg-[#EAEAEE]">
+            <section id="faqs" className="px-6 py-20 md:px-20 md:py-[90px] bg-[#EAEAEE]">
                 <h1 className="text-center text-[48px] md:text-[64px] text-primary-blue-dark leading-none font-bold font-sora">FAQs</h1>
 
                 <div className="mt-[90px] grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -202,7 +202,7 @@ const Main = () => {
                 </div>
             </section>
 
-            <footer className="px-6 py-20 md:px-20 md:py-[90px] bg-primary-purple space-y-[100px] text-white">
+            <footer id="footer" className="px-6 py-20 md:px-20 md:py-[90px] bg-primary-purple space-y-[100px] text-white">
                 <div className="flex flex-col md:flex-row md:justify-between">
                     <div className="space-y-6">
                         <Image className="-ml-6" src={"/assets/2023/images/footer-logo.svg"} alt="Logo" width={150} height={150} />
