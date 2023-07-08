@@ -29,12 +29,12 @@ const links = [
     {
         name: "events",
         href: "#events"
-    },
-    {
-        name: "Get Tickets",
-        href: BUY_CONFERENCE_TICKET_URL,
-        target: "_blank"
     }
+    // {
+    //     name: "Get Tickets",
+    //     href: BUY_CONFERENCE_TICKET_URL,
+    //     target: "_blank"
+    // }
 ];
 
 const Main = () => {
@@ -68,8 +68,8 @@ const Main = () => {
                         </h1>
                         <div className="flex flex-col items-center w-full space-y-5 md:space-y-0 md:space-x-5 md:flex-row">
                             <Button withArrow className="">
-                                <Link target={"_blank"} href={"https://docsend.com/view/x3t5y66xybdyyxwq"}>
-                                    Become a sponsor
+                                <Link target={"_blank"} href={HACKATHON_REGISTRATION_URL}>
+                                    Register For Hackathon
                                 </Link>
                             </Button>
                             <Button withArrow className="" variant="outlined">
@@ -84,7 +84,7 @@ const Main = () => {
                     </div>
                 </div>
             </main>
-            <section className="py-10 border-b-4 bg-primary-light-bg border-primary-blue-dark">
+            <section className="flex items-center min-h-screen py-10 border-b-4 bg-primary-light-bg border-primary-blue-dark">
                 <div className="container grid items-center justify-center grid-cols-1 gap-5 min-h-fit lg:grid-cols-2">
                     <h1 className="md:text-[112px] text-6xl text-primary-blue-dark leading-none font-bold font-sora ">
                         <Balancer>
@@ -111,9 +111,9 @@ const Main = () => {
             </section>
             <section className="py-10 border-b-4 bg-primary-purple border-primary-blue-dark">
                 <div className="container min-h-screen space-y-5">
-                    <h1 className="md:text-[112px] text-6xl text-white leading-none font-bold font-sora text-center">
+                    <h1 className="md:text-[80px] text-4xl text-white leading-none font-bold font-sora text-center">
                         <Balancer>
-                            SPONSORS<span className="text-primary-yellow">.</span>
+                            PREVIOUS SPONSORS<span className="text-primary-yellow">.</span>
                         </Balancer>
                     </h1>
                     <div className="grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-4">
@@ -126,10 +126,23 @@ const Main = () => {
                                 </Link>
                             </div>
                         ))}
+                        <div className="col-span-2 md:col-span-3 lg:col-span-4">
+                            <div className="py-5 mx-auto space-y-3 md:w-4/5">
+                                <h1 className="text-4xl font-extrabold text-center text-white uppercase font-sora">
+                                    <Balancer>Sponsor hackfest 2023</Balancer>
+                                </h1>
+                                <p className="mx-auto text-lg text-center text-white">Become a sponsor of the largest Gen Z developers, founders, designers, and techies festival.</p>
+                            </div>
+                            <Button className="mx-auto bg-primary-green hover:bg-primary-green/80">
+                                <Link className="w-fit" target={"_blank"} href={"https://docsend.com/view/x3t5y66xybdyyxwq"}>
+                                    Become a sponsor
+                                </Link>
+                            </Button>
+                        </div>
                     </div>
                 </div>
             </section>
-            <section className="py-10 border-b-4 bg-primary-light-bg border-primary-blue-dark">
+            <section className="flex items-center min-h-screen py-10 border-b-4 bg-primary-light-bg border-primary-blue-dark">
                 <div className="container grid flex-col-reverse items-center justify-center grid-cols-1 gap-5 min-h-fit lg:grid-cols-2 ">
                     <h1 className="md:text-[100px] text-6xl text-primary-blue-dark leading-none font-bold font-sora lg:hidden">
                         <Balancer>
@@ -139,7 +152,7 @@ const Main = () => {
 
                     <div className="row-span-3 pt-2 pb-4 pl-2 pr-4 rounded-lg bg-primary-blue-dark">
                         <div className="relative w-full h-72 md:h-[500px]">
-                            <Image src={"/assets/2023/images/genzhackfest-74.jpg"} alt="About us" fill className="object-cover rounded-md" />
+                            <Image src={"/assets/2023/images/hack.png"} alt="About us" fill className="object-cover object-left-top rounded-md" />
                         </div>
                     </div>
                     <h1 className="md:text-[100px] text-6xl text-primary-blue-dark leading-none font-bold font-sora hidden lg:block">
@@ -152,7 +165,9 @@ const Main = () => {
                             The hackathon aims to address a specific problem in Africa that is often neglected. It brings together individuals from various fields to collaborate and find innovative solutions. By leveraging their diverse skills and expertise, participants work towards creating tangible and impactful outcomes.
                         </p>
                         <Button withArrow className="w-full lg:w-fit">
-                            Join the hackathon
+                            <Link target="_blank" href={HACKATHON_REGISTRATION_URL}>
+                                Join the hackathon
+                            </Link>
                         </Button>
                     </div>
                 </div>
@@ -187,7 +202,7 @@ const Main = () => {
 
                 <div className="mt-[90px] grid grid-cols-1 lg:grid-cols-2 gap-6">
                     {arrayFns.divideArrayIntoTwo(FAQS_DATA).map((data, i) => (
-                        <div key={i} className="join join-vertical w-full rounded-none">
+                        <div key={i} className="w-full rounded-none join join-vertical">
                             {data.map((faq, i) => (
                                 <FAQCard key={i} {...faq} />
                             ))}
@@ -206,7 +221,7 @@ const Main = () => {
                     <div className="space-x-[32px] md:space-x-[64px] lg:space-x-[110px] flex mt-[40px] md:mt-0">
                         {FOOTER_LINKS.map((link, i) => (
                             <div key={i}>
-                                <h3 className="text-white font-2xl font-sora font-bold uppercase">{link.category}</h3>
+                                <h3 className="font-bold text-white uppercase font-2xl font-sora">{link.category}</h3>
                                 <ul className="mt-12 space-y-6">
                                     {link.links.map((link, i) => (
                                         <li key={i}>
@@ -223,7 +238,7 @@ const Main = () => {
 
                 <div className="flex justify-center">
                     {/* <div>
-                            <h3 className="text-white font-2xl font-sora font-bold uppercase">GET ALL LATEST UPDATES</h3>
+                            <h3 className="font-bold text-white uppercase font-2xl font-sora">GET ALL LATEST UPDATES</h3>
                         <form className="">
                         </form>
                     </div> */}
@@ -248,9 +263,7 @@ const Navigation = () => {
                     <ul className="items-center hidden space-x-1 lg:flex">
                         {links.map((link, index) => (
                             <li key={index} className="p-4 font-semibold uppercase text-primary-dark font-rubik">
-                                <Link target={link.target || "_self"} href={link.href}>
-                                    {link.name}
-                                </Link>
+                                <Link href={link.href}>{link.name}</Link>
                             </li>
                         ))}
                     </ul>
@@ -260,9 +273,9 @@ const Navigation = () => {
                         <MenuIcon />
                     </button>
 
-                    <Link target={"_blank"} href={HACKATHON_REGISTRATION_URL}>
+                    <Link target={"_blank"} href={BUY_CONFERENCE_TICKET_URL}>
                         <Button withArrow className="hidden lg:flex" size="sm">
-                            Register
+                            Get Tickets
                         </Button>
                     </Link>
                 </li>
@@ -275,15 +288,13 @@ const Navigation = () => {
             >
                 {links.map((link, index) => (
                     <li key={index} className="p-4 font-semibold uppercase text-primary-dark font-rubik">
-                        <Link target={link.target || "_self"} href={link.href}>
-                            {link.name}
-                        </Link>
+                        <Link href={link.href}>{link.name}</Link>
                     </li>
                 ))}
                 <li>
-                    <Link href={HACKATHON_REGISTRATION_URL}>
+                    <Link href={BUY_CONFERENCE_TICKET_URL}>
                         <Button withArrow className="w-full" size="sm">
-                            Register
+                            Get Tickets
                         </Button>
                     </Link>
                 </li>

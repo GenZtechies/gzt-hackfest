@@ -24,7 +24,7 @@ const btn = clf("font-medium font-rubik text-base uppercase rounded-full flex it
 
 const Button = ({ children, variant = "contained", className, withArrow, size = "md", ...props }: ButtonProps) => {
     return (
-        <button className={clsx(btn({ variant, size }), className)} {...props}>
+        <button className={clsx(btn({ variant, size, className }))} {...props}>
             {children} {withArrow ? <ArrowIcon className="scale-75" /> : null}
         </button>
     );
