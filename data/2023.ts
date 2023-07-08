@@ -28,12 +28,12 @@ export const PAST_EVENTS: PastEventsCardProps[] = [
     {
         eventTitle: "hackfest 2022",
         imgSrc: "/assets/2023/images/event-1.png",
-        link: "https://google.com"
+        link: "https://photos.app.goo.gl/MnLqmyVyAn8ivCc19"
     },
     {
         eventTitle: "hackfest 2022",
         imgSrc: "/assets/2023/images/event-2.png",
-        link: "https://google.com"
+        link: "https://photos.app.goo.gl/MnLqmyVyAn8ivCc19"
     }
 ];
 
