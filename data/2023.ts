@@ -33,7 +33,7 @@ export const PAST_EVENTS: PastEventsCardProps[] = [
 export const FAQS_DATA: FAQCardProps[] = [
     {
         question: "What is Gen Z HackFest?",
-        answer: "Gen Z HackFest is an annual week-long hackathon and a one-day in-person conference aimed to connect Gen Z's in tech on a large scale. It's an event where ambitious Gen Z's come together to put their creative and coding skills to test, build solutions to problems in Africa and showcase what they can do!"
+        answer: "Gen Z HackFest is an annual week-long hackathon and a one-day in-person conference for Gen-Zs in tech. It's an event where ambitious Gen-Zs come together to put their creative and coding skills to test, build innovative solutions to problems in Africa, and showcase what they can do!"
     },
     {
         type: "general",
@@ -43,22 +43,22 @@ export const FAQS_DATA: FAQCardProps[] = [
     {
         type: "general",
         question: "When is the event?",
-        answer: "The week-long hackathon is from 19th — 24th of August, 2023. The one day in-person conference is on the 26th of August, 2023."
+        answer: "The week-long hackathon is from August 19 — 24. However, teams can be formed and projects can be built beginning August 1st, we understand that everyone has different availabilities particularly students and working professionals. The in-person conference is on the 26th of August in Lagos."
     },
     {
         type: "hackathon",
         question: "Do I need coding experience?",
-        answer: "No! But you can find a team of developers to join. First time coders are encouraged to attend as well. We hope to help each of the participants dicover passion for something new."
+        answer: "No! But you can find a team of developers to join. First-time coders are encouraged to attend as well. We hope to help each of the participants discover their passion for something new."
     },
     {
         type: "conference",
         question: "Who can attend?",
-        answer: "Any Gen Z is welcome! No prior experience in tech is required. Students, developers, designers, founders and any other interested individuals are welcome to attend the conference."
+        answer: "All Gen-Zs are welcome! No prior experience in tech is required. Students, developers, designers, founders, and anyone are welcome to attend the conference."
     },
     {
         type: "conference",
         question: "Will there be swag?",
-        answer: "Yes! Every attendee will receive a swag. They'll also be a lot of giveaways and prizes to be won throughout the event."
+        answer: "Yes! Every attendee will receive a swag. They'll also be a lot of giveaways and prizes throughout the event."
     },
     {
         type: "hackathon",
@@ -88,37 +88,37 @@ export const FAQS_DATA: FAQCardProps[] = [
     {
         type: "hackathon",
         question: "Can I participate in the hackathon individually, or do I need to form a team?",
-        answer: "The hackathon encourages team participation, and the maximum team size allowed is 3 members. However, if you prefer to participate individually, you are welcome to do so."
+        answer: "The hackathon encourages team participation, a team must not exceed 3 members. However, if you prefer to participate individually, you are welcome to do so."
     },
     {
         type: "hackathon",
         question: "How do I form a team or find team members for the hackathon?",
-        answer: "You can reach out to fellow participants through slack to find team members. Alternatively, you can form a team with friends or colleagues who are also interested in participating and have registered. You are free to change teammates if any of them “ghost” the project."
+        answer: "You can reach out to fellow participants through Slack to find team members. Alternatively, you can form a team with friends or colleagues who are also interested in participating and have registered. You are free to change teammates if any of them “ghost” halfway through."
     },
     {
         type: "hackathon",
         question: "Where will the Hackathon take place?",
-        answer: "The hackathon will take place virtually. All links to community calls will be sent prior to the call."
+        answer: "The hackathon will take place virtually. All links to community calls will be sent ahead to all registered participants."
     },
     {
         type: "hackathon",
         question: "Can I work on a project that I have already started before the hackathon?",
-        answer: "The hackathon promotes the creation of new projects during the event. It is recommended you work on a new idea / solution for the hackathon."
+        answer: "The hackathon promotes the creation of new projects during the event. It is recommended you work on a new idea/solution for the hackathon."
     },
     {
         type: "hackathon",
         question: "How are the winners selected?",
-        answer: "Projects will be judged based on a set of predetermined criteria.  The judging will be unbiased."
+        answer: "All submitted projects will be scored based on a set of factors that will be communicated pre-event. The judging will be 100% unbiased."
     },
     {
         type: "hackathon",
         question: "What programming languages or technologies can I use for my project?",
-        answer: "The hackathon is open to participants from various technical backgrounds. You can choose any programming language or technology stack that best suits your project requirements and expertise. There are no specific restrictions on the tools or technologies you can use. You can even use brainf***"
+        answer: "The hackathon is open to participants from various technical backgrounds. You can choose any programming language or technology stack that best suits your project requirements and expertise. There are no specific restrictions on the tools or technologies you can use."
     },
     {
         type: "hackathon",
         question: "What happens after the hackathon ends?",
-        answer: "After the hackathon concludes, the judging process will take place to evaluate the projects. Winners will be announced and awarded prizes on the conference day!"
+        answer: "Judging begins! The winners will be announced and prizes will be awarded at the conference."
     },
     {
         question: "I still have a question 🥲",
@@ -140,7 +140,7 @@ export const TOP_NAV_LINKS: { name: string; href: string }[] = [
         href: "#faqs"
     },
     {
-        name: "events",
+        name: "conference",
         href: "#past-events"
     }
 ];
