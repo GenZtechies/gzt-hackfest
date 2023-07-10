@@ -43,7 +43,7 @@ export const FAQS_DATA: FAQCardProps[] = [
     {
         type: "general",
         question: "When is the event?",
-        answer: "The week-long hackathon is from August 21 — 24. However, teams can be formed and projects can be built beginning August 1st, we understand that everyone has different availabilities particularly students and working professionals. The in-person conference is on the 26th of August in Lagos."
+        answer: "The week-long hackathon is from August 19 — 24. However, teams can be formed and projects can be built beginning August 1st, we understand that everyone has different availabilities particularly students and working professionals. The in-person conference is on the 26th of August in Lagos."
     },
     {
         type: "hackathon",
@@ -88,7 +88,7 @@ export const FAQS_DATA: FAQCardProps[] = [
     {
         type: "hackathon",
         question: "Can I participate in the hackathon individually, or do I need to form a team?",
-        answer: "The hackathon encourages team participation, a team must not exceed 4 members. However, if you prefer to participate individually, you are welcome to do so."
+        answer: "The hackathon encourages team participation, a team must not exceed 3 members. However, if you prefer to participate individually, you are welcome to do so."
     },
     {
         type: "hackathon",
