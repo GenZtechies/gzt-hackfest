@@ -134,9 +134,8 @@ const Main = () => {
                 <div className="w-full lg:basis-1/2">
                     <SectionHeader text="about us" textClassName="md:text-[112px] text-6xl" dotClassName="text-primary-purple" />
 
-                    <p className="text-lg text-[#2F2D2D] uppercase leading-[200.5%] py-10">GenZtechies is a community for Gen Z developers, founders, designers, and techies across Africa to connect, learn, and discover life-changing opportunities.
-
-                            <br></br>Africa has the largest population of unemployed youths, talent is equally distributed but opportunity is not. Beginning in 2022, we organize Gen Z HackFest as a unique 2-in-1 conference and hackathon to bridge this gap in our own little way.</p>
+                    <p className="text-lg text-[#2F2D2D] uppercase leading-[200.5%] py-10">GenZtechies is a community for Gen Z developers, founders, designers, and techies across Africa to connect, learn, and discover life-changing opportunities.<br>
+                    </br> <br></br>Africa has the largest population of unemployed youths, talent is equally distributed but opportunity is not. Beginning in 2022, we organize Gen Z HackFest as a unique 2-in-1 conference and hackathon to bridge this gap in our own little way.</p>
 
                     <Link target="_blank" passHref href={JOIN_THE_COMMUNITY_URL} className="inline-block py-4">
                         <Button withArrow className="w-full lg:w-fit">
