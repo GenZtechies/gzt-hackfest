@@ -27,7 +27,7 @@ const Main = () => {
                 // breaker
                 title="Gen Z Hackfest 2023"
                 image="/assets/2023/site-metaimage.png"
-                description="Gen Z Hackfest 2023 is a week-long hackathon and one-day conference aimed at connecting Gen Z’s in tech on a large scale."
+                description="Gen Z Hackfest 2023 is a week-long hackathon and one-day conference aimed at connecting Gen-Zs in tech on a large scale."
             />
 
             <main id="home" className="flex flex-col justify-between w-screen h-screen border-b-4 bg-primary-light-bg border-primary-blue-dark">
@@ -134,7 +134,9 @@ const Main = () => {
                 <div className="w-full lg:basis-1/2">
                     <SectionHeader text="about us" textClassName="md:text-[112px] text-6xl" dotClassName="text-primary-purple" />
 
-                    <p className="text-lg text-[#2F2D2D] uppercase leading-[200.5%] py-10">we are a community of Gen Z developers, founders, designers, and techies across Africa where we connect, learn, and discover life-changing opportunities.</p>
+                    <p className="text-lg text-[#2F2D2D] uppercase leading-[200.5%] py-10">GenZtechies is a community for Gen Z developers, founders, designers, and techies across Africa to connect, learn, and discover life-changing opportunities.
+
+                            <br></br>Africa has the largest population of unemployed youths, talent is equally distributed but opportunity is not. Beginning in 2022, we organize Gen Z HackFest as a unique 2-in-1 conference and hackathon to bridge this gap in our own little way.</p>
 
                     <Link target="_blank" passHref href={JOIN_THE_COMMUNITY_URL} className="inline-block py-4">
                         <Button withArrow className="w-full lg:w-fit">
@@ -167,8 +169,8 @@ const Main = () => {
 
                         <div className="col-span-2 md:col-span-3 lg:col-span-4 pt-10">
                             <div className="py-5 mx-auto space-y-3 md:w-4/5">
-                                <h1 className="text-4xl md:text-5xl font-extrabold text-center text-white uppercase font-sora">Sponsor hackfest 2023</h1>
-                                <p className="mx-auto text-lg text-center text-white">Become a sponsor of the largest Gen Z developers, founders, designers, and techies festival.</p>
+                                <h1 className="text-4xl md:text-5xl font-extrabold text-center text-white uppercase font-sora">Sponsor Gen Z Hackfest 2023</h1>
+                                <p className="mx-auto text-lg text-center text-white">Sponsor the largest gathering of Gen-Zs in tech across Africa.</p>
                             </div>
 
                             <Link target="_blank" href={SPONSORSHIP_DECK_URL} passHref>
@@ -188,7 +190,7 @@ const Main = () => {
                     <SectionHeader text="prepare to hack" dotClassName="text-primary-purple" />
 
                     <p className="text-lg text-[#2F2D2D] uppercase leading-[200.5%] py-5">
-                        The hackathon aims to address a specific problem in Africa that is often neglected. It brings together individuals from various fields to collaborate and find innovative solutions. By leveraging their diverse skills and expertise, participants work towards creating tangible and impactful outcomes.
+                        The open-ended hackathon aims to solve problems in Africa that are often overlooked. We're bringing thousands of people from different diversities together to collaborate and build innovative solutions. By leveraging their diverse skills and expertise, participants work towards creating meaningful and impactful solutions.
                     </p>
 
                     <Link target="_blank" passHref href={HACKATHON_REGISTRATION_URL} className="inline-block py-4">
@@ -212,8 +214,8 @@ const Main = () => {
             )}
 
             <section id="see-you-soon-marquee" className="py-10 bg-primary-light-bg marquee border-y-4 border-y-primary-blue-dark">
-                <span className="text-6xl md:text-[100px] text-primary-blue-dark leading-none font-bold font-sora uppercase">&bull; See you at the hackathon &bull; See you at the hackathon &bull;</span>
-                <span className="text-6xl md:text-[100px] text-primary-blue-dark leading-none font-bold font-sora uppercase">&bull; See you at the hackathon &bull; See you at the hackathon &bull;</span>
+                <span className="text-6xl md:text-[100px] text-primary-blue-dark leading-none font-bold font-sora uppercase">&bull; See you at Gen Z Hackfest &bull; See you at Gen Z Hackfest &bull;</span>
+                <span className="text-6xl md:text-[100px] text-primary-blue-dark leading-none font-bold font-sora uppercase">&bull; See you at Gen Z Hackfest &bull; See you at Gen Z Hackfest &bull;</span>
             </section>
 
             <section id="past-events" className="px-6 py-24 md:px-20 bg-[#EAEAEE]">
@@ -245,7 +247,7 @@ const Main = () => {
                     <div className="space-y-6">
                         <Image className="-ml-6" src={"https://assets.genztechies.com/icon-coloured.svg"} alt="Logo" width={150} height={150} />
 
-                        <p className="w-[250px] sm:w-[300px] uppercase tracking-wider">GenZtechies is a nonprofit community fiscally sponsored by The Hack Foundation Nonprofit EIN: 81-2908499.</p>
+                        <p className="w-[250px] sm:w-[300px] uppercase tracking-wider">GenZtechies is a nonprofit community fiscally sponsored by The Hack Foundation Nonprofit with EIN: 81-2908499.</p>
                     </div>
 
                     <div className="space-x-[32px] md:space-x-[64px] lg:space-x-[110px] flex mt-[40px] md:mt-0">
@@ -268,7 +270,7 @@ const Main = () => {
                 </div>
 
                 <div className="flex justify-center">
-                    <SectionHeader text="thank you" textClassName="text-white" dotClassName="text-primary-green" />
+                    <SectionHeader text="See You at Gen Z HackFest" textClassName="text-white" dotClassName="text-primary-green" />
                 </div>
             </footer>
         </>
