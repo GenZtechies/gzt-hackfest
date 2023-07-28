@@ -1,5 +1,5 @@
-import React from "react";
 import { clf, clsx } from "class-flex";
+import React from "react";
 
 interface ButtonProps extends React.HtmlHTMLAttributes<HTMLButtonElement> {
     children?: React.ReactNode;
@@ -30,7 +30,7 @@ const Button = ({ children, variant = "contained", className, withArrow, size = 
     );
 };
 
-const ArrowIcon = ({ className }: { className?: string }) => (
+export const ArrowIcon = ({ className }: { className?: string }) => (
     <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
         <path d="M1 14L14 1M14 1V13.48M14 1H1.52" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
