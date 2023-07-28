@@ -85,15 +85,16 @@ const Main = () => {
 
                 <div className="container grid items-center justify-center flex-grow w-full grid-cols-1 gap-10 md:grid-cols-5">
                     <div className="flex flex-col justify-around w-full col-span-3 space-y-5 h-4/5">
-                        <h1>
+                        <h1 className="whitespace-nowrap">
                             <Balancer>
-                                <span className="font-extrabold font-sora leading-none text-stroke-sm md:text-stroke text-6xl md:text-[112px]">GEN Z HACKFEST 2023</span>
-
-                                <span className="inline-block ml-5">
+                                <span className="font-extrabold font-sora leading-none text-stroke-sm md:text-stroke text-5xl md:text-[112px] mr-5 align-top">GEN Z HACKFEST 2023</span>
+                                <span className="inline-block ">
                                     <span className="text-sm font-medium tracking-wider md:text-xl text-primary-dark font-rubik">August 21st - 26th.</span> <br />
-                                    <a target="_blank" href={venue} className="text-sm font-semibold tracking-widest capitalize md:text-xl text-primary-dark font-rubik">
-                                        UNILAG Multi-purpose Hall
-                                    </a>
+                                    <span className="text-sm font-semibold tracking-widest underline capitalize md:text-xl text-primary-dark font-rubik">
+                                        <a target="_blank" href={venue}>
+                                            UNILAG Multi-purpose Hall
+                                        </a>
+                                    </span>
                                     <br />
                                     <span className="text-lg font-semibold tracking-widest capitalize md:text-4xl text-primary-dark font-rubik">lagos, Nigeria</span>
                                 </span>
