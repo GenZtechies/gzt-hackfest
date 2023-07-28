@@ -1,6 +1,6 @@
 import { FAQCardProps } from "@/components/2023/FAQCard";
-import { SpeakerCardProps } from "@/components/2023/SpeakerCard";
 import { PastEventsCardProps } from "@/components/2023/PastEventsCard";
+import { SpeakerCardProps } from "@/components/2023/SpeakerCard";
 
 export const JOIN_THE_COMMUNITY_URL = "https://www.genztechies.com";
 export const SESSIONIZE_URL = "https://sessionize.com/genzhackfest-2023";
@@ -126,7 +126,9 @@ export const FAQS_DATA: FAQCardProps[] = [
     }
 ];
 
-export const TOP_NAV_LINKS: { name: string; href: string }[] = [
+export const venue = "https://www.google.com/maps/dir/my+location/Unilag+Multipurpose+Hall,+Lagos/";
+
+export const TOP_NAV_LINKS: { name: string; href: string; target?: string }[] = [
     {
         name: "About",
         href: "#about-us"
@@ -142,6 +144,11 @@ export const TOP_NAV_LINKS: { name: string; href: string }[] = [
     {
         name: "conference",
         href: "#past-events"
+    },
+    {
+        name: "locate venue",
+        href: venue,
+        target: "_blank"
     }
 ];
 

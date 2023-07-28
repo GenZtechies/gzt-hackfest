@@ -1,13 +1,13 @@
-import React from "react";
-import Link from "next/link";
-import Image from "next/image";
 import { clsx } from "class-flex";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
 import { Balancer } from "react-wrap-balancer";
 
 import { Seo } from "@/components";
-import arrayFns from "@/utils/array-fns";
 import { Button, FAQCard, PastEventsCard, SectionHeader, SpeakerCard } from "@/components/2023";
-import { JOIN_THE_COMMUNITY_URL, BUY_CONFERENCE_TICKET_URL, FAQS_DATA, TOP_NAV_LINKS, FOOTER_LINKS, HACKATHON_REGISTRATION_URL, PAST_EVENTS, SPEAKERS, PREVIOUS_PARTNERS, SPONSORSHIP_DECK_URL, SESSIONIZE_URL } from "@/data/2023";
+import { BUY_CONFERENCE_TICKET_URL, FAQS_DATA, FOOTER_LINKS, HACKATHON_REGISTRATION_URL, JOIN_THE_COMMUNITY_URL, PAST_EVENTS, PREVIOUS_PARTNERS, SPEAKERS, SPONSORSHIP_DECK_URL, TOP_NAV_LINKS, venue } from "@/data/2023";
+import arrayFns from "@/utils/array-fns";
 
 const Main = () => {
     const [open, setOpen] = React.useState(false);
@@ -41,7 +41,9 @@ const Main = () => {
                             <ul className="items-center hidden space-x-1 lg:flex">
                                 {TOP_NAV_LINKS.map((link, index) => (
                                     <li key={index} className="p-4 font-semibold uppercase text-primary-dark font-rubik">
-                                        <Link href={link.href}>{link.name}</Link>
+                                        <Link href={link.href} target={link?.target}>
+                                            {link.name}
+                                        </Link>
                                     </li>
                                 ))}
                             </ul>
@@ -83,12 +85,17 @@ const Main = () => {
 
                 <div className="container grid items-center justify-center flex-grow w-full grid-cols-1 gap-10 md:grid-cols-5">
                     <div className="flex flex-col justify-around w-full col-span-3 space-y-5 h-4/5">
-                        <h1>
+                        <h1 className="whitespace-nowrap">
                             <Balancer>
-                                <span className="font-extrabold font-sora leading-none text-stroke-sm md:text-stroke text-6xl md:text-[112px]">GEN Z HACKFEST 2023</span>
-
-                                <span className="inline-block ml-5">
+                                <span className="font-extrabold font-sora leading-none text-stroke-sm md:text-stroke text-5xl md:text-[112px] mr-5 align-top">GEN Z HACKFEST 2023</span>
+                                <span className="inline-block ">
                                     <span className="text-sm font-medium tracking-wider md:text-xl text-primary-dark font-rubik">August 21st - 26th.</span> <br />
+                                    <span className="text-sm font-semibold tracking-widest underline capitalize md:text-xl text-primary-dark font-rubik">
+                                        <a target="_blank" href={venue}>
+                                            UNILAG Multi-purpose Hall
+                                        </a>
+                                    </span>
+                                    <br />
                                     <span className="text-lg font-semibold tracking-widest capitalize md:text-4xl text-primary-dark font-rubik">lagos, Nigeria</span>
                                 </span>
                             </Balancer>
@@ -134,8 +141,10 @@ const Main = () => {
                 <div className="w-full lg:basis-1/2">
                     <SectionHeader text="about us" textClassName="md:text-[112px] text-6xl" dotClassName="text-primary-purple" />
 
-                    <p className="text-lg text-[#2F2D2D] uppercase leading-[200.5%] py-10">GenZtechies is a community for Gen Z developers, founders, designers, and techies across Africa to connect, learn, and discover life-changing opportunities.<br>
-                    </br> <br></br>Africa has the largest population of unemployed youths, talent is equally distributed but opportunity is not. Beginning in 2022, we organize Gen Z HackFest as a unique 2-in-1 conference and hackathon to bridge this gap in our own little way.</p>
+                    <p className="text-lg text-[#2F2D2D] uppercase leading-[200.5%] py-10">
+                        GenZtechies is a community for Gen Z developers, founders, designers, and techies across Africa to connect, learn, and discover life-changing opportunities.<br></br> <br></br>Africa has the largest population of unemployed youths, talent is equally distributed but opportunity is not. Beginning in 2022, we organize Gen Z
+                        HackFest as a unique 2-in-1 conference and hackathon to bridge this gap in our own little way.
+                    </p>
 
                     <Link target="_blank" passHref href={JOIN_THE_COMMUNITY_URL} className="inline-block py-4">
                         <Button withArrow className="w-full lg:w-fit">
@@ -155,9 +164,9 @@ const Main = () => {
                         <SectionHeader text="previous partners" textClassName="text-white" dotClassName="text-primary-yellow" />
                     </h1>
 
-                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+                    <div className="grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-4">
                         {PREVIOUS_PARTNERS.map((partner) => (
-                            <div key={partner.title} className="relative md:w-full px-8 border border-b-4 rounded-md aspect-square md:h-52 bg-primary-light-bg border-primary-blue-dark" data-aos="fade-up">
+                            <div key={partner.title} className="relative px-8 border border-b-4 rounded-md md:w-full aspect-square md:h-52 bg-primary-light-bg border-primary-blue-dark" data-aos="fade-up">
                                 <Link href={partner.link} target="_blank">
                                     <div className="relative w-full h-full">
                                         <Image src={`/assets/2023/images/previous_partners/${partner.title}.svg`} fill alt="company-logo" />
@@ -166,9 +175,9 @@ const Main = () => {
                             </div>
                         ))}
 
-                        <div className="col-span-2 md:col-span-3 lg:col-span-4 pt-10">
+                        <div className="col-span-2 pt-10 md:col-span-3 lg:col-span-4">
                             <div className="py-5 mx-auto space-y-3 md:w-4/5">
-                                <h1 className="text-4xl md:text-5xl font-extrabold text-center text-white uppercase font-sora">Sponsor Gen Z Hackfest 2023</h1>
+                                <h1 className="text-4xl font-extrabold text-center text-white uppercase md:text-5xl font-sora">Sponsor Gen Z Hackfest 2023</h1>
                                 <p className="mx-auto text-lg text-center text-white">Sponsor the largest gathering of Gen-Zs in tech across Africa.</p>
                             </div>
 
