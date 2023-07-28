@@ -85,7 +85,7 @@ const Main = () => {
 
                 <div className="container grid items-center justify-center flex-grow w-full grid-cols-1 gap-10 md:grid-cols-5">
                     <div className="flex flex-col justify-around w-full col-span-3 space-y-5 h-4/5">
-                        <h1 className="whitespace-nowrap">
+                        <h1 className="">
                             <Balancer>
                                 <span className="font-extrabold font-sora leading-none text-stroke-sm md:text-stroke text-5xl md:text-[112px] mr-5 align-top">GEN Z HACKFEST 2023</span>
                                 <span className="inline-block ">
