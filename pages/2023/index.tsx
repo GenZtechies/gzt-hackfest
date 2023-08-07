@@ -213,7 +213,7 @@ const Main = () => {
                 <section id="speakers" className="px-6 py-24 md:px-20 bg-[#EAEAEE]">
                     <SectionHeader text="speakers" />
 
-                    <div className="mt-[56px] flex flex-col md:flex-row gap-4 md:overflow-x-auto md:scrollbar-none">
+                    <div className="grid content-center grid-cols-2 gap-x-5 gap-y-10 place-items-center md:grid-cols-4">
                         {SPEAKERS.map((speaker, i) => (
                             <SpeakerCard key={i} {...speaker} />
                         ))}

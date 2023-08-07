@@ -10,6 +10,9 @@ const nextConfig = {
                 permanent: false
             }
         ];
+    },
+    images: {
+        domains: ["drive.google.com"]
     }
 };
 
