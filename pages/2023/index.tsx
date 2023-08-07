@@ -213,7 +213,7 @@ const Main = () => {
                 <section id="speakers" className="px-6 py-24 md:px-20 bg-[#EAEAEE]">
                     <SectionHeader text="speakers" />
 
-                    <div className="grid content-center grid-cols-1 gap-x-5 gap-y-10 place-items-center md:grid-cols-4">
+                    <div className="grid content-center sm:grid-cols-1 gap-x-5 gap-y-14 place-items-center md:grid-cols-3">
                         {SPEAKERS.map((speaker, i) => (
                             <SpeakerCard key={i} {...speaker} />
                         ))}
