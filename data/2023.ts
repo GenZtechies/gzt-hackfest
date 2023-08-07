@@ -10,11 +10,71 @@ export const BUY_CONFERENCE_TICKET_URL = "https://eventprime.co/e/gen-z-hackfest
 export const HACKFEST_2022_PICTURES_URL = "https://photos.app.goo.gl/MnLqmyVyAn8ivCc19";
 
 export const SPEAKERS: SpeakerCardProps[] = [
-    // {
-    //     name: "edidiong asikpo",
-    //     imgSrc: "/assets/2023/images/speakers/edidiong-asikpo.png",
-    //     role: "senior developer advocate"
-    // }
+    {
+        name: "Victor fatanmi",
+        role: "CEO at Fullgap and FourthCanvas",
+        imgId: "16Gq2L9ow2E_10ZQeE5nQsqDe6OlI79Wc"
+    },
+    {
+        name: "edidiong asikpo",
+        role: "senior developer advocate at ambassador labs",
+        imgId: "1_q_anGaNHd1E8gGq0c8B8bqgpuqC0n88"
+    },
+    {
+        name: "Alexandra Ighodaro",
+        role: "Data engineer at wema bank",
+        imgId: "13-LfZorNJtdErWstkxARCR2TZRgJ8BXx"
+    },
+    {
+        name: "jude dike",
+        role: "CEO/Cofounder at GetEquity",
+        imgId: "12ZApW5NJNiXRXIhQMlrXLz2TawRae9E3"
+    },
+    {
+        name: "Benita Riagbayire",
+        role: "marketing associate at figg africa",
+        imgId: "1tYnrUeVqYJ4vU_X9C-WLizGseeGBUI_S"
+    },
+    {
+        name: "travis uche",
+        role: "Managing Director Xanotech LTD",
+        imgId: "1K2B14aZkdS716eOj5GJTEUkx2AArUHBd"
+    },
+    {
+        name: "eunice azu",
+        role: "customer success associate",
+        imgId: "1TaZ8ogVHgr6CRlbXnJ2BxssINbkbE7Kr"
+    },
+    {
+        name: "Rasheed aro",
+        role: "COO and Co-Founder at Trakka",
+        imgId: "1M9LZOdcSGKR9OQn0vzPe2wLrwR2PQebe"
+    },
+    {
+        name: "Oyinkansola Olunaike",
+        role: "Product designer",
+        imgId: "1Z-yCuC9Y6Rk5-ujKQekP5XGYGb1Soijp"
+    },
+    {
+        name: "Douglas Kendyson",
+        role: "ceo & founder atselar",
+        imgId: "1kwVkStNuhnPrA1jqx2a1ZV0RF6r6zSe-"
+    },
+    {
+        name: "osame okunbo",
+        role: "Co-Founder and Solutions Architect Mangospace",
+        imgId: "1Q42WsCmU3ljuDSftGGqs9iYq_aRSNr-6"
+    },
+    {
+        name: "Fadhl Yusuf",
+        role: "design consultant at uu consulting",
+        imgId: "1LrBq9-DRw17sfZS5C0fybuR6Q9rVlf9H"
+    },
+    {
+        name: "Daniel Umoren",
+        role: "frontend developer & community manager",
+        imgId: "1IcvpUWZsn_Ag-iwMgc9lsnjinG1BO_NT"
+    }
 ];
 
 export const PAST_EVENTS: PastEventsCardProps[] = [
