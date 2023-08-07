@@ -1,16 +1,16 @@
 import Image from "next/image";
 
 export type SpeakerCardProps = {
-    imgId: string;
+    imgSrc: string;
     name: string;
     role: string;
 };
 
-const SpeakerCard = ({ name, imgId, role }: SpeakerCardProps) => {
+const SpeakerCard = ({ name, imgSrc, role }: SpeakerCardProps) => {
     return (
         <div className="flex-shrink-0 space-y-6 h-96">
-            <div className="relative w-full overflow-hidden rounded-lg shadow-sm h-72 ">
-                <Image src={`https://drive.google.com/uc?export=view&id=${imgId}`} fill alt={name} className="object-cover object-top" />
+            <div className="relative w-full overflow-hidden border-b-8 rounded-lg shadow-sm h-72 border-primary-blue-dark">
+                <Image src={imgSrc} fill alt={name} className="object-cover object-top" />
             </div>
 
             <div className="space-y-1 text-center">
