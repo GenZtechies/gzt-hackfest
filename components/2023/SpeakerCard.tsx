@@ -10,7 +10,7 @@ export type SpeakerCardProps = {
 
 const SpeakerCard = ({ name, imgSrc, role, linkedin }: SpeakerCardProps) => {
     return (
-        <div className="flex-shrink-0 space-y-6 h-96 aspect-square">
+        <div className="flex-shrink-0 space-y-6 h-96">
             <Link href={linkedin} target="_blank" className="w-full">
                 <div className="relative w-full overflow-hidden border-b-8 rounded-lg shadow-sm h-80 border-primary-blue-dark">
                     <Image src={imgSrc} fill alt={name} className="object-cover object-top" />

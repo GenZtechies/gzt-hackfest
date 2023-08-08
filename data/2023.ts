@@ -11,16 +11,10 @@ export const HACKFEST_2022_PICTURES_URL = "https://photos.app.goo.gl/MnLqmyVyAn8
 
 export const SPEAKERS: SpeakerCardProps[] = [
     {
-        name: "edidiong asikpo",
-        role: "senior developer advocate at ambassador labs",
-        imgSrc: "/assets/2023/speakers/edidiong-asikpo.jpeg",
-        linkedin: "https://www.linkedin.com/in/edidiong-asikpo"
-    },
-    {
-        name: "Douglas Kendyson",
-        role: "ceo & founder at selar",
-        imgSrc: "/assets/2023/speakers/douglas-kendyson.jpg",
-        linkedin: "https://www.linkedin.com/in/kendysond"
+        name: "jude dike",
+        role: "CEO/Cofounder at GetEquity",
+        imgSrc: "/assets/2023/speakers/jude-dike.JPG",
+        linkedin: "https://www.linkedin.com/in/dikejudein"
     },
     {
         name: "Alexandra Ighodaro",
@@ -29,11 +23,24 @@ export const SPEAKERS: SpeakerCardProps[] = [
         linkedin: "https://www.linkedin.com/in/alexandra-ighodaro"
     },
     {
+        name: "Douglas Kendyson",
+        role: "ceo & founder at selar",
+        imgSrc: "/assets/2023/speakers/douglas-kendyson-new.jpg",
+        linkedin: "https://www.linkedin.com/in/kendysond"
+    },
+    {
         name: "Victor fatanmi",
         role: "CEO at Fullgap and FourthCanvas",
         imgSrc: "/assets/2023/speakers/victor-fatanmi.png",
         linkedin: "https://www.linkedin.com/in/victorfatanmi"
     },
+    {
+        name: "edidiong asikpo",
+        role: "senior developer advocate at ambassador labs",
+        imgSrc: "/assets/2023/speakers/edidiong-asikpo.jpeg",
+        linkedin: "https://www.linkedin.com/in/edidiong-asikpo"
+    },
+
     {
         name: "Benita Riagbayire",
         role: "marketing associate at figg africa",
@@ -41,12 +48,11 @@ export const SPEAKERS: SpeakerCardProps[] = [
         linkedin: "https://www.linkedin.com/in/benita-riagbayire-178b6917a"
     },
     {
-        name: "jude dike",
-        role: "CEO/Cofounder at GetEquity",
-        imgSrc: "/assets/2023/speakers/jude-dike.JPG",
-        linkedin: "https://www.linkedin.com/in/dikejudein"
+        name: "Rasheed aro",
+        role: "COO and Co-Founder at Trakka",
+        imgSrc: "/assets/2023/speakers/rasheed-aro.jpg",
+        linkedin: "https://www.linkedin.com/in/rasheed-aro-81431b1a3"
     },
-
     {
         name: "eunice azu",
         role: "customer success associate",
@@ -54,24 +60,18 @@ export const SPEAKERS: SpeakerCardProps[] = [
         linkedin: "https://www.linkedin.com/in/azueunice"
     },
     {
-        name: "Rasheed aro",
-        role: "COO and Co-Founder at Trakka",
-        imgSrc: "/assets/2023/speakers/rasheed-aro.jpg",
-        linkedin: "https://www.linkedin.com/in/rasheed-aro-81431b1a3"
+        name: "travis uche",
+        role: "Managing Director Xanotech LTD",
+        imgSrc: "/assets/2023/speakers/travis-uche.jpeg",
+        linkedin: "https://www.linkedin.com/in/david-travis-uche"
     },
-
     {
         name: "Oyinkansola Olunaike",
         role: "Product designer",
         imgSrc: "/assets/2023/speakers/oyinkansola-olunaike.jpeg",
         linkedin: "https://www.linkedin.com/in/oyinkansola-olunaike-7582531a1"
     },
-    {
-        name: "travis uche",
-        role: "Managing Director Xanotech LTD",
-        imgSrc: "/assets/2023/speakers/travis-uche.jpeg",
-        linkedin: "https://www.linkedin.com/in/david-travis-uche"
-    },
+
     {
         name: "osame okunbo",
         role: "Co-Founder and Solutions Architect Mangospace",
