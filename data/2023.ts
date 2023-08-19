@@ -360,12 +360,12 @@ export const sponsors_partners = [
     },
     {
         name: "Unilag TV",
-        link: "#",
+        link: "https://www.youtube.com/@unilagontv5062",
         image: "unilag-tv.jpg"
     },
     {
         name: "Brila FM",
-        link: "#",
+        link: "https://www.brila.net/",
         image: "brilla-fm.jpg"
     }
 ];
