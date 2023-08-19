@@ -318,3 +318,54 @@ export const PREVIOUS_PARTNERS: { title: string; link: string }[] = [
         link: "https://www.zuri.team/"
     }
 ];
+
+export const sponsors_partners = [
+    {
+        title: "vercel",
+        link: "https://vercel.com/?utm_source=genztechies&utm_campaign=oss"
+    },
+    {
+        title: "chimoney",
+        link: "https://chimoney.io"
+    },
+    {
+        title: "quine",
+        link: "https://quine.sh"
+    },
+    {
+        title: "paystack",
+        link: "https://paystack.com"
+    },
+    // {
+    //     title: "technext",
+    //     link: "https://technext.ng/"
+    // },
+    {
+        title: "She Code Africa",
+        link: "https://shecodeafrica.org/",
+        image: "she-code-africa.svg"
+    },
+    {
+        title: "i4g",
+        link: "https://ingressive.org/"
+    },
+    {
+        title: "NexaScale",
+        link: "https://nexascale.org/",
+        image: "nexascale.png"
+    },
+    {
+        title: "treford",
+        link: "https://treford.africa/"
+    },
+    {
+        name: "Unilag TV",
+        link: "#",
+        image: "unilag-tv.jpg"
+    },
+    {
+        name: "Brila FM",
+        link: "#",
+        image: "brilla-fm.jpg"
+    }
+];

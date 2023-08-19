@@ -6,7 +6,7 @@ import { Balancer } from "react-wrap-balancer";
 
 import { Seo } from "@/components";
 import { Button, FAQCard, PastEventsCard, SectionHeader, SpeakerCard } from "@/components/2023";
-import { BUY_CONFERENCE_TICKET_URL, FAQS_DATA, FOOTER_LINKS, HACKATHON_REGISTRATION_URL, JOIN_THE_COMMUNITY_URL, PAST_EVENTS, PREVIOUS_PARTNERS, SPEAKERS, SPONSORSHIP_DECK_URL, TOP_NAV_LINKS, venue } from "@/data/2023";
+import { BUY_CONFERENCE_TICKET_URL, FAQS_DATA, FOOTER_LINKS, HACKATHON_REGISTRATION_URL, JOIN_THE_COMMUNITY_URL, PAST_EVENTS, SPEAKERS, SPONSORSHIP_DECK_URL, TOP_NAV_LINKS, sponsors_partners, venue } from "@/data/2023";
 import arrayFns from "@/utils/array-fns";
 
 const Main = () => {
@@ -161,15 +161,15 @@ const Main = () => {
             <section id="previous-partners" className="py-20 border-b-4 bg-primary-purple border-primary-blue-dark">
                 <div className="container space-y-10">
                     <h1 className="md:text-[80px] text-4xl text-white leading-none font-bold font-sora text-center">
-                        <SectionHeader text="previous partners" textClassName="text-white" dotClassName="text-primary-yellow" />
+                        <SectionHeader text="Sponsors and Partners" textClassName="text-white" dotClassName="text-primary-yellow" />
                     </h1>
 
                     <div className="grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-4">
-                        {PREVIOUS_PARTNERS.map((partner) => (
+                        {sponsors_partners.map((partner) => (
                             <div key={partner.title} className="relative px-8 border border-b-4 rounded-md md:w-full aspect-square md:h-52 bg-primary-light-bg border-primary-blue-dark" data-aos="fade-up">
                                 <Link href={partner.link} target="_blank">
                                     <div className="relative w-full h-full">
-                                        <Image src={`/assets/2023/images/previous_partners/${partner.title}.svg`} fill alt="company-logo" />
+                                        <Image className="object-contain" src={`/assets/2023/images/previous_partners/${partner?.image || `${partner.title}.svg`}`} fill alt="company-logo" />
                                     </div>
                                 </Link>
                             </div>
