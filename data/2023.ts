@@ -321,33 +321,38 @@ export const PREVIOUS_PARTNERS: { title: string; link: string }[] = [
 
 export const sponsors_partners = [
     {
-        title: "vercel",
-        link: "https://vercel.com/?utm_source=genztechies&utm_campaign=oss"
+        title: "quine",
+        link: "https://quine.sh"
+    },
+
+    {
+        title: "paystack",
+        link: "https://paystack.com"
     },
     {
         title: "chimoney",
         link: "https://chimoney.io"
     },
     {
-        title: "quine",
-        link: "https://quine.sh"
+        title: "sail",
+        link: "https://www.tokunboabiru.org/sail"
     },
     {
-        title: "paystack",
-        link: "https://paystack.com"
+        title: "vercel",
+        link: "https://vercel.com/?utm_source=genztechies&utm_campaign=oss"
     },
+
     // {
     //     title: "technext",
     //     link: "https://technext.ng/"
     // },
     {
-        title: "She Code Africa",
-        link: "https://shecodeafrica.org/",
-        image: "she-code-africa.svg"
-    },
-    {
         title: "i4g",
         link: "https://ingressive.org/"
+    },
+    {
+        title: "treford",
+        link: "https://treford.africa/"
     },
     {
         title: "NexaScale",
@@ -355,9 +360,11 @@ export const sponsors_partners = [
         image: "nexascale.png"
     },
     {
-        title: "treford",
-        link: "https://treford.africa/"
+        title: "She Code Africa",
+        link: "https://shecodeafrica.org/",
+        image: "she-code-africa.svg"
     },
+
     {
         name: "Unilag TV",
         link: "https://www.youtube.com/@unilagontv5062",

@@ -6,7 +6,7 @@ import { Balancer } from "react-wrap-balancer";
 
 import { Seo } from "@/components";
 import { Button, FAQCard, PastEventsCard, SectionHeader, SpeakerCard } from "@/components/2023";
-import { BUY_CONFERENCE_TICKET_URL, FAQS_DATA, FOOTER_LINKS, HACKATHON_REGISTRATION_URL, JOIN_THE_COMMUNITY_URL, PAST_EVENTS, SPEAKERS, SPONSORSHIP_DECK_URL, TOP_NAV_LINKS, sponsors_partners, venue } from "@/data/2023";
+import { BUY_CONFERENCE_TICKET_URL, FAQS_DATA, FOOTER_LINKS, HACKATHON_REGISTRATION_URL, JOIN_THE_COMMUNITY_URL, PAST_EVENTS, SPEAKERS, TOP_NAV_LINKS, sponsors_partners, venue } from "@/data/2023";
 import arrayFns from "@/utils/array-fns";
 
 const Main = () => {
@@ -72,7 +72,6 @@ const Main = () => {
                                 <Link href={link.href}>{link.name}</Link>
                             </li>
                         ))}
-
                         <li>
                             <Link href={BUY_CONFERENCE_TICKET_URL} passHref>
                                 <Button withArrow className="w-full" size="sm">
@@ -174,17 +173,6 @@ const Main = () => {
                                 </Link>
                             </div>
                         ))}
-
-                        <div className="col-span-2 pt-10 md:col-span-3 lg:col-span-4">
-                            <div className="py-5 mx-auto space-y-3 md:w-4/5">
-                                <h1 className="text-4xl font-extrabold text-center text-white uppercase md:text-5xl font-sora">Sponsor Gen Z Hackfest 2023</h1>
-                                <p className="mx-auto text-lg text-center text-white">Sponsor the largest gathering of Gen-Zs in tech across Africa.</p>
-                            </div>
-
-                            <Link target="_blank" href={SPONSORSHIP_DECK_URL} passHref>
-                                <Button className="mx-auto bg-primary-green hover:bg-primary-green/80 ">Become a sponsor</Button>
-                            </Link>
-                        </div>
                     </div>
                 </div>
             </section>
