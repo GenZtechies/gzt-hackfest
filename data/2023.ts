@@ -322,7 +322,7 @@ export const PREVIOUS_PARTNERS: { title: string; link: string }[] = [
 export const sponsors_partners = [
     {
         title: "quine",
-        link: "https://quine.sh"
+        link: "https://www.quine.sh/?utm_source=genztechies&utm_campaign=social_promo"
     },
 
     {
