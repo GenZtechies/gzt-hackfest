@@ -364,6 +364,11 @@ export const sponsors_partners = [
         link: "https://shecodeafrica.org/",
         image: "she-code-africa.svg"
     },
+    {
+        title: "Web3 lagies",
+        link: "https://www.web3ladies.com/",
+        image: "web3ladies-logo.svg"
+    },
 
     {
         name: "Unilag TV",
