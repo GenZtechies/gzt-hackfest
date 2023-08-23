@@ -9,6 +9,39 @@ export const HACKATHON_REGISTRATION_URL = "https://forms.gle/y5wRgVRFh1HabQrj7";
 export const BUY_CONFERENCE_TICKET_URL = "https://eventprime.co/e/gen-z-hackfest-2023";
 export const HACKFEST_2022_PICTURES_URL = "https://photos.app.goo.gl/MnLqmyVyAn8ivCc19";
 
+export const JUDGES = [
+    {
+        name: "Adora Nwodo",
+        role: "Founder at NexaScale",
+        imgSrc: "/assets/2023/judges/adora-nwodo.jpg"
+    },
+    {
+        name: "Ada Nduka Oyom",
+        role: "Founder, She Code Africa",
+        imgSrc: "/assets/2023/judges/ada-nduka.jpg"
+    },
+    {
+        name: "Efiong Efi-Mbukpa",
+        role: "CTO hadi finance",
+        imgSrc: "/assets/2023/judges/efiong.jpg"
+    },
+    {
+        name: "Tolu Kalejaiye",
+        role: "Developer Relations Team Lead at Paystack",
+        imgSrc: "/assets/2023/judges/tolu-kalejaiye.jpeg"
+    },
+    {
+        name: "Babatunde Hammed ",
+        role: "Head of Operations at Chimoney",
+        imgSrc: "/assets/2023/judges/babatunde-hammed.jpeg"
+    },
+    {
+        name: "Nathan Nwachuku",
+        role: "CEO at Klas",
+        imgSrc: "/assets/2023/judges/chima.jpeg"
+    }
+];
+
 export const SPEAKERS: SpeakerCardProps[] = [
     {
         name: "jude dike",
@@ -89,6 +122,12 @@ export const SPEAKERS: SpeakerCardProps[] = [
         role: "frontend developer & community manager",
         imgSrc: "/assets/2023/speakers/daniel-umoren.jpg",
         linkedin: "https://www.linkedin.com/in/daniel-umoren"
+    },
+    {
+        name: "Zach Latta",
+        role: "Founder of Hack Club",
+        imgSrc: "/assets/2023/speakers/zach-latta.jpeg", //public\assets\2023\speakers\zach-latta.jpeg
+        linkedin: "https://www.linkedin.com/in/zachlatta/"
     }
 ];
 

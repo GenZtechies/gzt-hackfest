@@ -6,7 +6,7 @@ import { Balancer } from "react-wrap-balancer";
 
 import { Seo } from "@/components";
 import { Button, FAQCard, PastEventsCard, SectionHeader, SpeakerCard } from "@/components/2023";
-import { BUY_CONFERENCE_TICKET_URL, FAQS_DATA, FOOTER_LINKS, HACKATHON_REGISTRATION_URL, JOIN_THE_COMMUNITY_URL, PAST_EVENTS, SPEAKERS, TOP_NAV_LINKS, sponsors_partners, venue } from "@/data/2023";
+import { BUY_CONFERENCE_TICKET_URL, FAQS_DATA, FOOTER_LINKS, HACKATHON_REGISTRATION_URL, JOIN_THE_COMMUNITY_URL, JUDGES, PAST_EVENTS, SPEAKERS, TOP_NAV_LINKS, sponsors_partners, venue } from "@/data/2023";
 import arrayFns from "@/utils/array-fns";
 
 const Main = () => {
@@ -208,6 +208,15 @@ const Main = () => {
                     </div>
                 </section>
             )}
+
+            <section id="judges" className="px-6 py-24 md:px-20 bg-[#EAEAEE]">
+                <SectionHeader text="judges" />
+                <div className="grid content-center sm:grid-cols-1 gap-x-5 gap-y-14 place-items-center md:grid-cols-3">
+                    {JUDGES.map((speaker, i) => (
+                        <SpeakerCard key={i} {...speaker} />
+                    ))}
+                </div>
+            </section>
 
             <section id="see-you-soon-marquee" className="py-10 bg-primary-light-bg marquee border-y-4 border-y-primary-blue-dark">
                 <span className="text-6xl md:text-[100px] text-primary-blue-dark leading-none font-bold font-sora uppercase">&bull; See you at Gen Z Hackfest &bull; See you at Gen Z Hackfest &bull;</span>
