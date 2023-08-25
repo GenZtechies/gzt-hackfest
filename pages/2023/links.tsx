@@ -17,8 +17,8 @@ const Links = () => {
         <main className="flex items-center justify-center w-screen h-screen bg-white">
             <ul className="space-y-2">
                 {links.map((link) => (
-                    <li>
-                        <Link href={link.link || "#"} className="font-semibold text-center text-black">
+                    <li key={link.name} className="text-center text-primary-purple">
+                        <Link href={link.link || "#"} target="_blank" className="font-semibold">
                             {link.name}
                         </Link>
                     </li>
