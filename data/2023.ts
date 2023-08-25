@@ -240,7 +240,7 @@ export const FAQS_DATA: FAQCardProps[] = [
     }
 ];
 
-export const venue = "https://www.google.com/maps/dir/my+location/Unilag+Multipurpose+Hall,+Lagos/";
+export const venue = "https://maps.app.goo.gl/WeLTpXTEgkTEbB8CA";//"https://www.google.com/maps/dir/my+location/Unilag+Multipurpose+Hall,+Lagos/";
 
 export const TOP_NAV_LINKS: { name: string; href: string; target?: string }[] = [
     {
