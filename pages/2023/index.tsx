@@ -58,9 +58,9 @@ const Main = () => {
                                 </svg>
                             </button>
 
-                            <Link target="_blank" passHref href={BUY_CONFERENCE_TICKET_URL}>
+                            <Link target="_blank" passHref href={"https://genztechies.notion.site/GenZHackfest2023-Progam-Outline-372f4e0439af458fbff01486ac63e5c4"}>
                                 <Button withArrow className="hidden lg:flex" size="sm">
-                                    Get Tickets
+                                    View Schedule
                                 </Button>
                             </Link>
                         </li>
@@ -72,13 +72,13 @@ const Main = () => {
                                 <Link href={link.href}>{link.name}</Link>
                             </li>
                         ))}
-                        <li>
+                        {/* <li>
                             <Link href={BUY_CONFERENCE_TICKET_URL} passHref>
                                 <Button withArrow className="w-full" size="sm">
                                     Get Tickets
                                 </Button>
                             </Link>
-                        </li>
+                        </li> */}
                     </ul>
                 </nav>
 
@@ -101,19 +101,13 @@ const Main = () => {
                         </h1>
 
                         <div className="flex flex-col items-center w-full space-y-5 md:space-y-0 md:space-x-5 md:flex-row">
-                            <Link target="_blank" passHref href={HACKATHON_REGISTRATION_URL}>
-                                <Button withArrow>Register For Hackathon</Button>
+                            <Link target="_blank" passHref href={"https://genztechies.notion.site/GenZHackfest2023-Progam-Outline-372f4e0439af458fbff01486ac63e5c4"}>
+                                <Button withArrow>View Event Schedule</Button>
                             </Link>
 
-                            {/* <Link target="_blank" passHref href={SESSIONIZE_URL}>
+                            <Link target="_blank" passHref href={venue}>
                                 <Button withArrow variant="outlined">
-                                    speak at hackfest
-                                </Button>
-                            </Link> */}
-
-                            <Link target="_blank" passHref href={BUY_CONFERENCE_TICKET_URL}>
-                                <Button withArrow variant="outlined">
-                                    Get Conference Tickets
+                                    Locate Event Venue
                                 </Button>
                             </Link>
                         </div>
@@ -189,11 +183,11 @@ const Main = () => {
                         The open-ended hackathon aims to solve problems in Africa that are often overlooked. We're bringing thousands of people from different diversities together to collaborate and build innovative solutions. By leveraging their diverse skills and expertise, participants work towards creating meaningful and impactful solutions.
                     </p>
 
-                    <Link target="_blank" passHref href={HACKATHON_REGISTRATION_URL} className="inline-block py-4">
+                    {/* <Link target="_blank" passHref href={HACKATHON_REGISTRATION_URL} className="inline-block py-4">
                         <Button withArrow className="w-full lg:w-fit">
                             Join the hackathon
                         </Button>
-                    </Link>
+                    </Link> */}
                 </div>
             </section>
 
