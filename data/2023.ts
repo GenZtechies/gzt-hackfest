@@ -381,7 +381,7 @@ export const sponsors_partners = [
         link: "https://vercel.com/?utm_source=genztechies&utm_campaign=oss"
     },
     {
-        name: "kora",
+        title: "kora",
         link: "https://korapay.com/"
     },
 
