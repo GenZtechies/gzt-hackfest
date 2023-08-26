@@ -240,7 +240,7 @@ export const FAQS_DATA: FAQCardProps[] = [
     }
 ];
 
-export const venue = "https://maps.app.goo.gl/WeLTpXTEgkTEbB8CA";//"https://www.google.com/maps/dir/my+location/Unilag+Multipurpose+Hall,+Lagos/";
+export const venue = "https://maps.app.goo.gl/WeLTpXTEgkTEbB8CA"; //"https://www.google.com/maps/dir/my+location/Unilag+Multipurpose+Hall,+Lagos/";
 
 export const TOP_NAV_LINKS: { name: string; href: string; target?: string }[] = [
     {
@@ -380,6 +380,10 @@ export const sponsors_partners = [
         title: "vercel",
         link: "https://vercel.com/?utm_source=genztechies&utm_campaign=oss"
     },
+    {
+        name: "kora",
+        link: "https://korapay.com/"
+    },
 
     // {
     //     title: "technext",
@@ -403,11 +407,11 @@ export const sponsors_partners = [
         link: "https://shecodeafrica.org/",
         image: "she-code-africa.svg"
     },
-    {
-        title: "Web3 lagies",
-        link: "https://www.web3ladies.com/",
-        image: "web3ladies-logo.svg"
-    },
+    // {
+    //     title: "Web3 lagies",
+    //     link: "https://www.web3ladies.com/",
+    //     image: "web3ladies-logo.svg"
+    // },
 
     {
         name: "Unilag TV",
