@@ -260,8 +260,8 @@ export const TOP_NAV_LINKS: { name: string; href: string; target?: string }[] = 
         href: "#past-events"
     },
     {
-        name: "locate venue",
-        href: venue,
+        name: "view photos",
+        href: "https://photos.app.goo.gl/b9rHzM8RgE4dpMXeA",
         target: "_blank"
     }
 ];

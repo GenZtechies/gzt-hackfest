@@ -6,7 +6,7 @@ import { Balancer } from "react-wrap-balancer";
 
 import { Seo } from "@/components";
 import { Button, FAQCard, PastEventsCard, SectionHeader, SpeakerCard } from "@/components/2023";
-import { BUY_CONFERENCE_TICKET_URL, FAQS_DATA, FOOTER_LINKS, HACKATHON_REGISTRATION_URL, JOIN_THE_COMMUNITY_URL, JUDGES, PAST_EVENTS, SPEAKERS, TOP_NAV_LINKS, sponsors_partners, venue } from "@/data/2023";
+import { FAQS_DATA, FOOTER_LINKS, JOIN_THE_COMMUNITY_URL, JUDGES, PAST_EVENTS, SPEAKERS, TOP_NAV_LINKS, sponsors_partners, venue } from "@/data/2023";
 import arrayFns from "@/utils/array-fns";
 
 const Main = () => {
@@ -58,9 +58,9 @@ const Main = () => {
                                 </svg>
                             </button>
 
-                            <Link target="_blank" passHref href={"https://genztechies.notion.site/GenZHackfest2023-Progam-Outline-372f4e0439af458fbff01486ac63e5c4"}>
+                            <Link target="_blank" passHref href={"https://photos.app.goo.gl/b9rHzM8RgE4dpMXeA"}>
                                 <Button withArrow className="hidden lg:flex" size="sm">
-                                    View Schedule
+                                    View Official Photos
                                 </Button>
                             </Link>
                         </li>
@@ -101,13 +101,13 @@ const Main = () => {
                         </h1>
 
                         <div className="flex flex-col items-center w-full space-y-5 md:space-y-0 md:space-x-5 md:flex-row">
-                            <Link target="_blank" passHref href={"https://genztechies.notion.site/GenZHackfest2023-Progam-Outline-372f4e0439af458fbff01486ac63e5c4"}>
-                                <Button withArrow>View Event Schedule</Button>
+                            <Link target="_blank" passHref href={"https://photos.app.goo.gl/b9rHzM8RgE4dpMXeA"}>
+                                <Button withArrow>View Official Photos</Button>
                             </Link>
 
-                            <Link target="_blank" passHref href={venue}>
+                            <Link target="_blank" passHref href={"https://photos.app.goo.gl/qmzF7VwKVgxHTJA2A"}>
                                 <Button withArrow variant="outlined">
-                                    Locate Event Venue
+                                    Upload your Photos
                                 </Button>
                             </Link>
                         </div>
