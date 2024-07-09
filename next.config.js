@@ -8,7 +8,13 @@ const nextConfig = {
                 source: "/",
                 destination: "/2023",
                 permanent: false
-            }
+            },
+            {
+                source: "/2024",
+                destination: "https://fusiontechfest.com",
+                permanent: false,
+                basePath: false
+            },
         ];
     },
     images: {
