@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://hackfest.genztechies.com/
+
+# Sitemaps
+Sitemap: https://hackfest.genztechies.com/sitemap.xml
