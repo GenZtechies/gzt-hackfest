@@ -31,14 +31,19 @@ export const JUDGES = [
         imgSrc: "/assets/2023/judges/tolu-kalejaiye.jpeg"
     },
     {
-        name: "Babatunde Hammed ",
-        role: "Head of Operations at Chimoney",
-        imgSrc: "/assets/2023/judges/babatunde-hammed.jpeg"
+        name: "Ibrahim Salami ",
+        role: "Co-founder & CEO  at Devtranet",
+        imgSrc: "/assets/2023/judges/ibrahim-salami.png"
     },
     {
         name: "Nathan Nwachuku",
         role: "CEO at Klas",
         imgSrc: "/assets/2023/judges/chima.jpeg"
+    },
+    {
+        name: "Babatunde Hammed ",
+        role: "Head of Operations at Chimoney",
+        imgSrc: "/assets/2023/judges/babatunde-hammed.jpeg"
     }
 ];
 
